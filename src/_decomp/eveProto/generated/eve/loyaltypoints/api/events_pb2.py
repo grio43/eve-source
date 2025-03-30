@@ -1,0 +1,19 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\loyaltypoints\api\events_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.loyaltypoints import loyaltypoints_pb2 as eve_dot_loyaltypoints_dot_loyaltypoints__pb2
+from eveProto.generated.eve.loyaltypoints.wallet import wallet_pb2 as eve_dot_loyaltypoints_dot_wallet_dot_wallet__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/loyaltypoints/api/events.proto', package='eve.loyaltypoints.api', syntax='proto3', serialized_options='Z@github.com/ccpgames/eve-proto-go/generated/eve/loyaltypoints/api', create_key=_descriptor._internal_create_key, serialized_pb='\n"eve/loyaltypoints/api/events.proto\x12\x15eve.loyaltypoints.api\x1a%eve/loyaltypoints/loyaltypoints.proto\x1a%eve/loyaltypoints/wallet/wallet.proto"\xb6\x01\n\x0eGrantCommanded\x129\n\x0bdestination\x18\x01 \x01(\x0b2$.eve.loyaltypoints.wallet.Identifier\x12+\n\x06points\x18\x02 \x01(\x0b2\x1b.eve.loyaltypoints.Currency\x12<\n\x10transaction_type\x18\x03 \x01(\x0e2".eve.loyaltypoints.TransactionTypeBBZ@github.com/ccpgames/eve-proto-go/generated/eve/loyaltypoints/apib\x06proto3', dependencies=[eve_dot_loyaltypoints_dot_loyaltypoints__pb2.DESCRIPTOR, eve_dot_loyaltypoints_dot_wallet_dot_wallet__pb2.DESCRIPTOR])
+_GRANTCOMMANDED = _descriptor.Descriptor(name='GrantCommanded', full_name='eve.loyaltypoints.api.GrantCommanded', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='destination', full_name='eve.loyaltypoints.api.GrantCommanded.destination', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='points', full_name='eve.loyaltypoints.api.GrantCommanded.points', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='transaction_type', full_name='eve.loyaltypoints.api.GrantCommanded.transaction_type', index=2, number=3, type=14, cpp_type=8, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=140, serialized_end=322)
+_GRANTCOMMANDED.fields_by_name['destination'].message_type = eve_dot_loyaltypoints_dot_wallet_dot_wallet__pb2._IDENTIFIER
+_GRANTCOMMANDED.fields_by_name['points'].message_type = eve_dot_loyaltypoints_dot_loyaltypoints__pb2._CURRENCY
+_GRANTCOMMANDED.fields_by_name['transaction_type'].enum_type = eve_dot_loyaltypoints_dot_loyaltypoints__pb2._TRANSACTIONTYPE
+DESCRIPTOR.message_types_by_name['GrantCommanded'] = _GRANTCOMMANDED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+GrantCommanded = _reflection.GeneratedProtocolMessageType('GrantCommanded', (_message.Message,), {'DESCRIPTOR': _GRANTCOMMANDED,
+ '__module__': 'eve.loyaltypoints.api.events_pb2'})
+_sym_db.RegisterMessage(GrantCommanded)
+DESCRIPTOR._options = None

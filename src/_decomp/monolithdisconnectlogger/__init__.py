@@ -1,0 +1,8 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\monolithdisconnectlogger\__init__.py
+from logger import MonolithDisconnectLogger
+import mdlconst
+log_disconnect = MonolithDisconnectLogger.log_disconnect
+log_player_user_requested_disconnect = MonolithDisconnectLogger.log_player_user_requested_disconnect
+log_player_char_requested_disconnect = MonolithDisconnectLogger.log_player_char_requested_disconnect
+log_player_usurped_disconnect = MonolithDisconnectLogger.log_player_usurped_disconnect
+log_server_shutdown_disconnect = MonolithDisconnectLogger.log_server_shutdown_disconnect

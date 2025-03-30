@@ -1,0 +1,34 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\corporation\industry\ledger_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.character import character_pb2 as eve_dot_character_dot_character__pb2
+from eveProto.generated.eve.corporation import corporation_pb2 as eve_dot_corporation_dot_corporation__pb2
+from eveProto.generated.eve.industry import ledger_pb2 as eve_dot_industry_dot_ledger__pb2
+from eveProto.generated.eve.industry import observer_pb2 as eve_dot_industry_dot_observer__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/corporation/industry/ledger.proto', package='eve.corporation.industry.ledger', syntax='proto3', serialized_options='ZJgithub.com/ccpgames/eve-proto-go/generated/eve/corporation/industry/ledger', create_key=_descriptor._internal_create_key, serialized_pb='\n%eve/corporation/industry/ledger.proto\x12\x1feve.corporation.industry.ledger\x1a\x1deve/character/character.proto\x1a!eve/corporation/corporation.proto\x1a\x19eve/industry/ledger.proto\x1a\x1beve/industry/observer.proto"\xde\x01\n\x1eGetAllLedgersByObserverRequest\x120\n\x0bcorporation\x18\x01 \x01(\x0b2\x1b.eve.corporation.Identifier\x124\n\x11requesting_member\x18\x02 \x01(\x0b2\x19.eve.character.Identifier\x123\n\x08observer\x18\x03 \x01(\x0b2!.eve.industry.observer.Identifier\x12\x0c\n\x04page\x18\x04 \x01(\r\x12\x11\n\tpage_size\x18\x05 \x01(\r"S\n\x1fGetAllLedgersByObserverResponse\x120\n\x07ledgers\x18\x01 \x03(\x0b2\x1f.eve.industry.ledger.AttributesBLZJgithub.com/ccpgames/eve-proto-go/generated/eve/corporation/industry/ledgerb\x06proto3', dependencies=[eve_dot_character_dot_character__pb2.DESCRIPTOR,
+ eve_dot_corporation_dot_corporation__pb2.DESCRIPTOR,
+ eve_dot_industry_dot_ledger__pb2.DESCRIPTOR,
+ eve_dot_industry_dot_observer__pb2.DESCRIPTOR])
+_GETALLLEDGERSBYOBSERVERREQUEST = _descriptor.Descriptor(name='GetAllLedgersByObserverRequest', full_name='eve.corporation.industry.ledger.GetAllLedgersByObserverRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='corporation', full_name='eve.corporation.industry.ledger.GetAllLedgersByObserverRequest.corporation', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='requesting_member', full_name='eve.corporation.industry.ledger.GetAllLedgersByObserverRequest.requesting_member', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='observer', full_name='eve.corporation.industry.ledger.GetAllLedgersByObserverRequest.observer', index=2, number=3, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='page', full_name='eve.corporation.industry.ledger.GetAllLedgersByObserverRequest.page', index=3, number=4, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='page_size', full_name='eve.corporation.industry.ledger.GetAllLedgersByObserverRequest.page_size', index=4, number=5, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=197, serialized_end=419)
+_GETALLLEDGERSBYOBSERVERRESPONSE = _descriptor.Descriptor(name='GetAllLedgersByObserverResponse', full_name='eve.corporation.industry.ledger.GetAllLedgersByObserverResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='ledgers', full_name='eve.corporation.industry.ledger.GetAllLedgersByObserverResponse.ledgers', index=0, number=1, type=11, cpp_type=10, label=3, has_default_value=False, default_value=[], message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=421, serialized_end=504)
+_GETALLLEDGERSBYOBSERVERREQUEST.fields_by_name['corporation'].message_type = eve_dot_corporation_dot_corporation__pb2._IDENTIFIER
+_GETALLLEDGERSBYOBSERVERREQUEST.fields_by_name['requesting_member'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_GETALLLEDGERSBYOBSERVERREQUEST.fields_by_name['observer'].message_type = eve_dot_industry_dot_observer__pb2._IDENTIFIER
+_GETALLLEDGERSBYOBSERVERRESPONSE.fields_by_name['ledgers'].message_type = eve_dot_industry_dot_ledger__pb2._ATTRIBUTES
+DESCRIPTOR.message_types_by_name['GetAllLedgersByObserverRequest'] = _GETALLLEDGERSBYOBSERVERREQUEST
+DESCRIPTOR.message_types_by_name['GetAllLedgersByObserverResponse'] = _GETALLLEDGERSBYOBSERVERRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+GetAllLedgersByObserverRequest = _reflection.GeneratedProtocolMessageType('GetAllLedgersByObserverRequest', (_message.Message,), {'DESCRIPTOR': _GETALLLEDGERSBYOBSERVERREQUEST,
+ '__module__': 'eve.corporation.industry.ledger_pb2'})
+_sym_db.RegisterMessage(GetAllLedgersByObserverRequest)
+GetAllLedgersByObserverResponse = _reflection.GeneratedProtocolMessageType('GetAllLedgersByObserverResponse', (_message.Message,), {'DESCRIPTOR': _GETALLLEDGERSBYOBSERVERRESPONSE,
+ '__module__': 'eve.corporation.industry.ledger_pb2'})
+_sym_db.RegisterMessage(GetAllLedgersByObserverResponse)
+DESCRIPTOR._options = None

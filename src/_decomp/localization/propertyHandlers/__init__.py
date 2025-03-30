@@ -1,0 +1,7 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\localization\propertyHandlers\__init__.py
+from localization.propertyHandlers import characterPropertyHandler
+from localization.propertyHandlers import itemPropertyHandler
+from localization.propertyHandlers import locationPropertyHandler
+from localization.propertyHandlers import npcOrganizationPropertyHandler
+from localization.propertyHandlers import numericPropertyHandler
+from localization.propertyHandlers import timeIntervalPropertyHandler

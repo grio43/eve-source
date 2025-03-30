@@ -1,0 +1,68 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve_public\app\eveonline\career\goal_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve_public.career import goal_pb2 as eve__public_dot_career_dot_goal__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve_public/app/eveonline/career/goal.proto', package='eve_public.app.eveonline.career.goal', syntax='proto3', serialized_options='ZOgithub.com/ccpgames/eve-proto-go/generated/eve_public/app/eveonline/career/goal', create_key=_descriptor._internal_create_key, serialized_pb='\n*eve_public/app/eveonline/career/goal.proto\x12$eve_public.app.eveonline.career.goal\x1a\x1ceve_public/career/goal.proto"\x13\n\rGetAllRequest:\x02\x18\x01"\xd0\x01\n\x0eGetAllResponse\x12H\n\x05goals\x18\x01 \x03(\x0b29.eve_public.app.eveonline.career.goal.GetAllResponse.Goal\x1ap\n\x04Goal\x120\n\x04goal\x18\x01 \x01(\x0b2".eve_public.career.goal.Identifier\x126\n\nattributes\x18\x02 \x01(\x0b2".eve_public.career.goal.Attributes:\x02\x18\x01"C\n\x0fCompletedNotice\x120\n\x04goal\x18\x01 \x01(\x0b2".eve_public.career.goal.Identifier"T\n\x10ProgressedNotice\x120\n\x04goal\x18\x01 \x01(\x0b2".eve_public.career.goal.Identifier\x12\x0e\n\x06amount\x18\x02 \x01(\r"J\n\x12ClaimRewardRequest\x120\n\x04goal\x18\x01 \x01(\x0b2".eve_public.career.goal.Identifier:\x02\x18\x01"K\n\x13ClaimRewardResponse\x120\n\x04goal\x18\x01 \x01(\x0b2".eve_public.career.goal.Identifier:\x02\x18\x01";\n\x07Tracked\x120\n\x04goal\x18\x01 \x01(\x0b2".eve_public.career.goal.Identifier"<\n\x08Selected\x120\n\x04goal\x18\x01 \x01(\x0b2".eve_public.career.goal.IdentifierBQZOgithub.com/ccpgames/eve-proto-go/generated/eve_public/app/eveonline/career/goalb\x06proto3', dependencies=[eve__public_dot_career_dot_goal__pb2.DESCRIPTOR])
+_GETALLREQUEST = _descriptor.Descriptor(name='GetAllRequest', full_name='eve_public.app.eveonline.career.goal.GetAllRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[], extensions=[], nested_types=[], enum_types=[], serialized_options='\x18\x01', is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=114, serialized_end=133)
+_GETALLRESPONSE_GOAL = _descriptor.Descriptor(name='Goal', full_name='eve_public.app.eveonline.career.goal.GetAllResponse.Goal', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='goal', full_name='eve_public.app.eveonline.career.goal.GetAllResponse.Goal.goal', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='attributes', full_name='eve_public.app.eveonline.career.goal.GetAllResponse.Goal.attributes', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=228, serialized_end=340)
+_GETALLRESPONSE = _descriptor.Descriptor(name='GetAllResponse', full_name='eve_public.app.eveonline.career.goal.GetAllResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='goals', full_name='eve_public.app.eveonline.career.goal.GetAllResponse.goals', index=0, number=1, type=11, cpp_type=10, label=3, has_default_value=False, default_value=[], message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[_GETALLRESPONSE_GOAL], enum_types=[], serialized_options='\x18\x01', is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=136, serialized_end=344)
+_COMPLETEDNOTICE = _descriptor.Descriptor(name='CompletedNotice', full_name='eve_public.app.eveonline.career.goal.CompletedNotice', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='goal', full_name='eve_public.app.eveonline.career.goal.CompletedNotice.goal', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=346, serialized_end=413)
+_PROGRESSEDNOTICE = _descriptor.Descriptor(name='ProgressedNotice', full_name='eve_public.app.eveonline.career.goal.ProgressedNotice', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='goal', full_name='eve_public.app.eveonline.career.goal.ProgressedNotice.goal', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='amount', full_name='eve_public.app.eveonline.career.goal.ProgressedNotice.amount', index=1, number=2, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=415, serialized_end=499)
+_CLAIMREWARDREQUEST = _descriptor.Descriptor(name='ClaimRewardRequest', full_name='eve_public.app.eveonline.career.goal.ClaimRewardRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='goal', full_name='eve_public.app.eveonline.career.goal.ClaimRewardRequest.goal', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options='\x18\x01', is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=501, serialized_end=575)
+_CLAIMREWARDRESPONSE = _descriptor.Descriptor(name='ClaimRewardResponse', full_name='eve_public.app.eveonline.career.goal.ClaimRewardResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='goal', full_name='eve_public.app.eveonline.career.goal.ClaimRewardResponse.goal', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options='\x18\x01', is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=577, serialized_end=652)
+_TRACKED = _descriptor.Descriptor(name='Tracked', full_name='eve_public.app.eveonline.career.goal.Tracked', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='goal', full_name='eve_public.app.eveonline.career.goal.Tracked.goal', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=654, serialized_end=713)
+_SELECTED = _descriptor.Descriptor(name='Selected', full_name='eve_public.app.eveonline.career.goal.Selected', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='goal', full_name='eve_public.app.eveonline.career.goal.Selected.goal', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=715, serialized_end=775)
+_GETALLRESPONSE_GOAL.fields_by_name['goal'].message_type = eve__public_dot_career_dot_goal__pb2._IDENTIFIER
+_GETALLRESPONSE_GOAL.fields_by_name['attributes'].message_type = eve__public_dot_career_dot_goal__pb2._ATTRIBUTES
+_GETALLRESPONSE_GOAL.containing_type = _GETALLRESPONSE
+_GETALLRESPONSE.fields_by_name['goals'].message_type = _GETALLRESPONSE_GOAL
+_COMPLETEDNOTICE.fields_by_name['goal'].message_type = eve__public_dot_career_dot_goal__pb2._IDENTIFIER
+_PROGRESSEDNOTICE.fields_by_name['goal'].message_type = eve__public_dot_career_dot_goal__pb2._IDENTIFIER
+_CLAIMREWARDREQUEST.fields_by_name['goal'].message_type = eve__public_dot_career_dot_goal__pb2._IDENTIFIER
+_CLAIMREWARDRESPONSE.fields_by_name['goal'].message_type = eve__public_dot_career_dot_goal__pb2._IDENTIFIER
+_TRACKED.fields_by_name['goal'].message_type = eve__public_dot_career_dot_goal__pb2._IDENTIFIER
+_SELECTED.fields_by_name['goal'].message_type = eve__public_dot_career_dot_goal__pb2._IDENTIFIER
+DESCRIPTOR.message_types_by_name['GetAllRequest'] = _GETALLREQUEST
+DESCRIPTOR.message_types_by_name['GetAllResponse'] = _GETALLRESPONSE
+DESCRIPTOR.message_types_by_name['CompletedNotice'] = _COMPLETEDNOTICE
+DESCRIPTOR.message_types_by_name['ProgressedNotice'] = _PROGRESSEDNOTICE
+DESCRIPTOR.message_types_by_name['ClaimRewardRequest'] = _CLAIMREWARDREQUEST
+DESCRIPTOR.message_types_by_name['ClaimRewardResponse'] = _CLAIMREWARDRESPONSE
+DESCRIPTOR.message_types_by_name['Tracked'] = _TRACKED
+DESCRIPTOR.message_types_by_name['Selected'] = _SELECTED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+GetAllRequest = _reflection.GeneratedProtocolMessageType('GetAllRequest', (_message.Message,), {'DESCRIPTOR': _GETALLREQUEST,
+ '__module__': 'eve_public.app.eveonline.career.goal_pb2'})
+_sym_db.RegisterMessage(GetAllRequest)
+GetAllResponse = _reflection.GeneratedProtocolMessageType('GetAllResponse', (_message.Message,), {'Goal': _reflection.GeneratedProtocolMessageType('Goal', (_message.Message,), {'DESCRIPTOR': _GETALLRESPONSE_GOAL,
+          '__module__': 'eve_public.app.eveonline.career.goal_pb2'}),
+ 'DESCRIPTOR': _GETALLRESPONSE,
+ '__module__': 'eve_public.app.eveonline.career.goal_pb2'})
+_sym_db.RegisterMessage(GetAllResponse)
+_sym_db.RegisterMessage(GetAllResponse.Goal)
+CompletedNotice = _reflection.GeneratedProtocolMessageType('CompletedNotice', (_message.Message,), {'DESCRIPTOR': _COMPLETEDNOTICE,
+ '__module__': 'eve_public.app.eveonline.career.goal_pb2'})
+_sym_db.RegisterMessage(CompletedNotice)
+ProgressedNotice = _reflection.GeneratedProtocolMessageType('ProgressedNotice', (_message.Message,), {'DESCRIPTOR': _PROGRESSEDNOTICE,
+ '__module__': 'eve_public.app.eveonline.career.goal_pb2'})
+_sym_db.RegisterMessage(ProgressedNotice)
+ClaimRewardRequest = _reflection.GeneratedProtocolMessageType('ClaimRewardRequest', (_message.Message,), {'DESCRIPTOR': _CLAIMREWARDREQUEST,
+ '__module__': 'eve_public.app.eveonline.career.goal_pb2'})
+_sym_db.RegisterMessage(ClaimRewardRequest)
+ClaimRewardResponse = _reflection.GeneratedProtocolMessageType('ClaimRewardResponse', (_message.Message,), {'DESCRIPTOR': _CLAIMREWARDRESPONSE,
+ '__module__': 'eve_public.app.eveonline.career.goal_pb2'})
+_sym_db.RegisterMessage(ClaimRewardResponse)
+Tracked = _reflection.GeneratedProtocolMessageType('Tracked', (_message.Message,), {'DESCRIPTOR': _TRACKED,
+ '__module__': 'eve_public.app.eveonline.career.goal_pb2'})
+_sym_db.RegisterMessage(Tracked)
+Selected = _reflection.GeneratedProtocolMessageType('Selected', (_message.Message,), {'DESCRIPTOR': _SELECTED,
+ '__module__': 'eve_public.app.eveonline.career.goal_pb2'})
+_sym_db.RegisterMessage(Selected)
+DESCRIPTOR._options = None
+_GETALLREQUEST._options = None
+_GETALLRESPONSE._options = None
+_CLAIMREWARDREQUEST._options = None
+_CLAIMREWARDRESPONSE._options = None

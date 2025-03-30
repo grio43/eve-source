@@ -1,0 +1,67 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\projectdiscovery\common\projects\covid\tiers.py
+LABELS_FOLDER = 'UI/ProjectDiscovery/Covid/Rewards/Types/'
+
+def get_name(name):
+    return LABELS_FOLDER + name
+
+
+def get_description(name):
+    return LABELS_FOLDER + name + 'Description'
+
+
+TIERS = [{'level': 5,
+  'types': (54714, 54830),
+  'rewardLabel': get_name('Mask'),
+  'rewardDescription': get_description('Mask')},
+ {'level': 10,
+  'types': (54949, 54948),
+  'rewardLabel': get_name('Cap'),
+  'rewardDescription': get_description('Cap')},
+ {'level': 25,
+  'types': (54944, 54943),
+  'rewardLabel': get_name('Tshirt'),
+  'rewardDescription': get_description('Tshirt')},
+ {'level': 50,
+  'types': (45486,),
+  'rewardLabel': get_name('PacifierBPC'),
+  'rewardDescription': get_description('PacifierBPC')},
+ {'level': 75,
+  'types': (55295,),
+  'rewardLabel': get_name('PacifierSkin'),
+  'rewardDescription': get_description('PacifierSkin')},
+ {'level': 100,
+  'types': (40458, 40462),
+  'rewardLabel': get_name('LabCoatDataAnalyst'),
+  'rewardDescription': get_description('LabCoatDataAnalyst')},
+ {'level': 125,
+  'types': (40464, 40460),
+  'rewardLabel': get_name('LabCoatProgramDirector'),
+  'rewardDescription': get_description('LabCoatProgramDirector')},
+ {'level': 150,
+  'types': (45487,),
+  'rewardLabel': get_name('EnforcerBPC'),
+  'rewardDescription': get_description('EnforcerBPC')},
+ {'level': 175,
+  'types': (55296,),
+  'rewardLabel': get_name('EnforcerSkin'),
+  'rewardDescription': get_description('EnforcerSkin')},
+ {'level': 200,
+  'types': (55627, 55636),
+  'rewardLabel': get_name('FacePaint1'),
+  'rewardDescription': get_description('FacePaint1')},
+ {'level': 250,
+  'types': (54965, 54966),
+  'rewardLabel': get_name('Glasses'),
+  'rewardDescription': get_description('Glasses')},
+ {'level': 350,
+  'types': (54927, 54926),
+  'rewardLabel': get_name('FacePaint2'),
+  'rewardDescription': get_description('FacePaint2')},
+ {'level': 500,
+  'types': (45528,),
+  'rewardLabel': get_name('MarshalBPC'),
+  'rewardDescription': get_description('MarshalBPC')},
+ {'level': 650,
+  'types': (55294,),
+  'rewardLabel': get_name('MarshalSkin'),
+  'rewardDescription': get_description('MarshalSkin')}]

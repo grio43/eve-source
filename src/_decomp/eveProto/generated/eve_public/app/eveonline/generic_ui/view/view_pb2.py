@@ -1,0 +1,21 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve_public\app\eveonline\generic_ui\view\view_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from google.protobuf import duration_pb2 as google_dot_protobuf_dot_duration__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve_public/app/eveonline/generic_ui/view/view.proto', package='eve_public.app.eveonline.generic_ui.view', syntax='proto3', serialized_options='ZSgithub.com/ccpgames/eve-proto-go/generated/eve_public/app/eveonline/generic_ui/view', create_key=_descriptor._internal_create_key, serialized_pb='\n3eve_public/app/eveonline/generic_ui/view/view.proto\x12(eve_public.app.eveonline.generic_ui.view\x1a\x1egoogle/protobuf/duration.proto"+\n\tActivated\x12\x18\n\x10view_unique_name\x18\x01 \x01(\tJ\x04\x08\x02\x10\x03"[\n\x0bDeactivated\x12\x18\n\x10view_unique_name\x18\x01 \x01(\t\x122\n\x0fduration_active\x18\x02 \x01(\x0b2\x19.google.protobuf.DurationBUZSgithub.com/ccpgames/eve-proto-go/generated/eve_public/app/eveonline/generic_ui/viewb\x06proto3', dependencies=[google_dot_protobuf_dot_duration__pb2.DESCRIPTOR])
+_ACTIVATED = _descriptor.Descriptor(name='Activated', full_name='eve_public.app.eveonline.generic_ui.view.Activated', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='view_unique_name', full_name='eve_public.app.eveonline.generic_ui.view.Activated.view_unique_name', index=0, number=1, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=129, serialized_end=172)
+_DEACTIVATED = _descriptor.Descriptor(name='Deactivated', full_name='eve_public.app.eveonline.generic_ui.view.Deactivated', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='view_unique_name', full_name='eve_public.app.eveonline.generic_ui.view.Deactivated.view_unique_name', index=0, number=1, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='duration_active', full_name='eve_public.app.eveonline.generic_ui.view.Deactivated.duration_active', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=174, serialized_end=265)
+_DEACTIVATED.fields_by_name['duration_active'].message_type = google_dot_protobuf_dot_duration__pb2._DURATION
+DESCRIPTOR.message_types_by_name['Activated'] = _ACTIVATED
+DESCRIPTOR.message_types_by_name['Deactivated'] = _DEACTIVATED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Activated = _reflection.GeneratedProtocolMessageType('Activated', (_message.Message,), {'DESCRIPTOR': _ACTIVATED,
+ '__module__': 'eve_public.app.eveonline.generic_ui.view.view_pb2'})
+_sym_db.RegisterMessage(Activated)
+Deactivated = _reflection.GeneratedProtocolMessageType('Deactivated', (_message.Message,), {'DESCRIPTOR': _DEACTIVATED,
+ '__module__': 'eve_public.app.eveonline.generic_ui.view.view_pb2'})
+_sym_db.RegisterMessage(Deactivated)
+DESCRIPTOR._options = None

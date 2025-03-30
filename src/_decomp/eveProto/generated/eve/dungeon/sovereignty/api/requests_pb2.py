@@ -1,0 +1,31 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\dungeon\sovereignty\api\requests_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.dungeon import dungeon_pb2 as eve_dot_dungeon_dot_dungeon__pb2
+from eveProto.generated.eve.dungeon.sovereignty import instance_pb2 as eve_dot_dungeon_dot_sovereignty_dot_instance__pb2
+from eveProto.generated.eve.solarsystem import solarsystem_pb2 as eve_dot_solarsystem_dot_solarsystem__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/dungeon/sovereignty/api/requests.proto', package='eve.dungeon.sovereignty.api', syntax='proto3', serialized_options='ZFgithub.com/ccpgames/eve-proto-go/generated/eve/dungeon/sovereignty/api', create_key=_descriptor._internal_create_key, serialized_pb='\n*eve/dungeon/sovereignty/api/requests.proto\x12\x1beve.dungeon.sovereignty.api\x1a\x19eve/dungeon/dungeon.proto\x1a&eve/dungeon/sovereignty/instance.proto\x1a!eve/solarsystem/solarsystem.proto"H\n\x13GetInstancesRequest\x121\n\x0csolar_system\x18\x01 \x01(\x0b2\x1b.eve.solarsystem.Identifier"\xd8\x01\n\x14GetInstancesResponse\x12K\n\x08dungeons\x18\x01 \x03(\x0b29.eve.dungeon.sovereignty.api.GetInstancesResponse.Dungeon\x1as\n\x07Dungeon\x12(\n\x07dungeon\x18\x01 \x01(\x0b2\x17.eve.dungeon.Identifier\x12>\n\x08instance\x18\x02 \x01(\x0b2,.eve.dungeon.sovereignty.instance.IdentifierBHZFgithub.com/ccpgames/eve-proto-go/generated/eve/dungeon/sovereignty/apib\x06proto3', dependencies=[eve_dot_dungeon_dot_dungeon__pb2.DESCRIPTOR, eve_dot_dungeon_dot_sovereignty_dot_instance__pb2.DESCRIPTOR, eve_dot_solarsystem_dot_solarsystem__pb2.DESCRIPTOR])
+_GETINSTANCESREQUEST = _descriptor.Descriptor(name='GetInstancesRequest', full_name='eve.dungeon.sovereignty.api.GetInstancesRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='solar_system', full_name='eve.dungeon.sovereignty.api.GetInstancesRequest.solar_system', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=177, serialized_end=249)
+_GETINSTANCESRESPONSE_DUNGEON = _descriptor.Descriptor(name='Dungeon', full_name='eve.dungeon.sovereignty.api.GetInstancesResponse.Dungeon', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='dungeon', full_name='eve.dungeon.sovereignty.api.GetInstancesResponse.Dungeon.dungeon', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='instance', full_name='eve.dungeon.sovereignty.api.GetInstancesResponse.Dungeon.instance', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=353, serialized_end=468)
+_GETINSTANCESRESPONSE = _descriptor.Descriptor(name='GetInstancesResponse', full_name='eve.dungeon.sovereignty.api.GetInstancesResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='dungeons', full_name='eve.dungeon.sovereignty.api.GetInstancesResponse.dungeons', index=0, number=1, type=11, cpp_type=10, label=3, has_default_value=False, default_value=[], message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[_GETINSTANCESRESPONSE_DUNGEON], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=252, serialized_end=468)
+_GETINSTANCESREQUEST.fields_by_name['solar_system'].message_type = eve_dot_solarsystem_dot_solarsystem__pb2._IDENTIFIER
+_GETINSTANCESRESPONSE_DUNGEON.fields_by_name['dungeon'].message_type = eve_dot_dungeon_dot_dungeon__pb2._IDENTIFIER
+_GETINSTANCESRESPONSE_DUNGEON.fields_by_name['instance'].message_type = eve_dot_dungeon_dot_sovereignty_dot_instance__pb2._IDENTIFIER
+_GETINSTANCESRESPONSE_DUNGEON.containing_type = _GETINSTANCESRESPONSE
+_GETINSTANCESRESPONSE.fields_by_name['dungeons'].message_type = _GETINSTANCESRESPONSE_DUNGEON
+DESCRIPTOR.message_types_by_name['GetInstancesRequest'] = _GETINSTANCESREQUEST
+DESCRIPTOR.message_types_by_name['GetInstancesResponse'] = _GETINSTANCESRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+GetInstancesRequest = _reflection.GeneratedProtocolMessageType('GetInstancesRequest', (_message.Message,), {'DESCRIPTOR': _GETINSTANCESREQUEST,
+ '__module__': 'eve.dungeon.sovereignty.api.requests_pb2'})
+_sym_db.RegisterMessage(GetInstancesRequest)
+GetInstancesResponse = _reflection.GeneratedProtocolMessageType('GetInstancesResponse', (_message.Message,), {'Dungeon': _reflection.GeneratedProtocolMessageType('Dungeon', (_message.Message,), {'DESCRIPTOR': _GETINSTANCESRESPONSE_DUNGEON,
+             '__module__': 'eve.dungeon.sovereignty.api.requests_pb2'}),
+ 'DESCRIPTOR': _GETINSTANCESRESPONSE,
+ '__module__': 'eve.dungeon.sovereignty.api.requests_pb2'})
+_sym_db.RegisterMessage(GetInstancesResponse)
+_sym_db.RegisterMessage(GetInstancesResponse.Dungeon)
+DESCRIPTOR._options = None

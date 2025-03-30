@@ -1,0 +1,4 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\careergoals\client\feature_flag.py
+from careergoals.client.signal import on_air_career_program_availability_changed
+from launchdarkly.client.featureflag import create_boolean_flag_check
+is_air_career_program_enabled = create_boolean_flag_check(launchdarkly_key='air_career_program_progression_claiming_enabled', fallback_value=True, on_flag_changed_callback=on_air_career_program_availability_changed)

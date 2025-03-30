@@ -1,0 +1,3 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\UITree\__init__.py
+__author__ = 'fridrik'
+from main import UITree

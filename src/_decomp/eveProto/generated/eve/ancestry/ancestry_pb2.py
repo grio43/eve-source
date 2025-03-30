@@ -1,0 +1,50 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\ancestry\ancestry_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.bloodline import bloodline_pb2 as eve_dot_bloodline_dot_bloodline__pb2
+from eveProto.generated.eve.graphics import icon_pb2 as eve_dot_graphics_dot_icon__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/ancestry/ancestry.proto', package='eve.ancestry', syntax='proto3', serialized_options='Z7github.com/ccpgames/eve-proto-go/generated/eve/ancestry', create_key=_descriptor._internal_create_key, serialized_pb='\n\x1beve/ancestry/ancestry.proto\x12\x0ceve.ancestry\x1a\x1deve/bloodline/bloodline.proto\x1a\x17eve/graphics/icon.proto" \n\nIdentifier\x12\x12\n\nsequential\x18\x01 \x01(\r"\xcb\x01\n\nAttributes\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x13\n\x0bdescription\x18\x02 \x01(\t\x12\x19\n\x11short_description\x18\x03 \x01(\t\x12,\n\tbloodline\x18\x04 \x01(\x0b2\x19.eve.bloodline.Identifier\x12\x11\n\x07no_icon\x18\x06 \x01(\x08H\x00\x120\n\x07graphic\x18\x07 \x01(\x0b2\x1d.eve.graphics.icon.IdentifierH\x00B\x06\n\x04iconJ\x04\x08\x05\x10\x06"\x0f\n\rGetAllRequest"\xb3\x01\n\x0eGetAllResponse\x129\n\nancestries\x18\x01 \x03(\x0b2%.eve.ancestry.GetAllResponse.Ancestry\x1af\n\x08Ancestry\x12,\n\nidentifier\x18\x01 \x01(\x0b2\x18.eve.ancestry.Identifier\x12,\n\nattributes\x18\x02 \x01(\x0b2\x18.eve.ancestry.AttributesB9Z7github.com/ccpgames/eve-proto-go/generated/eve/ancestryb\x06proto3', dependencies=[eve_dot_bloodline_dot_bloodline__pb2.DESCRIPTOR, eve_dot_graphics_dot_icon__pb2.DESCRIPTOR])
+_IDENTIFIER = _descriptor.Descriptor(name='Identifier', full_name='eve.ancestry.Identifier', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='sequential', full_name='eve.ancestry.Identifier.sequential', index=0, number=1, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=101, serialized_end=133)
+_ATTRIBUTES = _descriptor.Descriptor(name='Attributes', full_name='eve.ancestry.Attributes', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='name', full_name='eve.ancestry.Attributes.name', index=0, number=1, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='description', full_name='eve.ancestry.Attributes.description', index=1, number=2, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='short_description', full_name='eve.ancestry.Attributes.short_description', index=2, number=3, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='bloodline', full_name='eve.ancestry.Attributes.bloodline', index=3, number=4, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='no_icon', full_name='eve.ancestry.Attributes.no_icon', index=4, number=6, type=8, cpp_type=7, label=1, has_default_value=False, default_value=False, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='graphic', full_name='eve.ancestry.Attributes.graphic', index=5, number=7, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[_descriptor.OneofDescriptor(name='icon', full_name='eve.ancestry.Attributes.icon', index=0, containing_type=None, create_key=_descriptor._internal_create_key, fields=[])], serialized_start=136, serialized_end=339)
+_GETALLREQUEST = _descriptor.Descriptor(name='GetAllRequest', full_name='eve.ancestry.GetAllRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=341, serialized_end=356)
+_GETALLRESPONSE_ANCESTRY = _descriptor.Descriptor(name='Ancestry', full_name='eve.ancestry.GetAllResponse.Ancestry', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='identifier', full_name='eve.ancestry.GetAllResponse.Ancestry.identifier', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='attributes', full_name='eve.ancestry.GetAllResponse.Ancestry.attributes', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=436, serialized_end=538)
+_GETALLRESPONSE = _descriptor.Descriptor(name='GetAllResponse', full_name='eve.ancestry.GetAllResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='ancestries', full_name='eve.ancestry.GetAllResponse.ancestries', index=0, number=1, type=11, cpp_type=10, label=3, has_default_value=False, default_value=[], message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[_GETALLRESPONSE_ANCESTRY], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=359, serialized_end=538)
+_ATTRIBUTES.fields_by_name['bloodline'].message_type = eve_dot_bloodline_dot_bloodline__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['graphic'].message_type = eve_dot_graphics_dot_icon__pb2._IDENTIFIER
+_ATTRIBUTES.oneofs_by_name['icon'].fields.append(_ATTRIBUTES.fields_by_name['no_icon'])
+_ATTRIBUTES.fields_by_name['no_icon'].containing_oneof = _ATTRIBUTES.oneofs_by_name['icon']
+_ATTRIBUTES.oneofs_by_name['icon'].fields.append(_ATTRIBUTES.fields_by_name['graphic'])
+_ATTRIBUTES.fields_by_name['graphic'].containing_oneof = _ATTRIBUTES.oneofs_by_name['icon']
+_GETALLRESPONSE_ANCESTRY.fields_by_name['identifier'].message_type = _IDENTIFIER
+_GETALLRESPONSE_ANCESTRY.fields_by_name['attributes'].message_type = _ATTRIBUTES
+_GETALLRESPONSE_ANCESTRY.containing_type = _GETALLRESPONSE
+_GETALLRESPONSE.fields_by_name['ancestries'].message_type = _GETALLRESPONSE_ANCESTRY
+DESCRIPTOR.message_types_by_name['Identifier'] = _IDENTIFIER
+DESCRIPTOR.message_types_by_name['Attributes'] = _ATTRIBUTES
+DESCRIPTOR.message_types_by_name['GetAllRequest'] = _GETALLREQUEST
+DESCRIPTOR.message_types_by_name['GetAllResponse'] = _GETALLRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Identifier = _reflection.GeneratedProtocolMessageType('Identifier', (_message.Message,), {'DESCRIPTOR': _IDENTIFIER,
+ '__module__': 'eve.ancestry.ancestry_pb2'})
+_sym_db.RegisterMessage(Identifier)
+Attributes = _reflection.GeneratedProtocolMessageType('Attributes', (_message.Message,), {'DESCRIPTOR': _ATTRIBUTES,
+ '__module__': 'eve.ancestry.ancestry_pb2'})
+_sym_db.RegisterMessage(Attributes)
+GetAllRequest = _reflection.GeneratedProtocolMessageType('GetAllRequest', (_message.Message,), {'DESCRIPTOR': _GETALLREQUEST,
+ '__module__': 'eve.ancestry.ancestry_pb2'})
+_sym_db.RegisterMessage(GetAllRequest)
+GetAllResponse = _reflection.GeneratedProtocolMessageType('GetAllResponse', (_message.Message,), {'Ancestry': _reflection.GeneratedProtocolMessageType('Ancestry', (_message.Message,), {'DESCRIPTOR': _GETALLRESPONSE_ANCESTRY,
+              '__module__': 'eve.ancestry.ancestry_pb2'}),
+ 'DESCRIPTOR': _GETALLRESPONSE,
+ '__module__': 'eve.ancestry.ancestry_pb2'})
+_sym_db.RegisterMessage(GetAllResponse)
+_sym_db.RegisterMessage(GetAllResponse.Ancestry)
+DESCRIPTOR._options = None

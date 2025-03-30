@@ -1,0 +1,15 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\overviewPresets\overviewSharingConst.py
+import overviewPresets.overviewSettingsConst as osConst
+OVERVIEW_SHARING_USERSETTINGS = 'userSettings'
+OVERVIEW_SHARING_FLAG_ORDER = 'flagOrder'
+OVERVIEW_SHARING_BACKGROUND_ORDER = 'backgroundOrder'
+OVERVIEW_SHARING_FLAG_STATES = 'flagStates'
+OVERVIEW_SHARING_BG_STATES = 'backgroundStates'
+OVERVIEW_SHARING_COLUMN_ORDER = 'columnOrder'
+OVERVIEW_SHARING_OVERVIEW_COLUMNS = osConst.SETTING_COLUMNS
+OVERVIEW_SHARING_STATE_COLORS_LIST = 'stateColorsNameList'
+OVERVIEW_SHARING_STATE_BLINKS = osConst.SETTING_STATE_BLINKS
+OVERVIEW_SHARING_SHIP_LABELS = osConst.SETTINGS_SHIP_LABELS
+OVERVIEW_SHARING_SHIP_LABEL_ORDER = 'shipLabelOrder'
+OVERVIEW_SHARING_PRESETS = 'presets'
+OVERVIEW_SHARING_TAB_SETUP = 'tabSetup'

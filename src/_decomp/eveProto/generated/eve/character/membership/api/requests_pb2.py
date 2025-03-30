@@ -1,0 +1,42 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\character\membership\api\requests_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.character import character_pb2 as eve_dot_character_dot_character__pb2
+from eveProto.generated.eve.character.membership import membership_pb2 as eve_dot_character_dot_membership_dot_membership__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/character/membership/api/requests.proto', package='eve.character.membership.api', syntax='proto3', serialized_options='ZGgithub.com/ccpgames/eve-proto-go/generated/eve/character/membership/api', create_key=_descriptor._internal_create_key, serialized_pb='\n+eve/character/membership/api/requests.proto\x12\x1ceve.character.membership.api\x1a\x1deve/character/character.proto\x1a)eve/character/membership/membership.proto":\n\nGetRequest\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier"G\n\x0bGetResponse\x128\n\nmembership\x18\x01 \x01(\x0b2$.eve.character.membership.Attributes"?\n\x0eGetManyRequest\x12-\n\ncharacters\x18\x01 \x03(\x0b2\x19.eve.character.Identifier"\xca\x01\n\x0fGetManyResponse\x12E\n\x07members\x18\x01 \x03(\x0b24.eve.character.membership.api.GetManyResponse.Member\x1ap\n\x06Member\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier\x128\n\nmembership\x18\x02 \x01(\x0b2$.eve.character.membership.AttributesBIZGgithub.com/ccpgames/eve-proto-go/generated/eve/character/membership/apib\x06proto3', dependencies=[eve_dot_character_dot_character__pb2.DESCRIPTOR, eve_dot_character_dot_membership_dot_membership__pb2.DESCRIPTOR])
+_GETREQUEST = _descriptor.Descriptor(name='GetRequest', full_name='eve.character.membership.api.GetRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.character.membership.api.GetRequest.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=151, serialized_end=209)
+_GETRESPONSE = _descriptor.Descriptor(name='GetResponse', full_name='eve.character.membership.api.GetResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='membership', full_name='eve.character.membership.api.GetResponse.membership', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=211, serialized_end=282)
+_GETMANYREQUEST = _descriptor.Descriptor(name='GetManyRequest', full_name='eve.character.membership.api.GetManyRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='characters', full_name='eve.character.membership.api.GetManyRequest.characters', index=0, number=1, type=11, cpp_type=10, label=3, has_default_value=False, default_value=[], message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=284, serialized_end=347)
+_GETMANYRESPONSE_MEMBER = _descriptor.Descriptor(name='Member', full_name='eve.character.membership.api.GetManyResponse.Member', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.character.membership.api.GetManyResponse.Member.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='membership', full_name='eve.character.membership.api.GetManyResponse.Member.membership', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=440, serialized_end=552)
+_GETMANYRESPONSE = _descriptor.Descriptor(name='GetManyResponse', full_name='eve.character.membership.api.GetManyResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='members', full_name='eve.character.membership.api.GetManyResponse.members', index=0, number=1, type=11, cpp_type=10, label=3, has_default_value=False, default_value=[], message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[_GETMANYRESPONSE_MEMBER], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=350, serialized_end=552)
+_GETREQUEST.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_GETRESPONSE.fields_by_name['membership'].message_type = eve_dot_character_dot_membership_dot_membership__pb2._ATTRIBUTES
+_GETMANYREQUEST.fields_by_name['characters'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_GETMANYRESPONSE_MEMBER.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_GETMANYRESPONSE_MEMBER.fields_by_name['membership'].message_type = eve_dot_character_dot_membership_dot_membership__pb2._ATTRIBUTES
+_GETMANYRESPONSE_MEMBER.containing_type = _GETMANYRESPONSE
+_GETMANYRESPONSE.fields_by_name['members'].message_type = _GETMANYRESPONSE_MEMBER
+DESCRIPTOR.message_types_by_name['GetRequest'] = _GETREQUEST
+DESCRIPTOR.message_types_by_name['GetResponse'] = _GETRESPONSE
+DESCRIPTOR.message_types_by_name['GetManyRequest'] = _GETMANYREQUEST
+DESCRIPTOR.message_types_by_name['GetManyResponse'] = _GETMANYRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+GetRequest = _reflection.GeneratedProtocolMessageType('GetRequest', (_message.Message,), {'DESCRIPTOR': _GETREQUEST,
+ '__module__': 'eve.character.membership.api.requests_pb2'})
+_sym_db.RegisterMessage(GetRequest)
+GetResponse = _reflection.GeneratedProtocolMessageType('GetResponse', (_message.Message,), {'DESCRIPTOR': _GETRESPONSE,
+ '__module__': 'eve.character.membership.api.requests_pb2'})
+_sym_db.RegisterMessage(GetResponse)
+GetManyRequest = _reflection.GeneratedProtocolMessageType('GetManyRequest', (_message.Message,), {'DESCRIPTOR': _GETMANYREQUEST,
+ '__module__': 'eve.character.membership.api.requests_pb2'})
+_sym_db.RegisterMessage(GetManyRequest)
+GetManyResponse = _reflection.GeneratedProtocolMessageType('GetManyResponse', (_message.Message,), {'Member': _reflection.GeneratedProtocolMessageType('Member', (_message.Message,), {'DESCRIPTOR': _GETMANYRESPONSE_MEMBER,
+            '__module__': 'eve.character.membership.api.requests_pb2'}),
+ 'DESCRIPTOR': _GETMANYRESPONSE,
+ '__module__': 'eve.character.membership.api.requests_pb2'})
+_sym_db.RegisterMessage(GetManyResponse)
+_sym_db.RegisterMessage(GetManyResponse.Member)
+DESCRIPTOR._options = None

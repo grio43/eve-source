@@ -1,0 +1,8 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\jobboard\client\ui\analytics.py
+ANALYTICS_OPEN_CORPORATION_PROJECT_HISTORY = 'opportunities_open_corporation_project_history'
+ANALYTICS_OPEN_CORPORATION_FINDER = 'opportunities_open_corporation_finder'
+ANALYTICS_OPEN_AGENCY_HOMEFRONT = 'opportunities_open_agency_homefront'
+ANALYTICS_OPEN_AGENCY_MISSIONS = 'opportunities_open_agency_missions'
+ANALYTICS_OPEN_FACTIONAL_WARFARE_ENLISTMENT = 'opportunities_open_factional_warfare_enlistment'
+ANALYTICS_OPEN_MTO = 'opportunities_open_mercenary_tactical_operation'
+ANALYTICS_OPEN_AGENCY_MTO = 'opportunities_open_agency_mercenary_tactical_operation'

@@ -1,0 +1,5 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\eve\client\script\ui\shared\recommendation\test\test_recommendationService.py
+import unittest
+
+class TestRecommendationSvc(unittest.TestCase):
+    pass

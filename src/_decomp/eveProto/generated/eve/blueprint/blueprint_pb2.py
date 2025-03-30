@@ -1,0 +1,25 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\blueprint\blueprint_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.blueprint import blueprint_type_pb2 as eve_dot_blueprint_dot_blueprint__type__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/blueprint/blueprint.proto', package='eve.blueprint', syntax='proto3', serialized_options='Z8github.com/ccpgames/eve-proto-go/generated/eve/blueprint', create_key=_descriptor._internal_create_key, serialized_pb='\n\x1deve/blueprint/blueprint.proto\x12\reve.blueprint\x1a"eve/blueprint/blueprint_type.proto" \n\nIdentifier\x12\x12\n\nsequential\x18\x01 \x01(\x04"\xa3\x01\n\nAttributes\x12+\n\x04type\x18\x01 \x01(\x0b2\x1d.eve.blueprinttype.Identifier\x12\x1a\n\x12blueprint_original\x18\x02 \x01(\x08\x12\x1b\n\x13material_efficiency\x18\x03 \x01(\r\x12\x17\n\x0ftime_efficiency\x18\x04 \x01(\r\x12\x16\n\x0eruns_remaining\x18\x05 \x01(\x11B:Z8github.com/ccpgames/eve-proto-go/generated/eve/blueprintb\x06proto3', dependencies=[eve_dot_blueprint_dot_blueprint__type__pb2.DESCRIPTOR])
+_IDENTIFIER = _descriptor.Descriptor(name='Identifier', full_name='eve.blueprint.Identifier', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='sequential', full_name='eve.blueprint.Identifier.sequential', index=0, number=1, type=4, cpp_type=4, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=84, serialized_end=116)
+_ATTRIBUTES = _descriptor.Descriptor(name='Attributes', full_name='eve.blueprint.Attributes', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='type', full_name='eve.blueprint.Attributes.type', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='blueprint_original', full_name='eve.blueprint.Attributes.blueprint_original', index=1, number=2, type=8, cpp_type=7, label=1, has_default_value=False, default_value=False, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='material_efficiency', full_name='eve.blueprint.Attributes.material_efficiency', index=2, number=3, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='time_efficiency', full_name='eve.blueprint.Attributes.time_efficiency', index=3, number=4, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='runs_remaining', full_name='eve.blueprint.Attributes.runs_remaining', index=4, number=5, type=17, cpp_type=1, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=119, serialized_end=282)
+_ATTRIBUTES.fields_by_name['type'].message_type = eve_dot_blueprint_dot_blueprint__type__pb2._IDENTIFIER
+DESCRIPTOR.message_types_by_name['Identifier'] = _IDENTIFIER
+DESCRIPTOR.message_types_by_name['Attributes'] = _ATTRIBUTES
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Identifier = _reflection.GeneratedProtocolMessageType('Identifier', (_message.Message,), {'DESCRIPTOR': _IDENTIFIER,
+ '__module__': 'eve.blueprint.blueprint_pb2'})
+_sym_db.RegisterMessage(Identifier)
+Attributes = _reflection.GeneratedProtocolMessageType('Attributes', (_message.Message,), {'DESCRIPTOR': _ATTRIBUTES,
+ '__module__': 'eve.blueprint.blueprint_pb2'})
+_sym_db.RegisterMessage(Attributes)
+DESCRIPTOR._options = None

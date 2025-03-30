@@ -1,0 +1,29 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\deadspace\combatsite\event_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.character import character_pb2 as eve_dot_character_dot_character__pb2
+from eveProto.generated.eve.deadspace import archetype_pb2 as eve_dot_deadspace_dot_archetype__pb2
+from eveProto.generated.eve.deadspace.combatsite import combat_site_pb2 as eve_dot_deadspace_dot_combatsite_dot_combat__site__pb2
+from eveProto.generated.eve.dungeon import dungeon_pb2 as eve_dot_dungeon_dot_dungeon__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/deadspace/combatsite/event.proto', package='eve.deadspace.combatsite.event', syntax='proto3', serialized_options='ZIgithub.com/ccpgames/eve-proto-go/generated/eve/deadspace/combatsite/event', create_key=_descriptor._internal_create_key, serialized_pb='\n$eve/deadspace/combatsite/event.proto\x12\x1eeve.deadspace.combatsite.event\x1a\x1deve/character/character.proto\x1a\x1deve/deadspace/archetype.proto\x1a*eve/deadspace/combatsite/combat_site.proto\x1a\x19eve/dungeon/dungeon.proto"\xe7\x01\n\x12CharacterCompleted\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier\x12A\n\x0fsite_attributes\x18\x02 \x01(\x0b2$.eve.deadspace.combatsite.AttributesB\x02\x18\x01\x126\n\tarchetype\x18\x03 \x01(\x0b2#.eve.deadspace.archetype.Identifier\x12(\n\x07dungeon\x18\x04 \x01(\x0b2\x17.eve.dungeon.IdentifierBKZIgithub.com/ccpgames/eve-proto-go/generated/eve/deadspace/combatsite/eventb\x06proto3', dependencies=[eve_dot_character_dot_character__pb2.DESCRIPTOR,
+ eve_dot_deadspace_dot_archetype__pb2.DESCRIPTOR,
+ eve_dot_deadspace_dot_combatsite_dot_combat__site__pb2.DESCRIPTOR,
+ eve_dot_dungeon_dot_dungeon__pb2.DESCRIPTOR])
+_CHARACTERCOMPLETED = _descriptor.Descriptor(name='CharacterCompleted', full_name='eve.deadspace.combatsite.event.CharacterCompleted', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.deadspace.combatsite.event.CharacterCompleted.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='site_attributes', full_name='eve.deadspace.combatsite.event.CharacterCompleted.site_attributes', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options='\x18\x01', file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='archetype', full_name='eve.deadspace.combatsite.event.CharacterCompleted.archetype', index=2, number=3, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='dungeon', full_name='eve.deadspace.combatsite.event.CharacterCompleted.dungeon', index=3, number=4, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=206, serialized_end=437)
+_CHARACTERCOMPLETED.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_CHARACTERCOMPLETED.fields_by_name['site_attributes'].message_type = eve_dot_deadspace_dot_combatsite_dot_combat__site__pb2._ATTRIBUTES
+_CHARACTERCOMPLETED.fields_by_name['archetype'].message_type = eve_dot_deadspace_dot_archetype__pb2._IDENTIFIER
+_CHARACTERCOMPLETED.fields_by_name['dungeon'].message_type = eve_dot_dungeon_dot_dungeon__pb2._IDENTIFIER
+DESCRIPTOR.message_types_by_name['CharacterCompleted'] = _CHARACTERCOMPLETED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+CharacterCompleted = _reflection.GeneratedProtocolMessageType('CharacterCompleted', (_message.Message,), {'DESCRIPTOR': _CHARACTERCOMPLETED,
+ '__module__': 'eve.deadspace.combatsite.event_pb2'})
+_sym_db.RegisterMessage(CharacterCompleted)
+DESCRIPTOR._options = None
+_CHARACTERCOMPLETED.fields_by_name['site_attributes']._options = None

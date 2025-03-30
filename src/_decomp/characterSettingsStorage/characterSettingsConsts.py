@@ -1,0 +1,16 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\characterSettingsStorage\characterSettingsConsts.py
+NOTIFICATIONS_GROUPS_DONT_BLINK_NEOCOM = 'notificatation_groupsDontBlinkNeocom'
+NOTIFICATIONS_GROUPS_DONT_BLINK_TAB = 'notificatation__groupsDontBlinkTab'
+MAIL_BLINK_NEOCOM = 'mail_blinkNecom'
+MAIL_SHOW_POPUP = 'mail_showNotification'
+MAIL_BLINK_TAB = 'mail_blinkTab'
+MAIL_GET_SEARCH_WND = 'mail_getSearchWnd'
+MAILS_PER_PAGE = 'mail_perPageNumber'
+PERSONAL_AUTOPAYMENT = 'personalAutopayment'
+JUMPBRIDGE_AUTOPAYMENT = 'jumpbridgeAutopayment'
+JUMPBRIDGE_AUTOPAYMENT_CB = 'jumpbridgeAutopaymentCB'
+JUMPBRIDGE_AUTOPAYMENT_VALUE = 'jumpbridgeAutopaymentValue'
+PERSONAL_AUTOPAYMENTS_AVAILABLE = [JUMPBRIDGE_AUTOPAYMENT]
+UI_ELEMENTS_REVEALED = 'uiElementsRevealed'
+PREVENT_UI_HIDING = 'preventUiHiding'
+DISABLE_EMERGENCY_WARP = 'emergencyWarpDisabled'

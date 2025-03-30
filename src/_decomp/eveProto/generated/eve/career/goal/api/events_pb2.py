@@ -1,0 +1,26 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\career\goal\api\events_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.career import goal_pb2 as eve_dot_career_dot_goal__pb2
+from eveProto.generated.eve.character import character_pb2 as eve_dot_character_dot_character__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/career/goal/api/events.proto', package='eve.career.goal.api', syntax='proto3', serialized_options='Z>github.com/ccpgames/eve-proto-go/generated/eve/career/goal/api', create_key=_descriptor._internal_create_key, serialized_pb='\n eve/career/goal/api/events.proto\x12\x13eve.career.goal.api\x1a\x15eve/career/goal.proto\x1a\x1deve/character/character.proto"d\n\tCompleted\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier\x12)\n\x04goal\x18\x02 \x01(\x0b2\x1b.eve.career.goal.Identifier"\x96\x01\n\x0eRewardsClaimed\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier\x12)\n\x04goal\x18\x02 \x01(\x0b2\x1b.eve.career.goal.Identifier\x12+\n\x05label\x18\x03 \x01(\x0e2\x1c.eve.career.goal.RewardLabelB@Z>github.com/ccpgames/eve-proto-go/generated/eve/career/goal/apib\x06proto3', dependencies=[eve_dot_career_dot_goal__pb2.DESCRIPTOR, eve_dot_character_dot_character__pb2.DESCRIPTOR])
+_COMPLETED = _descriptor.Descriptor(name='Completed', full_name='eve.career.goal.api.Completed', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.career.goal.api.Completed.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='goal', full_name='eve.career.goal.api.Completed.goal', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=111, serialized_end=211)
+_REWARDSCLAIMED = _descriptor.Descriptor(name='RewardsClaimed', full_name='eve.career.goal.api.RewardsClaimed', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.career.goal.api.RewardsClaimed.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='goal', full_name='eve.career.goal.api.RewardsClaimed.goal', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='label', full_name='eve.career.goal.api.RewardsClaimed.label', index=2, number=3, type=14, cpp_type=8, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=214, serialized_end=364)
+_COMPLETED.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_COMPLETED.fields_by_name['goal'].message_type = eve_dot_career_dot_goal__pb2._IDENTIFIER
+_REWARDSCLAIMED.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_REWARDSCLAIMED.fields_by_name['goal'].message_type = eve_dot_career_dot_goal__pb2._IDENTIFIER
+_REWARDSCLAIMED.fields_by_name['label'].enum_type = eve_dot_career_dot_goal__pb2._REWARDLABEL
+DESCRIPTOR.message_types_by_name['Completed'] = _COMPLETED
+DESCRIPTOR.message_types_by_name['RewardsClaimed'] = _REWARDSCLAIMED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Completed = _reflection.GeneratedProtocolMessageType('Completed', (_message.Message,), {'DESCRIPTOR': _COMPLETED,
+ '__module__': 'eve.career.goal.api.events_pb2'})
+_sym_db.RegisterMessage(Completed)
+RewardsClaimed = _reflection.GeneratedProtocolMessageType('RewardsClaimed', (_message.Message,), {'DESCRIPTOR': _REWARDSCLAIMED,
+ '__module__': 'eve.career.goal.api.events_pb2'})
+_sym_db.RegisterMessage(RewardsClaimed)
+DESCRIPTOR._options = None

@@ -1,0 +1,18 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\corporationgoal\contribution\summary_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.character import character_pb2 as eve_dot_character_dot_character__pb2
+from eveProto.generated.eve.goal import goal_pb2 as eve_dot_goal_dot_goal__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/corporationgoal/contribution/summary.proto', package='eve.corporationgoal.contribution', syntax='proto3', serialized_options='ZKgithub.com/ccpgames/eve-proto-go/generated/eve/corporationgoal/contribution', create_key=_descriptor._internal_create_key, serialized_pb='\n.eve/corporationgoal/contribution/summary.proto\x12 eve.corporationgoal.contribution\x1a\x1deve/character/character.proto\x1a\x13eve/goal/goal.proto"\x8d\x01\n\x12ContributorSummary\x12.\n\x0bcontributor\x18\x01 \x01(\x0b2\x19.eve.character.Identifier\x12#\n\x1btotal_sum_of_progress_added\x18\x02 \x01(\x04\x12"\n\x04goal\x18\x03 \x01(\x0b2\x14.eve.goal.IdentifierBMZKgithub.com/ccpgames/eve-proto-go/generated/eve/corporationgoal/contributionb\x06proto3', dependencies=[eve_dot_character_dot_character__pb2.DESCRIPTOR, eve_dot_goal_dot_goal__pb2.DESCRIPTOR])
+_CONTRIBUTORSUMMARY = _descriptor.Descriptor(name='ContributorSummary', full_name='eve.corporationgoal.contribution.ContributorSummary', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='contributor', full_name='eve.corporationgoal.contribution.ContributorSummary.contributor', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='total_sum_of_progress_added', full_name='eve.corporationgoal.contribution.ContributorSummary.total_sum_of_progress_added', index=1, number=2, type=4, cpp_type=4, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='goal', full_name='eve.corporationgoal.contribution.ContributorSummary.goal', index=2, number=3, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=137, serialized_end=278)
+_CONTRIBUTORSUMMARY.fields_by_name['contributor'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_CONTRIBUTORSUMMARY.fields_by_name['goal'].message_type = eve_dot_goal_dot_goal__pb2._IDENTIFIER
+DESCRIPTOR.message_types_by_name['ContributorSummary'] = _CONTRIBUTORSUMMARY
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+ContributorSummary = _reflection.GeneratedProtocolMessageType('ContributorSummary', (_message.Message,), {'DESCRIPTOR': _CONTRIBUTORSUMMARY,
+ '__module__': 'eve.corporationgoal.contribution.summary_pb2'})
+_sym_db.RegisterMessage(ContributorSummary)
+DESCRIPTOR._options = None

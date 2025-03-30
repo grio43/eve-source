@@ -1,0 +1,26 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve_public\auth\steam\steam_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve_public.auth import auth_pb2 as eve__public_dot_auth_dot_auth__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve_public/auth/steam/steam.proto', package='eve_public.auth.steam', syntax='proto3', serialized_options='Z@github.com/ccpgames/eve-proto-go/generated/eve_public/auth/steam', create_key=_descriptor._internal_create_key, serialized_pb='\n!eve_public/auth/steam/steam.proto\x12\x15eve_public.auth.steam\x1a\x1aeve_public/auth/auth.proto"0\n\x18AuthenticateSteamRequest\x12\x14\n\x0csteam_ticket\x18\x01 \x01(\t"\xab\x01\n\x19AuthenticateSteamResponse\x12F\n\x10login_successful\x18\x01 \x01(\x0b2*.eve_public.auth.AuthenticationTokenResultH\x00\x12-\n\x05error\x18\x02 \x01(\x0b2\x1c.eve_public.auth.ErrorResultH\x00B\x17\n\x15authentication_resultBBZ@github.com/ccpgames/eve-proto-go/generated/eve_public/auth/steamb\x06proto3', dependencies=[eve__public_dot_auth_dot_auth__pb2.DESCRIPTOR])
+_AUTHENTICATESTEAMREQUEST = _descriptor.Descriptor(name='AuthenticateSteamRequest', full_name='eve_public.auth.steam.AuthenticateSteamRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='steam_ticket', full_name='eve_public.auth.steam.AuthenticateSteamRequest.steam_ticket', index=0, number=1, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=88, serialized_end=136)
+_AUTHENTICATESTEAMRESPONSE = _descriptor.Descriptor(name='AuthenticateSteamResponse', full_name='eve_public.auth.steam.AuthenticateSteamResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='login_successful', full_name='eve_public.auth.steam.AuthenticateSteamResponse.login_successful', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='error', full_name='eve_public.auth.steam.AuthenticateSteamResponse.error', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[_descriptor.OneofDescriptor(name='authentication_result', full_name='eve_public.auth.steam.AuthenticateSteamResponse.authentication_result', index=0, containing_type=None, create_key=_descriptor._internal_create_key, fields=[])], serialized_start=139, serialized_end=310)
+_AUTHENTICATESTEAMRESPONSE.fields_by_name['login_successful'].message_type = eve__public_dot_auth_dot_auth__pb2._AUTHENTICATIONTOKENRESULT
+_AUTHENTICATESTEAMRESPONSE.fields_by_name['error'].message_type = eve__public_dot_auth_dot_auth__pb2._ERRORRESULT
+_AUTHENTICATESTEAMRESPONSE.oneofs_by_name['authentication_result'].fields.append(_AUTHENTICATESTEAMRESPONSE.fields_by_name['login_successful'])
+_AUTHENTICATESTEAMRESPONSE.fields_by_name['login_successful'].containing_oneof = _AUTHENTICATESTEAMRESPONSE.oneofs_by_name['authentication_result']
+_AUTHENTICATESTEAMRESPONSE.oneofs_by_name['authentication_result'].fields.append(_AUTHENTICATESTEAMRESPONSE.fields_by_name['error'])
+_AUTHENTICATESTEAMRESPONSE.fields_by_name['error'].containing_oneof = _AUTHENTICATESTEAMRESPONSE.oneofs_by_name['authentication_result']
+DESCRIPTOR.message_types_by_name['AuthenticateSteamRequest'] = _AUTHENTICATESTEAMREQUEST
+DESCRIPTOR.message_types_by_name['AuthenticateSteamResponse'] = _AUTHENTICATESTEAMRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+AuthenticateSteamRequest = _reflection.GeneratedProtocolMessageType('AuthenticateSteamRequest', (_message.Message,), {'DESCRIPTOR': _AUTHENTICATESTEAMREQUEST,
+ '__module__': 'eve_public.auth.steam.steam_pb2'})
+_sym_db.RegisterMessage(AuthenticateSteamRequest)
+AuthenticateSteamResponse = _reflection.GeneratedProtocolMessageType('AuthenticateSteamResponse', (_message.Message,), {'DESCRIPTOR': _AUTHENTICATESTEAMRESPONSE,
+ '__module__': 'eve_public.auth.steam.steam_pb2'})
+_sym_db.RegisterMessage(AuthenticateSteamResponse)
+DESCRIPTOR._options = None

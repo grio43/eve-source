@@ -1,0 +1,28 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\fulfillment\offer\offer_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.payment import payment_pb2 as eve_dot_payment_dot_payment__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/fulfillment/offer/offer.proto', package='eve.fulfillment.offer', syntax='proto3', serialized_options='Z@github.com/ccpgames/eve-proto-go/generated/eve/fulfillment/offer', create_key=_descriptor._internal_create_key, serialized_pb='\n!eve/fulfillment/offer/offer.proto\x12\x15eve.fulfillment.offer\x1a\x19eve/payment/payment.proto"=\n\nIdentifier\x12\x16\n\nsequential\x18\x01 \x01(\rB\x02\x18\x01\x12\x13\n\x0bstore_offer\x18\x02 \x01(\t:\x02\x18\x01"\x87\x01\n\nAttributes\x12\x0c\n\x04name\x18\x01 \x01(\t\x12"\n\x06prices\x18\x02 \x03(\x0b2\x12.eve.payment.Money\x12\x11\n\tsensitive\x18\x03 \x01(\x08\x12\x14\n\x0cis_recurring\x18\x04 \x01(\x08\x12\x1a\n\x12recurring_interval\x18\x05 \x01(\x05:\x02\x18\x01BBZ@github.com/ccpgames/eve-proto-go/generated/eve/fulfillment/offerb\x06proto3', dependencies=[eve_dot_payment_dot_payment__pb2.DESCRIPTOR])
+_IDENTIFIER = _descriptor.Descriptor(name='Identifier', full_name='eve.fulfillment.offer.Identifier', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='sequential', full_name='eve.fulfillment.offer.Identifier.sequential', index=0, number=1, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options='\x18\x01', file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='store_offer', full_name='eve.fulfillment.offer.Identifier.store_offer', index=1, number=2, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options='\x18\x01', is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=87, serialized_end=148)
+_ATTRIBUTES = _descriptor.Descriptor(name='Attributes', full_name='eve.fulfillment.offer.Attributes', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='name', full_name='eve.fulfillment.offer.Attributes.name', index=0, number=1, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='prices', full_name='eve.fulfillment.offer.Attributes.prices', index=1, number=2, type=11, cpp_type=10, label=3, has_default_value=False, default_value=[], message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='sensitive', full_name='eve.fulfillment.offer.Attributes.sensitive', index=2, number=3, type=8, cpp_type=7, label=1, has_default_value=False, default_value=False, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='is_recurring', full_name='eve.fulfillment.offer.Attributes.is_recurring', index=3, number=4, type=8, cpp_type=7, label=1, has_default_value=False, default_value=False, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='recurring_interval', full_name='eve.fulfillment.offer.Attributes.recurring_interval', index=4, number=5, type=5, cpp_type=1, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options='\x18\x01', is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=151, serialized_end=286)
+_ATTRIBUTES.fields_by_name['prices'].message_type = eve_dot_payment_dot_payment__pb2._MONEY
+DESCRIPTOR.message_types_by_name['Identifier'] = _IDENTIFIER
+DESCRIPTOR.message_types_by_name['Attributes'] = _ATTRIBUTES
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Identifier = _reflection.GeneratedProtocolMessageType('Identifier', (_message.Message,), {'DESCRIPTOR': _IDENTIFIER,
+ '__module__': 'eve.fulfillment.offer.offer_pb2'})
+_sym_db.RegisterMessage(Identifier)
+Attributes = _reflection.GeneratedProtocolMessageType('Attributes', (_message.Message,), {'DESCRIPTOR': _ATTRIBUTES,
+ '__module__': 'eve.fulfillment.offer.offer_pb2'})
+_sym_db.RegisterMessage(Attributes)
+DESCRIPTOR._options = None
+_IDENTIFIER.fields_by_name['sequential']._options = None
+_IDENTIFIER._options = None
+_ATTRIBUTES._options = None

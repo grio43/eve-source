@@ -1,0 +1,25 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\eve\common\lib\infoEventConst.py
+infoEventRecruitmentAdSearch = 23
+infoEventRadialMenuAction = 29
+infoEventViewStateUsage = 25
+infoEventNewFeatureSeen = 46
+infoEventNewFeatureCallToAction = 47
+infoEventHelperPointerLinkClicked = 48
+infoEventHelperPointerLinkCreated = 49
+infoEventAgencyCardClicked = 40
+infoEventAgencyPrimaryButtonClick = 42
+infoEventAgencyGroupCardClicked = 50
+infoEventAgencyFilterChanged = 51
+infoEventAgencyBookmarkAdded = 52
+infoEventWndSecondsInFocus = 53
+infoEventWndOpenedCounters = 34
+infoEventInfoWindowTabs = 31
+infoEventNewEventNotificationAdClicked = 60
+infoEventNewEventNotificationNotAutomaticallyPopUpStateSelected = 61
+infoEventNewEventNotificationOpenSeason = 62
+infoEventNewEventNotificationToggleAurumStoreByCategoryId = 63
+infoEventNewEventNotificationToggleAurumStoreByTypeIds = 64
+infoEventNewEventNotificationRedirectUrl = 65
+infoEventNewEventNotificationSeenViaNeocom = 66
+infoEventNewEventNotificationClosedViaNeocom = 67
+infoEventNewEventNotificationClosed = 68

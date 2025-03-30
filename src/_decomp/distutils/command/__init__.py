@@ -1,0 +1,21 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\carbon\common\stdlib\distutils\command\__init__.py
+__revision__ = '$Id: __init__.py 82110 2010-06-20 13:38:51Z kristjan.jonsson $'
+__all__ = ['build',
+ 'build_py',
+ 'build_ext',
+ 'build_clib',
+ 'build_scripts',
+ 'clean',
+ 'install',
+ 'install_lib',
+ 'install_headers',
+ 'install_scripts',
+ 'install_data',
+ 'sdist',
+ 'register',
+ 'bdist',
+ 'bdist_dumb',
+ 'bdist_rpm',
+ 'bdist_wininst',
+ 'upload',
+ 'check']

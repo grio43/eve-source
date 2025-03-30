@@ -1,0 +1,41 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\corporation\accounting\entry_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.corporation.accounting import entry_type_pb2 as eve_dot_corporation_dot_accounting_dot_entry__type__pb2
+from eveProto.generated.eve.corporation.accounting import transaction_pb2 as eve_dot_corporation_dot_accounting_dot_transaction__pb2
+from eveProto.generated.eve.corporation.accounting import wallet_pb2 as eve_dot_corporation_dot_accounting_dot_wallet__pb2
+from eveProto.generated.eve.isk import isk_pb2 as eve_dot_isk_dot_isk__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/corporation/accounting/entry.proto', package='eve.corporation.accounting.entry', syntax='proto3', serialized_options='ZKgithub.com/ccpgames/eve-proto-go/generated/eve/corporation/accounting/entry', create_key=_descriptor._internal_create_key, serialized_pb='\n&eve/corporation/accounting/entry.proto\x12 eve.corporation.accounting.entry\x1a+eve/corporation/accounting/entry_type.proto\x1a,eve/corporation/accounting/transaction.proto\x1a\'eve/corporation/accounting/wallet.proto\x1a\x11eve/isk/isk.proto"l\n\nIdentifier\x12J\n\x0etransaction_id\x18\x01 \x01(\x0b22.eve.corporation.accounting.transaction.Identifier\x12\x12\n\nentryIndex\x18\x02 \x01(\r"\xe0\x01\n\nAttributes\x12D\n\nentry_type\x18\x01 \x01(\x0b20.eve.corporation.accounting.entrytype.Identifier\x12=\n\x06wallet\x18\x02 \x01(\x0b2-.eve.corporation.accounting.wallet.Identifier\x12!\n\x06amount\x18\x03 \x01(\x0b2\x11.eve.isk.Currency\x12*\n\x0faccount_balance\x18\x04 \x01(\x0b2\x11.eve.isk.Currency"\x86\x01\n\x07Created\x12>\n\x08entry_id\x18\x01 \x01(\x0b2,.eve.corporation.accounting.entry.Identifier\x12;\n\x05entry\x18\x02 \x01(\x0b2,.eve.corporation.accounting.entry.AttributesBMZKgithub.com/ccpgames/eve-proto-go/generated/eve/corporation/accounting/entryb\x06proto3', dependencies=[eve_dot_corporation_dot_accounting_dot_entry__type__pb2.DESCRIPTOR,
+ eve_dot_corporation_dot_accounting_dot_transaction__pb2.DESCRIPTOR,
+ eve_dot_corporation_dot_accounting_dot_wallet__pb2.DESCRIPTOR,
+ eve_dot_isk_dot_isk__pb2.DESCRIPTOR])
+_IDENTIFIER = _descriptor.Descriptor(name='Identifier', full_name='eve.corporation.accounting.entry.Identifier', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='transaction_id', full_name='eve.corporation.accounting.entry.Identifier.transaction_id', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='entryIndex', full_name='eve.corporation.accounting.entry.Identifier.entryIndex', index=1, number=2, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=227, serialized_end=335)
+_ATTRIBUTES = _descriptor.Descriptor(name='Attributes', full_name='eve.corporation.accounting.entry.Attributes', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='entry_type', full_name='eve.corporation.accounting.entry.Attributes.entry_type', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='wallet', full_name='eve.corporation.accounting.entry.Attributes.wallet', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='amount', full_name='eve.corporation.accounting.entry.Attributes.amount', index=2, number=3, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='account_balance', full_name='eve.corporation.accounting.entry.Attributes.account_balance', index=3, number=4, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=338, serialized_end=562)
+_CREATED = _descriptor.Descriptor(name='Created', full_name='eve.corporation.accounting.entry.Created', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='entry_id', full_name='eve.corporation.accounting.entry.Created.entry_id', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='entry', full_name='eve.corporation.accounting.entry.Created.entry', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=565, serialized_end=699)
+_IDENTIFIER.fields_by_name['transaction_id'].message_type = eve_dot_corporation_dot_accounting_dot_transaction__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['entry_type'].message_type = eve_dot_corporation_dot_accounting_dot_entry__type__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['wallet'].message_type = eve_dot_corporation_dot_accounting_dot_wallet__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['amount'].message_type = eve_dot_isk_dot_isk__pb2._CURRENCY
+_ATTRIBUTES.fields_by_name['account_balance'].message_type = eve_dot_isk_dot_isk__pb2._CURRENCY
+_CREATED.fields_by_name['entry_id'].message_type = _IDENTIFIER
+_CREATED.fields_by_name['entry'].message_type = _ATTRIBUTES
+DESCRIPTOR.message_types_by_name['Identifier'] = _IDENTIFIER
+DESCRIPTOR.message_types_by_name['Attributes'] = _ATTRIBUTES
+DESCRIPTOR.message_types_by_name['Created'] = _CREATED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Identifier = _reflection.GeneratedProtocolMessageType('Identifier', (_message.Message,), {'DESCRIPTOR': _IDENTIFIER,
+ '__module__': 'eve.corporation.accounting.entry_pb2'})
+_sym_db.RegisterMessage(Identifier)
+Attributes = _reflection.GeneratedProtocolMessageType('Attributes', (_message.Message,), {'DESCRIPTOR': _ATTRIBUTES,
+ '__module__': 'eve.corporation.accounting.entry_pb2'})
+_sym_db.RegisterMessage(Attributes)
+Created = _reflection.GeneratedProtocolMessageType('Created', (_message.Message,), {'DESCRIPTOR': _CREATED,
+ '__module__': 'eve.corporation.accounting.entry_pb2'})
+_sym_db.RegisterMessage(Created)
+DESCRIPTOR._options = None

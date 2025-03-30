@@ -1,0 +1,46 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\module_states.py
+from eveProto.module_state import ChannelState, PublisherState, ConsumerState, BrokerState
+NAME = 'Name'
+DESCRIPTION = 'Description'
+channel_states = {ChannelState.NONE: {NAME: 'None',
+                     DESCRIPTION: 'gateway client does not exist. call connect first.'},
+ ChannelState.IDLE: {NAME: 'Idle',
+                     DESCRIPTION: 'channel is idle'},
+ ChannelState.CONNECTING: {NAME: 'Connecting',
+                           DESCRIPTION: 'channel is connecting'},
+ ChannelState.READY: {NAME: 'Ready',
+                      DESCRIPTION: 'channel is ready for work'},
+ ChannelState.TRANSIENT_FAILURE: {NAME: 'TransientFailure',
+                                  DESCRIPTION: 'channel has seen a failure but expects to recover'},
+ ChannelState.SHUTDOWN: {NAME: 'Shutdown',
+                         DESCRIPTION: 'channel has seen a failure that it cannot recover from'}}
+publisher_states = {PublisherState.NONE: {NAME: 'None',
+                       DESCRIPTION: 'gateway client does not exist. call connect first.'},
+ PublisherState.UNKNOWN: {NAME: 'Unknown',
+                          DESCRIPTION: 'Publisher thread has not been started or is in an indeterminate state'},
+ PublisherState.CONNECTING: {NAME: 'Connecting',
+                             DESCRIPTION: 'Publisher thread is attempting to connect to the server'},
+ PublisherState.ACTIVE: {NAME: 'Active',
+                         DESCRIPTION: 'The stream is open for sending and receiving messages'},
+ PublisherState.SHUTDOWN: {NAME: 'ShutDown',
+                           DESCRIPTION: 'Publisher thread has been shut down and is no longer running'}}
+consumer_states = {ConsumerState.NONE: {NAME: 'None',
+                      DESCRIPTION: 'gateway client does not exist. call connect first.'},
+ ConsumerState.UNKNOWN: {NAME: 'Unknown',
+                         DESCRIPTION: 'Consumer thread has not been started or is in an indeterminate state'},
+ ConsumerState.CONNECTING: {NAME: 'Connecting',
+                            DESCRIPTION: 'Consumer thread is attempting to connect to the server'},
+ ConsumerState.ACTIVE: {NAME: 'Active',
+                        DESCRIPTION: 'The stream is open for sending and receiving messages'},
+ ConsumerState.SHUTDOWN: {NAME: 'ShutDown',
+                          DESCRIPTION: 'Consumer thread has been shut down and is no longer running'}}
+broker_states = {BrokerState.NONE: {NAME: 'None',
+                    DESCRIPTION: 'Gateway client does not exist. call connect first.'},
+ BrokerState.UNKNOWN: {NAME: 'Unknown',
+                       DESCRIPTION: 'Broker thread has not been started or is in an indeterminate state'},
+ BrokerState.CONNECTING: {NAME: 'Connecting',
+                          DESCRIPTION: 'Broker thread is attempting to connect to the server'},
+ BrokerState.ACTIVE: {NAME: 'Active',
+                      DESCRIPTION: 'The stream is open for sending and receiving messages'},
+ BrokerState.SHUTDOWN: {NAME: 'ShutDown',
+                        DESCRIPTION: 'Broker thread has been shut down and is no longer running'}}

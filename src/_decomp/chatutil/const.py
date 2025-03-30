@@ -1,0 +1,21 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\chatutil\const.py
+CATEGORY_PRIVATE = 'private'
+CATEGORY_PLAYER = 'player'
+CATEGORY_OWNED = 'owned'
+CATEGORY_BOT = 'bot'
+CATEGORY_SYSTEM = 'system'
+CATEGORY_FLEET = 'fleet'
+CATEGORY_CORP = 'corp'
+CATEGORY_ALLIANCE = 'alliance'
+CATEGORY_LOCAL = 'local'
+CATEGORY_NULLSEC = 'nullsec'
+CATEGORY_WORMHOLE = 'wormhole'
+CATEGORY_FACTION = 'faction'
+CATEGORY_RW = 'resourcewars'
+CATEGORY_WARFACTION = 'warfaction'
+CATEGORY_INCURSION = 'incursion'
+CATEGORY_LOCAL_SUPPRESSED = 'nolocal'
+CATEGORY_TRIGLAVIAN = 'triglavian'
+ERROR_CHAT_BANNED = 'wait'
+BAN_EXPIRY_STATUS_NEVER = -1
+BAN_EXPIRY_STATUS_NONE = 0

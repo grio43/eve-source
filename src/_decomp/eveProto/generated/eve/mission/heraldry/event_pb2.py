@@ -1,0 +1,27 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\mission\heraldry\event_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.agent import agent_pb2 as eve_dot_agent_dot_agent__pb2
+from eveProto.generated.eve.character import character_pb2 as eve_dot_character_dot_character__pb2
+from eveProto.generated.eve.mission import mission_pb2 as eve_dot_mission_dot_mission__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/mission/heraldry/event.proto', package='eve.mission.heraldry.event', syntax='proto3', serialized_options='ZEgithub.com/ccpgames/eve-proto-go/generated/eve/mission/heraldry/event', create_key=_descriptor._internal_create_key, serialized_pb='\n eve/mission/heraldry/event.proto\x12\x1aeve.mission.heraldry.event\x1a\x15eve/agent/agent.proto\x1a\x1deve/character/character.proto\x1a\x19eve/mission/mission.proto"\xfd\x01\n\x12CharacterCompleted\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier\x12(\n\x07mission\x18\x02 \x01(\x0b2\x17.eve.mission.Identifier\x12$\n\x05agent\x18\x03 \x01(\x0b2\x15.eve.agent.Identifier\x12(\n\nagent_type\x18\x04 \x01(\x0e2\x14.eve.agent.AgentType\x12\r\n\x05level\x18\x05 \x01(\r\x120\n\x0eagent_division\x18\x06 \x01(\x0e2\x18.eve.agent.AgentDivisionBGZEgithub.com/ccpgames/eve-proto-go/generated/eve/mission/heraldry/eventb\x06proto3', dependencies=[eve_dot_agent_dot_agent__pb2.DESCRIPTOR, eve_dot_character_dot_character__pb2.DESCRIPTOR, eve_dot_mission_dot_mission__pb2.DESCRIPTOR])
+_CHARACTERCOMPLETED = _descriptor.Descriptor(name='CharacterCompleted', full_name='eve.mission.heraldry.event.CharacterCompleted', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.mission.heraldry.event.CharacterCompleted.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='mission', full_name='eve.mission.heraldry.event.CharacterCompleted.mission', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='agent', full_name='eve.mission.heraldry.event.CharacterCompleted.agent', index=2, number=3, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='agent_type', full_name='eve.mission.heraldry.event.CharacterCompleted.agent_type', index=3, number=4, type=14, cpp_type=8, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='level', full_name='eve.mission.heraldry.event.CharacterCompleted.level', index=4, number=5, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='agent_division', full_name='eve.mission.heraldry.event.CharacterCompleted.agent_division', index=5, number=6, type=14, cpp_type=8, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=146, serialized_end=399)
+_CHARACTERCOMPLETED.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_CHARACTERCOMPLETED.fields_by_name['mission'].message_type = eve_dot_mission_dot_mission__pb2._IDENTIFIER
+_CHARACTERCOMPLETED.fields_by_name['agent'].message_type = eve_dot_agent_dot_agent__pb2._IDENTIFIER
+_CHARACTERCOMPLETED.fields_by_name['agent_type'].enum_type = eve_dot_agent_dot_agent__pb2._AGENTTYPE
+_CHARACTERCOMPLETED.fields_by_name['agent_division'].enum_type = eve_dot_agent_dot_agent__pb2._AGENTDIVISION
+DESCRIPTOR.message_types_by_name['CharacterCompleted'] = _CHARACTERCOMPLETED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+CharacterCompleted = _reflection.GeneratedProtocolMessageType('CharacterCompleted', (_message.Message,), {'DESCRIPTOR': _CHARACTERCOMPLETED,
+ '__module__': 'eve.mission.heraldry.event_pb2'})
+_sym_db.RegisterMessage(CharacterCompleted)
+DESCRIPTOR._options = None

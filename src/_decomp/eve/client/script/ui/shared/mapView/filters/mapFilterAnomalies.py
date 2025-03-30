@@ -1,0 +1,13 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\eve\client\script\ui\shared\mapView\filters\mapFilterAnomalies.py
+from carbonui.util.color import Color
+from eve.client.script.ui.shared.mapView.filters.baseMapFilterAnalog import BaseMapFilterAnalog
+
+class MapFilterAnomalies(BaseMapFilterAnalog):
+    name = 'Anomalies GM'
+    color = Color.GREEN
+
+    def _ConstructDataBySolarSystemID(self):
+        self._tracker = sm.GetService('dungeonTracking').get_tracker('combat_anomalies')
+        result = self._tracker.get_unknown_sites()
+        result.update(self._tracker.get_sites())
+        return result

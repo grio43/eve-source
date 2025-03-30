@@ -1,0 +1,29 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve_public\dungeon\sovereignty\api\requests_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve_public.dungeon import dungeon_pb2 as eve__public_dot_dungeon_dot_dungeon__pb2
+from eveProto.generated.eve_public.solarsystem import solarsystem_pb2 as eve__public_dot_solarsystem_dot_solarsystem__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve_public/dungeon/sovereignty/api/requests.proto', package='eve_public.dungeon.sovereignty.api', syntax='proto3', serialized_options='ZMgithub.com/ccpgames/eve-proto-go/generated/eve_public/dungeon/sovereignty/api', create_key=_descriptor._internal_create_key, serialized_pb='\n1eve_public/dungeon/sovereignty/api/requests.proto\x12"eve_public.dungeon.sovereignty.api\x1a eve_public/dungeon/dungeon.proto\x1a(eve_public/solarsystem/solarsystem.proto"\x1c\n\x1aGetVisibleInstancesRequest"\xea\x01\n\x1bGetVisibleInstancesResponse\x12Y\n\x08dungeons\x18\x01 \x03(\x0b2G.eve_public.dungeon.sovereignty.api.GetVisibleInstancesResponse.Dungeon\x1ap\n\x07Dungeon\x12/\n\x07dungeon\x18\x01 \x01(\x0b2\x1e.eve_public.dungeon.Identifier\x124\n\x08location\x18\x02 \x01(\x0b2".eve_public.solarsystem.IdentifierBOZMgithub.com/ccpgames/eve-proto-go/generated/eve_public/dungeon/sovereignty/apib\x06proto3', dependencies=[eve__public_dot_dungeon_dot_dungeon__pb2.DESCRIPTOR, eve__public_dot_solarsystem_dot_solarsystem__pb2.DESCRIPTOR])
+_GETVISIBLEINSTANCESREQUEST = _descriptor.Descriptor(name='GetVisibleInstancesRequest', full_name='eve_public.dungeon.sovereignty.api.GetVisibleInstancesRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=165, serialized_end=193)
+_GETVISIBLEINSTANCESRESPONSE_DUNGEON = _descriptor.Descriptor(name='Dungeon', full_name='eve_public.dungeon.sovereignty.api.GetVisibleInstancesResponse.Dungeon', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='dungeon', full_name='eve_public.dungeon.sovereignty.api.GetVisibleInstancesResponse.Dungeon.dungeon', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='location', full_name='eve_public.dungeon.sovereignty.api.GetVisibleInstancesResponse.Dungeon.location', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=318, serialized_end=430)
+_GETVISIBLEINSTANCESRESPONSE = _descriptor.Descriptor(name='GetVisibleInstancesResponse', full_name='eve_public.dungeon.sovereignty.api.GetVisibleInstancesResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='dungeons', full_name='eve_public.dungeon.sovereignty.api.GetVisibleInstancesResponse.dungeons', index=0, number=1, type=11, cpp_type=10, label=3, has_default_value=False, default_value=[], message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[_GETVISIBLEINSTANCESRESPONSE_DUNGEON], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=196, serialized_end=430)
+_GETVISIBLEINSTANCESRESPONSE_DUNGEON.fields_by_name['dungeon'].message_type = eve__public_dot_dungeon_dot_dungeon__pb2._IDENTIFIER
+_GETVISIBLEINSTANCESRESPONSE_DUNGEON.fields_by_name['location'].message_type = eve__public_dot_solarsystem_dot_solarsystem__pb2._IDENTIFIER
+_GETVISIBLEINSTANCESRESPONSE_DUNGEON.containing_type = _GETVISIBLEINSTANCESRESPONSE
+_GETVISIBLEINSTANCESRESPONSE.fields_by_name['dungeons'].message_type = _GETVISIBLEINSTANCESRESPONSE_DUNGEON
+DESCRIPTOR.message_types_by_name['GetVisibleInstancesRequest'] = _GETVISIBLEINSTANCESREQUEST
+DESCRIPTOR.message_types_by_name['GetVisibleInstancesResponse'] = _GETVISIBLEINSTANCESRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+GetVisibleInstancesRequest = _reflection.GeneratedProtocolMessageType('GetVisibleInstancesRequest', (_message.Message,), {'DESCRIPTOR': _GETVISIBLEINSTANCESREQUEST,
+ '__module__': 'eve_public.dungeon.sovereignty.api.requests_pb2'})
+_sym_db.RegisterMessage(GetVisibleInstancesRequest)
+GetVisibleInstancesResponse = _reflection.GeneratedProtocolMessageType('GetVisibleInstancesResponse', (_message.Message,), {'Dungeon': _reflection.GeneratedProtocolMessageType('Dungeon', (_message.Message,), {'DESCRIPTOR': _GETVISIBLEINSTANCESRESPONSE_DUNGEON,
+             '__module__': 'eve_public.dungeon.sovereignty.api.requests_pb2'}),
+ 'DESCRIPTOR': _GETVISIBLEINSTANCESRESPONSE,
+ '__module__': 'eve_public.dungeon.sovereignty.api.requests_pb2'})
+_sym_db.RegisterMessage(GetVisibleInstancesResponse)
+_sym_db.RegisterMessage(GetVisibleInstancesResponse.Dungeon)
+DESCRIPTOR._options = None

@@ -1,0 +1,27 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\corporation\alliance\api\requests_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.alliance import alliance_pb2 as eve_dot_alliance_dot_alliance__pb2
+from eveProto.generated.eve.corporation import corporation_pb2 as eve_dot_corporation_dot_corporation__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/corporation/alliance/api/requests.proto', package='eve.corporation.alliance.api', syntax='proto3', serialized_options='ZGgithub.com/ccpgames/eve-proto-go/generated/eve/corporation/alliance/api', create_key=_descriptor._internal_create_key, serialized_pb='\n+eve/corporation/alliance/api/requests.proto\x12\x1ceve.corporation.alliance.api\x1a\x1beve/alliance/alliance.proto\x1a!eve/corporation/corporation.proto"O\n\x1bGetCurrentMembershipRequest\x120\n\x0bcorporation\x18\x01 \x01(\x0b2\x1b.eve.corporation.Identifier"q\n\x1cGetCurrentMembershipResponse\x12,\n\x08alliance\x18\x01 \x01(\x0b2\x18.eve.alliance.IdentifierH\x00\x12\x15\n\x0bno_alliance\x18\x02 \x01(\x08H\x00B\x0c\n\nmembershipBIZGgithub.com/ccpgames/eve-proto-go/generated/eve/corporation/alliance/apib\x06proto3', dependencies=[eve_dot_alliance_dot_alliance__pb2.DESCRIPTOR, eve_dot_corporation_dot_corporation__pb2.DESCRIPTOR])
+_GETCURRENTMEMBERSHIPREQUEST = _descriptor.Descriptor(name='GetCurrentMembershipRequest', full_name='eve.corporation.alliance.api.GetCurrentMembershipRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='corporation', full_name='eve.corporation.alliance.api.GetCurrentMembershipRequest.corporation', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=141, serialized_end=220)
+_GETCURRENTMEMBERSHIPRESPONSE = _descriptor.Descriptor(name='GetCurrentMembershipResponse', full_name='eve.corporation.alliance.api.GetCurrentMembershipResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='alliance', full_name='eve.corporation.alliance.api.GetCurrentMembershipResponse.alliance', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='no_alliance', full_name='eve.corporation.alliance.api.GetCurrentMembershipResponse.no_alliance', index=1, number=2, type=8, cpp_type=7, label=1, has_default_value=False, default_value=False, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[_descriptor.OneofDescriptor(name='membership', full_name='eve.corporation.alliance.api.GetCurrentMembershipResponse.membership', index=0, containing_type=None, create_key=_descriptor._internal_create_key, fields=[])], serialized_start=222, serialized_end=335)
+_GETCURRENTMEMBERSHIPREQUEST.fields_by_name['corporation'].message_type = eve_dot_corporation_dot_corporation__pb2._IDENTIFIER
+_GETCURRENTMEMBERSHIPRESPONSE.fields_by_name['alliance'].message_type = eve_dot_alliance_dot_alliance__pb2._IDENTIFIER
+_GETCURRENTMEMBERSHIPRESPONSE.oneofs_by_name['membership'].fields.append(_GETCURRENTMEMBERSHIPRESPONSE.fields_by_name['alliance'])
+_GETCURRENTMEMBERSHIPRESPONSE.fields_by_name['alliance'].containing_oneof = _GETCURRENTMEMBERSHIPRESPONSE.oneofs_by_name['membership']
+_GETCURRENTMEMBERSHIPRESPONSE.oneofs_by_name['membership'].fields.append(_GETCURRENTMEMBERSHIPRESPONSE.fields_by_name['no_alliance'])
+_GETCURRENTMEMBERSHIPRESPONSE.fields_by_name['no_alliance'].containing_oneof = _GETCURRENTMEMBERSHIPRESPONSE.oneofs_by_name['membership']
+DESCRIPTOR.message_types_by_name['GetCurrentMembershipRequest'] = _GETCURRENTMEMBERSHIPREQUEST
+DESCRIPTOR.message_types_by_name['GetCurrentMembershipResponse'] = _GETCURRENTMEMBERSHIPRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+GetCurrentMembershipRequest = _reflection.GeneratedProtocolMessageType('GetCurrentMembershipRequest', (_message.Message,), {'DESCRIPTOR': _GETCURRENTMEMBERSHIPREQUEST,
+ '__module__': 'eve.corporation.alliance.api.requests_pb2'})
+_sym_db.RegisterMessage(GetCurrentMembershipRequest)
+GetCurrentMembershipResponse = _reflection.GeneratedProtocolMessageType('GetCurrentMembershipResponse', (_message.Message,), {'DESCRIPTOR': _GETCURRENTMEMBERSHIPRESPONSE,
+ '__module__': 'eve.corporation.alliance.api.requests_pb2'})
+_sym_db.RegisterMessage(GetCurrentMembershipResponse)
+DESCRIPTOR._options = None

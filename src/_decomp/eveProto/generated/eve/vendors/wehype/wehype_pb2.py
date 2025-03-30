@@ -1,0 +1,18 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\vendors\wehype\wehype_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.payment import payment_pb2 as eve_dot_payment_dot_payment__pb2
+from eveProto.generated.eve.user import user_pb2 as eve_dot_user_dot_user__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/vendors/wehype/wehype.proto', package='eve.vendors.wehype', syntax='proto3', serialized_options='Z=github.com/ccpgames/eve-proto-go/generated/eve/vendors/wehype', create_key=_descriptor._internal_create_key, serialized_pb='\n\x1feve/vendors/wehype/wehype.proto\x12\x12eve.vendors.wehype\x1a\x19eve/payment/payment.proto\x1a\x13eve/user/user.proto"\x8c\x01\n\x1cPaymentAffiliationRegistered\x122\n\x11payment_reference\x18\x01 \x01(\x0b2\x17.eve.payment.Identifier\x12"\n\x04user\x18\x02 \x01(\x0b2\x14.eve.user.Identifier\x12\x14\n\x0ccreator_code\x18\x03 \x01(\tB?Z=github.com/ccpgames/eve-proto-go/generated/eve/vendors/wehypeb\x06proto3', dependencies=[eve_dot_payment_dot_payment__pb2.DESCRIPTOR, eve_dot_user_dot_user__pb2.DESCRIPTOR])
+_PAYMENTAFFILIATIONREGISTERED = _descriptor.Descriptor(name='PaymentAffiliationRegistered', full_name='eve.vendors.wehype.PaymentAffiliationRegistered', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='payment_reference', full_name='eve.vendors.wehype.PaymentAffiliationRegistered.payment_reference', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='user', full_name='eve.vendors.wehype.PaymentAffiliationRegistered.user', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='creator_code', full_name='eve.vendors.wehype.PaymentAffiliationRegistered.creator_code', index=2, number=3, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=104, serialized_end=244)
+_PAYMENTAFFILIATIONREGISTERED.fields_by_name['payment_reference'].message_type = eve_dot_payment_dot_payment__pb2._IDENTIFIER
+_PAYMENTAFFILIATIONREGISTERED.fields_by_name['user'].message_type = eve_dot_user_dot_user__pb2._IDENTIFIER
+DESCRIPTOR.message_types_by_name['PaymentAffiliationRegistered'] = _PAYMENTAFFILIATIONREGISTERED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+PaymentAffiliationRegistered = _reflection.GeneratedProtocolMessageType('PaymentAffiliationRegistered', (_message.Message,), {'DESCRIPTOR': _PAYMENTAFFILIATIONREGISTERED,
+ '__module__': 'eve.vendors.wehype.wehype_pb2'})
+_sym_db.RegisterMessage(PaymentAffiliationRegistered)
+DESCRIPTOR._options = None

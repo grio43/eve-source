@@ -1,0 +1,129 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\industry\job\manufacturing_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.character import character_pb2 as eve_dot_character_dot_character__pb2
+from eveProto.generated.eve.container import type_pb2 as eve_dot_container_dot_type__pb2
+from eveProto.generated.eve.corporation import corporation_pb2 as eve_dot_corporation_dot_corporation__pb2
+from eveProto.generated.eve.industry.blueprint import blueprint_pb2 as eve_dot_industry_dot_blueprint_dot_blueprint__pb2
+from eveProto.generated.eve.industry.blueprint import copy_pb2 as eve_dot_industry_dot_blueprint_dot_copy__pb2
+from eveProto.generated.eve.industry.blueprint import type_pb2 as eve_dot_industry_dot_blueprint_dot_type__pb2
+from eveProto.generated.eve.industry import blueprint_location_pb2 as eve_dot_industry_dot_blueprint__location__pb2
+from eveProto.generated.eve.industry import facility_pb2 as eve_dot_industry_dot_facility__pb2
+from eveProto.generated.eve.industry.job import status_pb2 as eve_dot_industry_dot_job_dot_status__pb2
+from eveProto.generated.eve.inventory import generic_item_pb2 as eve_dot_inventory_dot_generic__item__pb2
+from eveProto.generated.eve.inventory import generic_item_type_pb2 as eve_dot_inventory_dot_generic__item__type__pb2
+from eveProto.generated.eve.isk import isk_pb2 as eve_dot_isk_dot_isk__pb2
+from eveProto.generated.eve.station import station_pb2 as eve_dot_station_dot_station__pb2
+from eveProto.generated.eve.structure import structure_pb2 as eve_dot_structure_dot_structure__pb2
+from google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/industry/job/manufacturing.proto', package='eve.industry.job.manufacturing', syntax='proto3', serialized_options='ZIgithub.com/ccpgames/eve-proto-go/generated/eve/industry/job/manufacturing', create_key=_descriptor._internal_create_key, serialized_pb='\n$eve/industry/job/manufacturing.proto\x12\x1eeve.industry.job.manufacturing\x1a\x1deve/character/character.proto\x1a\x18eve/container/type.proto\x1a!eve/corporation/corporation.proto\x1a&eve/industry/blueprint/blueprint.proto\x1a!eve/industry/blueprint/copy.proto\x1a!eve/industry/blueprint/type.proto\x1a%eve/industry/blueprint_location.proto\x1a\x1beve/industry/facility.proto\x1a\x1deve/industry/job/status.proto\x1a eve/inventory/generic_item.proto\x1a%eve/inventory/generic_item_type.proto\x1a\x11eve/isk/isk.proto\x1a\x19eve/station/station.proto\x1a\x1deve/structure/structure.proto\x1a\x1fgoogle/protobuf/timestamp.proto"\xc0\n\n\nAttributes\x12.\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.IdentifierH\x00\x122\n\x0bcorporation\x18\x02 \x01(\x0b2\x1b.eve.corporation.IdentifierH\x00\x12,\n\tinstaller\x18\x03 \x01(\x0b2\x19.eve.character.Identifier\x123\n\x08facility\x18\x04 \x01(\x0b2!.eve.industry.facility.Identifier\x12,\n\x07station\x18\x05 \x01(\x0b2\x17.eve.station.IdentifierB\x02\x18\x01\x123\n\x10location_station\x18\x1a \x01(\x0b2\x17.eve.station.IdentifierH\x01\x127\n\x12location_structure\x18\x1b \x01(\x0b2\x19.eve.structure.IdentifierH\x01\x12F\n\x12blueprint_location\x18\x06 \x01(\x0b2*.eve.industry.blueprintlocation.Identifier\x12/\n\x06status\x18\x07 \x01(\x0e2\x1f.eve.industry.job.status.Status\x12\x0c\n\x04runs\x18\x08 \x01(\r\x12\x1f\n\x04cost\x18\t \x01(\x0b2\x11.eve.isk.Currency\x121\n\x0eoutput_station\x18\n \x01(\x0b2\x17.eve.station.IdentifierH\x02\x125\n\x10output_structure\x18\x0b \x01(\x0b2\x19.eve.structure.IdentifierH\x02\x125\n\x10output_container\x18\x1c \x01(\x0b2\x19.eve.container.IdentifierH\x02\x12.\n\nstart_date\x18\x0c \x01(\x0b2\x1a.google.protobuf.Timestamp\x12,\n\x08end_date\x18\r \x01(\x0b2\x1a.google.protobuf.Timestamp\x12\x10\n\x08duration\x18\x0e \x01(\r\x12\x17\n\rwithout_pause\x18\x0f \x01(\x08H\x03\x120\n\npause_date\x18\x10 \x01(\x0b2\x1a.google.protobuf.TimestampH\x03\x12\x15\n\x0buncompleted\x18\x13 \x01(\x08H\x04\x12B\n\tcompleted\x18\x14 \x01(\x0b2-.eve.industry.job.status.CompletedDateAndCharH\x04\x12@\n\x12blueprint_original\x18\x15 \x01(\x0b2".eve.industry.blueprint.IdentifierH\x05\x12@\n\x0eblueprint_copy\x18\x16 \x01(\x0b2&.eve.industry.blueprintcopy.IdentifierH\x05\x12:\n\x07product\x18\x17 \x01(\x0b2).eve.inventory.genericitemtype.Identifier\x12\x15\n\rlicensed_runs\x18\x18 \x01(\r\x12>\n\x0eblueprint_type\x18\x19 \x01(\x0b2&.eve.industry.blueprinttype.IdentifierB\x07\n\x05ownerB\x13\n\x11facility_locationB\x11\n\x0foutput_locationB\x07\n\x05pauseB\x12\n\x10completed_statusB\x0b\n\tblueprint"\x7f\n\tCompleted\x127\n\x03job\x18\x01 \x01(\x0b2*.eve.industry.job.manufacturing.Attributes\x125\n\x06output\x18\x02 \x01(\x0b2%.eve.inventory.genericitem.Attributes:\x02\x18\x01BKZIgithub.com/ccpgames/eve-proto-go/generated/eve/industry/job/manufacturingb\x06proto3', dependencies=[eve_dot_character_dot_character__pb2.DESCRIPTOR,
+ eve_dot_container_dot_type__pb2.DESCRIPTOR,
+ eve_dot_corporation_dot_corporation__pb2.DESCRIPTOR,
+ eve_dot_industry_dot_blueprint_dot_blueprint__pb2.DESCRIPTOR,
+ eve_dot_industry_dot_blueprint_dot_copy__pb2.DESCRIPTOR,
+ eve_dot_industry_dot_blueprint_dot_type__pb2.DESCRIPTOR,
+ eve_dot_industry_dot_blueprint__location__pb2.DESCRIPTOR,
+ eve_dot_industry_dot_facility__pb2.DESCRIPTOR,
+ eve_dot_industry_dot_job_dot_status__pb2.DESCRIPTOR,
+ eve_dot_inventory_dot_generic__item__pb2.DESCRIPTOR,
+ eve_dot_inventory_dot_generic__item__type__pb2.DESCRIPTOR,
+ eve_dot_isk_dot_isk__pb2.DESCRIPTOR,
+ eve_dot_station_dot_station__pb2.DESCRIPTOR,
+ eve_dot_structure_dot_structure__pb2.DESCRIPTOR,
+ google_dot_protobuf_dot_timestamp__pb2.DESCRIPTOR])
+_ATTRIBUTES = _descriptor.Descriptor(name='Attributes', full_name='eve.industry.job.manufacturing.Attributes', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.industry.job.manufacturing.Attributes.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='corporation', full_name='eve.industry.job.manufacturing.Attributes.corporation', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='installer', full_name='eve.industry.job.manufacturing.Attributes.installer', index=2, number=3, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='facility', full_name='eve.industry.job.manufacturing.Attributes.facility', index=3, number=4, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='station', full_name='eve.industry.job.manufacturing.Attributes.station', index=4, number=5, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options='\x18\x01', file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='location_station', full_name='eve.industry.job.manufacturing.Attributes.location_station', index=5, number=26, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='location_structure', full_name='eve.industry.job.manufacturing.Attributes.location_structure', index=6, number=27, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='blueprint_location', full_name='eve.industry.job.manufacturing.Attributes.blueprint_location', index=7, number=6, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='status', full_name='eve.industry.job.manufacturing.Attributes.status', index=8, number=7, type=14, cpp_type=8, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='runs', full_name='eve.industry.job.manufacturing.Attributes.runs', index=9, number=8, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='cost', full_name='eve.industry.job.manufacturing.Attributes.cost', index=10, number=9, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='output_station', full_name='eve.industry.job.manufacturing.Attributes.output_station', index=11, number=10, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='output_structure', full_name='eve.industry.job.manufacturing.Attributes.output_structure', index=12, number=11, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='output_container', full_name='eve.industry.job.manufacturing.Attributes.output_container', index=13, number=28, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='start_date', full_name='eve.industry.job.manufacturing.Attributes.start_date', index=14, number=12, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='end_date', full_name='eve.industry.job.manufacturing.Attributes.end_date', index=15, number=13, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='duration', full_name='eve.industry.job.manufacturing.Attributes.duration', index=16, number=14, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='without_pause', full_name='eve.industry.job.manufacturing.Attributes.without_pause', index=17, number=15, type=8, cpp_type=7, label=1, has_default_value=False, default_value=False, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='pause_date', full_name='eve.industry.job.manufacturing.Attributes.pause_date', index=18, number=16, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='uncompleted', full_name='eve.industry.job.manufacturing.Attributes.uncompleted', index=19, number=19, type=8, cpp_type=7, label=1, has_default_value=False, default_value=False, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='completed', full_name='eve.industry.job.manufacturing.Attributes.completed', index=20, number=20, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='blueprint_original', full_name='eve.industry.job.manufacturing.Attributes.blueprint_original', index=21, number=21, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='blueprint_copy', full_name='eve.industry.job.manufacturing.Attributes.blueprint_copy', index=22, number=22, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='product', full_name='eve.industry.job.manufacturing.Attributes.product', index=23, number=23, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='licensed_runs', full_name='eve.industry.job.manufacturing.Attributes.licensed_runs', index=24, number=24, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='blueprint_type', full_name='eve.industry.job.manufacturing.Attributes.blueprint_type', index=25, number=25, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[_descriptor.OneofDescriptor(name='owner', full_name='eve.industry.job.manufacturing.Attributes.owner', index=0, containing_type=None, create_key=_descriptor._internal_create_key, fields=[]),
+ _descriptor.OneofDescriptor(name='facility_location', full_name='eve.industry.job.manufacturing.Attributes.facility_location', index=1, containing_type=None, create_key=_descriptor._internal_create_key, fields=[]),
+ _descriptor.OneofDescriptor(name='output_location', full_name='eve.industry.job.manufacturing.Attributes.output_location', index=2, containing_type=None, create_key=_descriptor._internal_create_key, fields=[]),
+ _descriptor.OneofDescriptor(name='pause', full_name='eve.industry.job.manufacturing.Attributes.pause', index=3, containing_type=None, create_key=_descriptor._internal_create_key, fields=[]),
+ _descriptor.OneofDescriptor(name='completed_status', full_name='eve.industry.job.manufacturing.Attributes.completed_status', index=4, containing_type=None, create_key=_descriptor._internal_create_key, fields=[]),
+ _descriptor.OneofDescriptor(name='blueprint', full_name='eve.industry.job.manufacturing.Attributes.blueprint', index=5, containing_type=None, create_key=_descriptor._internal_create_key, fields=[])], serialized_start=557, serialized_end=1901)
+_COMPLETED = _descriptor.Descriptor(name='Completed', full_name='eve.industry.job.manufacturing.Completed', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='job', full_name='eve.industry.job.manufacturing.Completed.job', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='output', full_name='eve.industry.job.manufacturing.Completed.output', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options='\x18\x01', is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=1903, serialized_end=2030)
+_ATTRIBUTES.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['corporation'].message_type = eve_dot_corporation_dot_corporation__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['installer'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['facility'].message_type = eve_dot_industry_dot_facility__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['station'].message_type = eve_dot_station_dot_station__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['location_station'].message_type = eve_dot_station_dot_station__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['location_structure'].message_type = eve_dot_structure_dot_structure__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['blueprint_location'].message_type = eve_dot_industry_dot_blueprint__location__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['status'].enum_type = eve_dot_industry_dot_job_dot_status__pb2._STATUS
+_ATTRIBUTES.fields_by_name['cost'].message_type = eve_dot_isk_dot_isk__pb2._CURRENCY
+_ATTRIBUTES.fields_by_name['output_station'].message_type = eve_dot_station_dot_station__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['output_structure'].message_type = eve_dot_structure_dot_structure__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['output_container'].message_type = eve_dot_container_dot_type__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['start_date'].message_type = google_dot_protobuf_dot_timestamp__pb2._TIMESTAMP
+_ATTRIBUTES.fields_by_name['end_date'].message_type = google_dot_protobuf_dot_timestamp__pb2._TIMESTAMP
+_ATTRIBUTES.fields_by_name['pause_date'].message_type = google_dot_protobuf_dot_timestamp__pb2._TIMESTAMP
+_ATTRIBUTES.fields_by_name['completed'].message_type = eve_dot_industry_dot_job_dot_status__pb2._COMPLETEDDATEANDCHAR
+_ATTRIBUTES.fields_by_name['blueprint_original'].message_type = eve_dot_industry_dot_blueprint_dot_blueprint__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['blueprint_copy'].message_type = eve_dot_industry_dot_blueprint_dot_copy__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['product'].message_type = eve_dot_inventory_dot_generic__item__type__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['blueprint_type'].message_type = eve_dot_industry_dot_blueprint_dot_type__pb2._IDENTIFIER
+_ATTRIBUTES.oneofs_by_name['owner'].fields.append(_ATTRIBUTES.fields_by_name['character'])
+_ATTRIBUTES.fields_by_name['character'].containing_oneof = _ATTRIBUTES.oneofs_by_name['owner']
+_ATTRIBUTES.oneofs_by_name['owner'].fields.append(_ATTRIBUTES.fields_by_name['corporation'])
+_ATTRIBUTES.fields_by_name['corporation'].containing_oneof = _ATTRIBUTES.oneofs_by_name['owner']
+_ATTRIBUTES.oneofs_by_name['facility_location'].fields.append(_ATTRIBUTES.fields_by_name['location_station'])
+_ATTRIBUTES.fields_by_name['location_station'].containing_oneof = _ATTRIBUTES.oneofs_by_name['facility_location']
+_ATTRIBUTES.oneofs_by_name['facility_location'].fields.append(_ATTRIBUTES.fields_by_name['location_structure'])
+_ATTRIBUTES.fields_by_name['location_structure'].containing_oneof = _ATTRIBUTES.oneofs_by_name['facility_location']
+_ATTRIBUTES.oneofs_by_name['output_location'].fields.append(_ATTRIBUTES.fields_by_name['output_station'])
+_ATTRIBUTES.fields_by_name['output_station'].containing_oneof = _ATTRIBUTES.oneofs_by_name['output_location']
+_ATTRIBUTES.oneofs_by_name['output_location'].fields.append(_ATTRIBUTES.fields_by_name['output_structure'])
+_ATTRIBUTES.fields_by_name['output_structure'].containing_oneof = _ATTRIBUTES.oneofs_by_name['output_location']
+_ATTRIBUTES.oneofs_by_name['output_location'].fields.append(_ATTRIBUTES.fields_by_name['output_container'])
+_ATTRIBUTES.fields_by_name['output_container'].containing_oneof = _ATTRIBUTES.oneofs_by_name['output_location']
+_ATTRIBUTES.oneofs_by_name['pause'].fields.append(_ATTRIBUTES.fields_by_name['without_pause'])
+_ATTRIBUTES.fields_by_name['without_pause'].containing_oneof = _ATTRIBUTES.oneofs_by_name['pause']
+_ATTRIBUTES.oneofs_by_name['pause'].fields.append(_ATTRIBUTES.fields_by_name['pause_date'])
+_ATTRIBUTES.fields_by_name['pause_date'].containing_oneof = _ATTRIBUTES.oneofs_by_name['pause']
+_ATTRIBUTES.oneofs_by_name['completed_status'].fields.append(_ATTRIBUTES.fields_by_name['uncompleted'])
+_ATTRIBUTES.fields_by_name['uncompleted'].containing_oneof = _ATTRIBUTES.oneofs_by_name['completed_status']
+_ATTRIBUTES.oneofs_by_name['completed_status'].fields.append(_ATTRIBUTES.fields_by_name['completed'])
+_ATTRIBUTES.fields_by_name['completed'].containing_oneof = _ATTRIBUTES.oneofs_by_name['completed_status']
+_ATTRIBUTES.oneofs_by_name['blueprint'].fields.append(_ATTRIBUTES.fields_by_name['blueprint_original'])
+_ATTRIBUTES.fields_by_name['blueprint_original'].containing_oneof = _ATTRIBUTES.oneofs_by_name['blueprint']
+_ATTRIBUTES.oneofs_by_name['blueprint'].fields.append(_ATTRIBUTES.fields_by_name['blueprint_copy'])
+_ATTRIBUTES.fields_by_name['blueprint_copy'].containing_oneof = _ATTRIBUTES.oneofs_by_name['blueprint']
+_COMPLETED.fields_by_name['job'].message_type = _ATTRIBUTES
+_COMPLETED.fields_by_name['output'].message_type = eve_dot_inventory_dot_generic__item__pb2._ATTRIBUTES
+DESCRIPTOR.message_types_by_name['Attributes'] = _ATTRIBUTES
+DESCRIPTOR.message_types_by_name['Completed'] = _COMPLETED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Attributes = _reflection.GeneratedProtocolMessageType('Attributes', (_message.Message,), {'DESCRIPTOR': _ATTRIBUTES,
+ '__module__': 'eve.industry.job.manufacturing_pb2'})
+_sym_db.RegisterMessage(Attributes)
+Completed = _reflection.GeneratedProtocolMessageType('Completed', (_message.Message,), {'DESCRIPTOR': _COMPLETED,
+ '__module__': 'eve.industry.job.manufacturing_pb2'})
+_sym_db.RegisterMessage(Completed)
+DESCRIPTOR._options = None
+_ATTRIBUTES.fields_by_name['station']._options = None
+_COMPLETED._options = None

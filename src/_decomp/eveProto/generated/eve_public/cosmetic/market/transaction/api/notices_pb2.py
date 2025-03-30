@@ -1,0 +1,22 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve_public\cosmetic\market\transaction\api\notices_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve_public.cosmetic.market.transaction import transaction_pb2 as eve__public_dot_cosmetic_dot_market_dot_transaction_dot_transaction__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve_public/cosmetic/market/transaction/api/notices.proto', package='eve_public.cosmetic.market.transaction.api', syntax='proto3', serialized_options='ZUgithub.com/ccpgames/eve-proto-go/generated/eve_public/cosmetic/market/transaction/api', create_key=_descriptor._internal_create_key, serialized_pb='\n8eve_public/cosmetic/market/transaction/api/notices.proto\x12*eve_public.cosmetic.market.transaction.api\x1a8eve_public/cosmetic/market/transaction/transaction.proto"b\n\x17TransactionFailedNotice\x12G\n\x0btransaction\x18\x01 \x01(\x0b22.eve_public.cosmetic.market.transaction.Identifier"e\n\x1aTransactionSucceededNotice\x12G\n\x0btransaction\x18\x01 \x01(\x0b22.eve_public.cosmetic.market.transaction.IdentifierBWZUgithub.com/ccpgames/eve-proto-go/generated/eve_public/cosmetic/market/transaction/apib\x06proto3', dependencies=[eve__public_dot_cosmetic_dot_market_dot_transaction_dot_transaction__pb2.DESCRIPTOR])
+_TRANSACTIONFAILEDNOTICE = _descriptor.Descriptor(name='TransactionFailedNotice', full_name='eve_public.cosmetic.market.transaction.api.TransactionFailedNotice', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='transaction', full_name='eve_public.cosmetic.market.transaction.api.TransactionFailedNotice.transaction', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=162, serialized_end=260)
+_TRANSACTIONSUCCEEDEDNOTICE = _descriptor.Descriptor(name='TransactionSucceededNotice', full_name='eve_public.cosmetic.market.transaction.api.TransactionSucceededNotice', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='transaction', full_name='eve_public.cosmetic.market.transaction.api.TransactionSucceededNotice.transaction', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=262, serialized_end=363)
+_TRANSACTIONFAILEDNOTICE.fields_by_name['transaction'].message_type = eve__public_dot_cosmetic_dot_market_dot_transaction_dot_transaction__pb2._IDENTIFIER
+_TRANSACTIONSUCCEEDEDNOTICE.fields_by_name['transaction'].message_type = eve__public_dot_cosmetic_dot_market_dot_transaction_dot_transaction__pb2._IDENTIFIER
+DESCRIPTOR.message_types_by_name['TransactionFailedNotice'] = _TRANSACTIONFAILEDNOTICE
+DESCRIPTOR.message_types_by_name['TransactionSucceededNotice'] = _TRANSACTIONSUCCEEDEDNOTICE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+TransactionFailedNotice = _reflection.GeneratedProtocolMessageType('TransactionFailedNotice', (_message.Message,), {'DESCRIPTOR': _TRANSACTIONFAILEDNOTICE,
+ '__module__': 'eve_public.cosmetic.market.transaction.api.notices_pb2'})
+_sym_db.RegisterMessage(TransactionFailedNotice)
+TransactionSucceededNotice = _reflection.GeneratedProtocolMessageType('TransactionSucceededNotice', (_message.Message,), {'DESCRIPTOR': _TRANSACTIONSUCCEEDEDNOTICE,
+ '__module__': 'eve_public.cosmetic.market.transaction.api.notices_pb2'})
+_sym_db.RegisterMessage(TransactionSucceededNotice)
+DESCRIPTOR._options = None

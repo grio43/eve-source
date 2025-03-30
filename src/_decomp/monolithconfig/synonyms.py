@@ -1,0 +1,20 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\monolithconfig\synonyms.py
+ENABLED = ['true',
+ 'yes',
+ 'y',
+ 'enable',
+ 'enabled',
+ 'on',
+ 'yep',
+ '1',
+ 'fuck on']
+DISABLED = ['false',
+ 'no',
+ 'n',
+ 'disable',
+ 'disabled',
+ 'off',
+ 'nope',
+ '0',
+ '',
+ 'fuck off']

@@ -1,0 +1,10 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\agentinteraction\constUI.py
+PADDING_XLARGE = 48
+PADDING_LARGE = 32
+PADDING_MEDIUM = 24
+PADDING_SMALL = 16
+PADDING_SMALLER = 12
+PADDING_XSMALL = 8
+HEADER_SIZE_XLARGE = 32
+HEADER_SIZE_BIG = 24
+HEADER_SIZE_MEDIUM = 18

@@ -1,0 +1,26 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\goal\contribution\api\events_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.character import character_pb2 as eve_dot_character_dot_character__pb2
+from eveProto.generated.eve.goal import goal_pb2 as eve_dot_goal_dot_goal__pb2
+from google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/goal/contribution/api/events.proto', package='eve.goal.contribution.api', syntax='proto3', serialized_options='ZDgithub.com/ccpgames/eve-proto-go/generated/eve/goal/contribution/api', create_key=_descriptor._internal_create_key, serialized_pb='\n&eve/goal/contribution/api/events.proto\x12\x19eve.goal.contribution.api\x1a\x1deve/character/character.proto\x1a\x13eve/goal/goal.proto\x1a\x1fgoogle/protobuf/timestamp.proto"\xfb\x01\n\x0bContributed\x12-\n\ttimestamp\x18\x01 \x01(\x0b2\x1a.google.protobuf.Timestamp\x12.\n\x0bcontributor\x18\x02 \x01(\x0b2\x19.eve.character.Identifier\x12"\n\x04goal\x18\x03 \x01(\x0b2\x14.eve.goal.Identifier\x12\x19\n\x11previous_progress\x18\x04 \x01(\x04\x12\x18\n\x10current_progress\x18\x05 \x01(\x04\x124\n\x19per_contribution_payments\x18\x06 \x03(\x0b2\x11.eve.goal.PaymentBFZDgithub.com/ccpgames/eve-proto-go/generated/eve/goal/contribution/apib\x06proto3', dependencies=[eve_dot_character_dot_character__pb2.DESCRIPTOR, eve_dot_goal_dot_goal__pb2.DESCRIPTOR, google_dot_protobuf_dot_timestamp__pb2.DESCRIPTOR])
+_CONTRIBUTED = _descriptor.Descriptor(name='Contributed', full_name='eve.goal.contribution.api.Contributed', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='timestamp', full_name='eve.goal.contribution.api.Contributed.timestamp', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='contributor', full_name='eve.goal.contribution.api.Contributed.contributor', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='goal', full_name='eve.goal.contribution.api.Contributed.goal', index=2, number=3, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='previous_progress', full_name='eve.goal.contribution.api.Contributed.previous_progress', index=3, number=4, type=4, cpp_type=4, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='current_progress', full_name='eve.goal.contribution.api.Contributed.current_progress', index=4, number=5, type=4, cpp_type=4, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='per_contribution_payments', full_name='eve.goal.contribution.api.Contributed.per_contribution_payments', index=5, number=6, type=11, cpp_type=10, label=3, has_default_value=False, default_value=[], message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=155, serialized_end=406)
+_CONTRIBUTED.fields_by_name['timestamp'].message_type = google_dot_protobuf_dot_timestamp__pb2._TIMESTAMP
+_CONTRIBUTED.fields_by_name['contributor'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_CONTRIBUTED.fields_by_name['goal'].message_type = eve_dot_goal_dot_goal__pb2._IDENTIFIER
+_CONTRIBUTED.fields_by_name['per_contribution_payments'].message_type = eve_dot_goal_dot_goal__pb2._PAYMENT
+DESCRIPTOR.message_types_by_name['Contributed'] = _CONTRIBUTED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Contributed = _reflection.GeneratedProtocolMessageType('Contributed', (_message.Message,), {'DESCRIPTOR': _CONTRIBUTED,
+ '__module__': 'eve.goal.contribution.api.events_pb2'})
+_sym_db.RegisterMessage(Contributed)
+DESCRIPTOR._options = None

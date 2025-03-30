@@ -1,0 +1,34 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\skill\extractor\event_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.character import character_pb2 as eve_dot_character_dot_character__pb2
+from eveProto.generated.eve.skill.extractor import extractor_pb2 as eve_dot_skill_dot_extractor_dot_extractor__pb2
+from eveProto.generated.eve.skill.injector import injector_pb2 as eve_dot_skill_dot_injector_dot_injector__pb2
+from eveProto.generated.eve.skill import skill_type_pb2 as eve_dot_skill_dot_skill__type__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/skill/extractor/event.proto', package='eve.skill.extractor.event', syntax='proto3', serialized_options='ZDgithub.com/ccpgames/eve-proto-go/generated/eve/skill/extractor/event', create_key=_descriptor._internal_create_key, serialized_pb='\n\x1feve/skill/extractor/event.proto\x12\x19eve.skill.extractor.event\x1a\x1deve/character/character.proto\x1a#eve/skill/extractor/extractor.proto\x1a!eve/skill/injector/injector.proto\x1a\x1aeve/skill/skill_type.proto"s\n\x0eExtractedSkill\x12(\n\x05skill\x18\x01 \x01(\x0b2\x19.eve.skilltype.Identifier\x12\x1b\n\x13skill_points_before\x18\x02 \x01(\r\x12\x1a\n\x12skill_points_after\x18\x03 \x01(\r"\xe3\x01\n\tExtracted\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier\x12B\n\x0fextracted_skill\x18\x02 \x03(\x0b2).eve.skill.extractor.event.ExtractedSkill\x122\n\textractor\x18\x03 \x01(\x0b2\x1f.eve.skill.extractor.Identifier\x120\n\x08injector\x18\x04 \x01(\x0b2\x1e.eve.skill.injector.IdentifierBFZDgithub.com/ccpgames/eve-proto-go/generated/eve/skill/extractor/eventb\x06proto3', dependencies=[eve_dot_character_dot_character__pb2.DESCRIPTOR,
+ eve_dot_skill_dot_extractor_dot_extractor__pb2.DESCRIPTOR,
+ eve_dot_skill_dot_injector_dot_injector__pb2.DESCRIPTOR,
+ eve_dot_skill_dot_skill__type__pb2.DESCRIPTOR])
+_EXTRACTEDSKILL = _descriptor.Descriptor(name='ExtractedSkill', full_name='eve.skill.extractor.event.ExtractedSkill', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='skill', full_name='eve.skill.extractor.event.ExtractedSkill.skill', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='skill_points_before', full_name='eve.skill.extractor.event.ExtractedSkill.skill_points_before', index=1, number=2, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='skill_points_after', full_name='eve.skill.extractor.event.ExtractedSkill.skill_points_after', index=2, number=3, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=193, serialized_end=308)
+_EXTRACTED = _descriptor.Descriptor(name='Extracted', full_name='eve.skill.extractor.event.Extracted', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.skill.extractor.event.Extracted.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='extracted_skill', full_name='eve.skill.extractor.event.Extracted.extracted_skill', index=1, number=2, type=11, cpp_type=10, label=3, has_default_value=False, default_value=[], message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='extractor', full_name='eve.skill.extractor.event.Extracted.extractor', index=2, number=3, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='injector', full_name='eve.skill.extractor.event.Extracted.injector', index=3, number=4, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=311, serialized_end=538)
+_EXTRACTEDSKILL.fields_by_name['skill'].message_type = eve_dot_skill_dot_skill__type__pb2._IDENTIFIER
+_EXTRACTED.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_EXTRACTED.fields_by_name['extracted_skill'].message_type = _EXTRACTEDSKILL
+_EXTRACTED.fields_by_name['extractor'].message_type = eve_dot_skill_dot_extractor_dot_extractor__pb2._IDENTIFIER
+_EXTRACTED.fields_by_name['injector'].message_type = eve_dot_skill_dot_injector_dot_injector__pb2._IDENTIFIER
+DESCRIPTOR.message_types_by_name['ExtractedSkill'] = _EXTRACTEDSKILL
+DESCRIPTOR.message_types_by_name['Extracted'] = _EXTRACTED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+ExtractedSkill = _reflection.GeneratedProtocolMessageType('ExtractedSkill', (_message.Message,), {'DESCRIPTOR': _EXTRACTEDSKILL,
+ '__module__': 'eve.skill.extractor.event_pb2'})
+_sym_db.RegisterMessage(ExtractedSkill)
+Extracted = _reflection.GeneratedProtocolMessageType('Extracted', (_message.Message,), {'DESCRIPTOR': _EXTRACTED,
+ '__module__': 'eve.skill.extractor.event_pb2'})
+_sym_db.RegisterMessage(Extracted)
+DESCRIPTOR._options = None

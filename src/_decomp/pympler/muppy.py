@@ -1,0 +1,169 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\pympler\muppy.py
+import gc
+from pympler import summary
+from pympler.util import compat
+from inspect import isframe, stack
+try:
+    from sys import getsizeof as _getsizeof
+except ImportError:
+    from pympler.asizeof import flatsize
+    _getsizeof = flatsize
+
+__TPFLAGS_HAVE_GC = 16384
+
+def get_objects(remove_dups = True, include_frames = False):
+    gc.collect()
+    tmp = gc.get_objects()
+    tmp = [ o for o in tmp if not isframe(o) ]
+    res = []
+    for o in tmp:
+        refs = get_referents(o)
+        for ref in refs:
+            if not _is_containerobject(ref):
+                res.append(ref)
+
+    res.extend(tmp)
+    if remove_dups:
+        res = _remove_duplicates(res)
+    if include_frames:
+        for sf in stack()[2:]:
+            res.append(sf[0])
+
+    return res
+
+
+def get_size(objects):
+    res = 0
+    for o in objects:
+        try:
+            res += _getsizeof(o)
+        except AttributeError:
+            print 'IGNORING: type=%s; o=%s' % (str(type(o)), str(o))
+
+    return res
+
+
+def get_diff(left, right):
+    res = {'+': [],
+     '-': []}
+
+    def partition(objects):
+        res = {}
+        for o in objects:
+            t = type(o)
+            if type(o) not in res:
+                res[t] = []
+            res[t].append(o)
+
+        return res
+
+    def get_not_included(foo, bar):
+        res = []
+        for o in foo:
+            if not compat.object_in_list(type(o), bar):
+                res.append(o)
+            elif not compat.object_in_list(o, bar[type(o)]):
+                res.append(o)
+
+        return res
+
+    left_objects = partition(left)
+    right_objects = partition(right)
+    res['+'] = get_not_included(right, left_objects)
+    res['-'] = get_not_included(left, right_objects)
+    return res
+
+
+def sort(objects):
+    objects = sorted(objects, key=_getsizeof)
+    return objects
+
+
+def filter(objects, Type = None, min = -1, max = -1):
+    res = []
+    if min > max:
+        raise ValueError('minimum must be smaller than maximum')
+    if Type is not None:
+        res = [ o for o in objects if isinstance(o, Type) ]
+    if min > -1:
+        res = [ o for o in res if _getsizeof(o) < min ]
+    if max > -1:
+        res = [ o for o in res if _getsizeof(o) > max ]
+    return res
+
+
+def get_referents(object, level = 1):
+    res = gc.get_referents(object)
+    level -= 1
+    if level > 0:
+        for o in res:
+            res.extend(get_referents(o, level))
+
+    res = _remove_duplicates(res)
+    return res
+
+
+def _get_usage(function, *args):
+    res = None
+
+    def _get_summaries(function, *args):
+        s_before = summary.summarize(get_objects())
+        function(*args)
+        s_after = summary.summarize(get_objects())
+        return (s_before, s_after)
+
+    def _get_usage(function, *args):
+        res = []
+        s_before, s_after = _get_summaries(function, *args)
+        ignore = []
+        if s_before != s_after:
+            ignore.append(s_before)
+        for row in s_before:
+            if len(gc.get_referrers(row)) == 2:
+                ignore.append(row)
+            for item in row:
+                if len(gc.get_referrers(item)) == 2:
+                    ignore.append(item)
+
+        for o in ignore:
+            s_after = summary._subtract(s_after, o)
+
+        res = summary.get_diff(s_before, s_after)
+        return summary._sweep(res)
+
+    def noop():
+        pass
+
+    offset = _get_usage(noop)
+    offset = _get_usage(noop)
+    tmp = _get_usage(function, *args)
+    tmp = _get_usage(function, *args)
+    tmp = summary.get_diff(offset, tmp)
+    tmp = summary._sweep(tmp)
+    if len(tmp) != 0:
+        res = tmp
+    return res
+
+
+def _is_containerobject(o):
+    if type(o).__flags__ & __TPFLAGS_HAVE_GC == 0:
+        return False
+    else:
+        return True
+
+
+def _remove_duplicates(objects):
+    seen = set()
+    result = []
+    for item in objects:
+        marker = id(item)
+        if marker in seen:
+            continue
+        seen.add(marker)
+        result.append(item)
+
+    return result
+
+
+def print_summary():
+    summary.print_(summary.summarize(get_objects()))

@@ -1,0 +1,15 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\jobboard\client\feature_flag.py
+from jobboard.client import job_board_signals
+from launchdarkly.client.featureflag import create_boolean_flag_check
+is_job_board_available = create_boolean_flag_check(launchdarkly_key='job-board-enabled-feature-flag', fallback_value=True, on_flag_changed_callback=job_board_signals.on_job_board_feature_availability_changed)
+open_job_board_on_startup = create_boolean_flag_check(launchdarkly_key='job-board-open-on-startup-feature-flag', fallback_value=False, on_flag_changed_callback=job_board_signals.on_job_board_open_on_startup_changed)
+are_dungeons_in_job_board_available = create_boolean_flag_check(launchdarkly_key='job-board-dungeons-enabled-feature-flag', fallback_value=True, on_flag_changed_callback=job_board_signals.on_dungeons_feature_availability_changed)
+are_combat_anomalies_in_job_board_available = create_boolean_flag_check(launchdarkly_key='job-board-combat-anomalies-enabled-feature-flag', fallback_value=True, on_flag_changed_callback=job_board_signals.on_combat_anomalies_feature_availability_changed)
+are_homefront_operations_in_job_board_available = create_boolean_flag_check(launchdarkly_key='job-board-homefront-operations-enabled-feature-flag', fallback_value=True, on_flag_changed_callback=job_board_signals.on_homefront_operations_feature_availability_changed)
+are_missions_in_job_board_available = create_boolean_flag_check(launchdarkly_key='job-board-missions-enabled-feature-flag', fallback_value=True, on_flag_changed_callback=job_board_signals.on_missions_feature_availability_changed)
+are_goals_in_job_board_available = create_boolean_flag_check(launchdarkly_key='job-board-goals-enabled-feature-flag', fallback_value=True, on_flag_changed_callback=job_board_signals.on_goals_feature_availability_changed)
+are_factional_warfare_sites_in_job_board_available = create_boolean_flag_check(launchdarkly_key='job-board-factional-warfare-enabled-feature-flag', fallback_value=True, on_flag_changed_callback=job_board_signals.on_factional_warfare_feature_availability_changed)
+are_escalation_sites_in_job_board_available = create_boolean_flag_check(launchdarkly_key='job-board-escalation-sites-enabled-feature-flag', fallback_value=True, on_flag_changed_callback=job_board_signals.on_escalation_sites_feature_availability_changed)
+are_ore_anomalies_in_job_board_available = create_boolean_flag_check(launchdarkly_key='job-board-ore-anomalies-enabled-feature-flag', fallback_value=True, on_flag_changed_callback=job_board_signals.on_ore_anomalies_feature_availability_changed)
+are_ice_belts_in_job_board_available = create_boolean_flag_check(launchdarkly_key='job-board-ice-belts-enabled-feature-flag', fallback_value=True, on_flag_changed_callback=job_board_signals.on_ice_belts_feature_availability_changed)
+are_pirate_insurgency_sites_in_job_board_available = create_boolean_flag_check(launchdarkly_key='job-board-pirate-insurgency-sites-enabled-feature-flag', fallback_value=True, on_flag_changed_callback=job_board_signals.on_pirate_insurgency_feature_availability_changed)

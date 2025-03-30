@@ -1,0 +1,27 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\sovereignty\api\events_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.alliance import alliance_pb2 as eve_dot_alliance_dot_alliance__pb2
+from eveProto.generated.eve.solarsystem import solarsystem_pb2 as eve_dot_solarsystem_dot_solarsystem__pb2
+from eveProto.generated.eve.sovereignty.hub import hub_pb2 as eve_dot_sovereignty_dot_hub_dot_hub__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/sovereignty/api/events.proto', package='eve.sovereignty.api', syntax='proto3', serialized_options='Z>github.com/ccpgames/eve-proto-go/generated/eve/sovereignty/api', create_key=_descriptor._internal_create_key, serialized_pb='\n eve/sovereignty/api/events.proto\x12\x13eve.sovereignty.api\x1a\x1beve/alliance/alliance.proto\x1a!eve/solarsystem/solarsystem.proto\x1a\x1deve/sovereignty/hub/hub.proto"\xa0\x01\n\x07Claimed\x120\n\x0bsolarsystem\x18\x01 \x01(\x0b2\x1b.eve.solarsystem.Identifier\x12*\n\x08alliance\x18\x02 \x01(\x0b2\x18.eve.alliance.Identifier\x127\n\x0esovereigntyhub\x18\x03 \x01(\x0b2\x1f.eve.sovereignty.hub.Identifier"d\n\x04Lost\x120\n\x0bsolarsystem\x18\x01 \x01(\x0b2\x1b.eve.solarsystem.Identifier\x12*\n\x08alliance\x18\x02 \x01(\x0b2\x18.eve.alliance.IdentifierB@Z>github.com/ccpgames/eve-proto-go/generated/eve/sovereignty/apib\x06proto3', dependencies=[eve_dot_alliance_dot_alliance__pb2.DESCRIPTOR, eve_dot_solarsystem_dot_solarsystem__pb2.DESCRIPTOR, eve_dot_sovereignty_dot_hub_dot_hub__pb2.DESCRIPTOR])
+_CLAIMED = _descriptor.Descriptor(name='Claimed', full_name='eve.sovereignty.api.Claimed', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='solarsystem', full_name='eve.sovereignty.api.Claimed.solarsystem', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='alliance', full_name='eve.sovereignty.api.Claimed.alliance', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='sovereigntyhub', full_name='eve.sovereignty.api.Claimed.sovereigntyhub', index=2, number=3, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=153, serialized_end=313)
+_LOST = _descriptor.Descriptor(name='Lost', full_name='eve.sovereignty.api.Lost', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='solarsystem', full_name='eve.sovereignty.api.Lost.solarsystem', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='alliance', full_name='eve.sovereignty.api.Lost.alliance', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=315, serialized_end=415)
+_CLAIMED.fields_by_name['solarsystem'].message_type = eve_dot_solarsystem_dot_solarsystem__pb2._IDENTIFIER
+_CLAIMED.fields_by_name['alliance'].message_type = eve_dot_alliance_dot_alliance__pb2._IDENTIFIER
+_CLAIMED.fields_by_name['sovereigntyhub'].message_type = eve_dot_sovereignty_dot_hub_dot_hub__pb2._IDENTIFIER
+_LOST.fields_by_name['solarsystem'].message_type = eve_dot_solarsystem_dot_solarsystem__pb2._IDENTIFIER
+_LOST.fields_by_name['alliance'].message_type = eve_dot_alliance_dot_alliance__pb2._IDENTIFIER
+DESCRIPTOR.message_types_by_name['Claimed'] = _CLAIMED
+DESCRIPTOR.message_types_by_name['Lost'] = _LOST
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Claimed = _reflection.GeneratedProtocolMessageType('Claimed', (_message.Message,), {'DESCRIPTOR': _CLAIMED,
+ '__module__': 'eve.sovereignty.api.events_pb2'})
+_sym_db.RegisterMessage(Claimed)
+Lost = _reflection.GeneratedProtocolMessageType('Lost', (_message.Message,), {'DESCRIPTOR': _LOST,
+ '__module__': 'eve.sovereignty.api.events_pb2'})
+_sym_db.RegisterMessage(Lost)
+DESCRIPTOR._options = None

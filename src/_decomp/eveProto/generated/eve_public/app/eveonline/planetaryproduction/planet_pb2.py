@@ -1,0 +1,22 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve_public\app\eveonline\planetaryproduction\planet_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve_public.planet import planet_pb2 as eve__public_dot_planet_dot_planet__pb2
+from eveProto.generated.eve_public.solarsystem import solarsystem_pb2 as eve__public_dot_solarsystem_dot_solarsystem__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve_public/app/eveonline/planetaryproduction/planet.proto', package='eve_public.app.eveonline.planetaryproduction.planet', syntax='proto3', serialized_options='Z^github.com/ccpgames/eve-proto-go/generated/eve_public/app/eveonline/planetaryproduction/planet', create_key=_descriptor._internal_create_key, serialized_pb='\n9eve_public/app/eveonline/planetaryproduction/planet.proto\x123eve_public.app.eveonline.planetaryproduction.planet\x1a\x1eeve_public/planet/planet.proto\x1a(eve_public/solarsystem/solarsystem.proto"\xce\x01\n\x08Accessed\x12-\n\x06planet\x18\x01 \x01(\x0b2\x1d.eve_public.planet.Identifier\x12?\n\x13planet_solar_system\x18\x02 \x01(\x0b2".eve_public.solarsystem.Identifier\x12?\n\x13player_solar_system\x18\x03 \x01(\x0b2".eve_public.solarsystem.Identifier\x12\x11\n\tcolonized\x18\x04 \x01(\x08B`Z^github.com/ccpgames/eve-proto-go/generated/eve_public/app/eveonline/planetaryproduction/planetb\x06proto3', dependencies=[eve__public_dot_planet_dot_planet__pb2.DESCRIPTOR, eve__public_dot_solarsystem_dot_solarsystem__pb2.DESCRIPTOR])
+_ACCESSED = _descriptor.Descriptor(name='Accessed', full_name='eve_public.app.eveonline.planetaryproduction.planet.Accessed', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='planet', full_name='eve_public.app.eveonline.planetaryproduction.planet.Accessed.planet', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='planet_solar_system', full_name='eve_public.app.eveonline.planetaryproduction.planet.Accessed.planet_solar_system', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='player_solar_system', full_name='eve_public.app.eveonline.planetaryproduction.planet.Accessed.player_solar_system', index=2, number=3, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='colonized', full_name='eve_public.app.eveonline.planetaryproduction.planet.Accessed.colonized', index=3, number=4, type=8, cpp_type=7, label=1, has_default_value=False, default_value=False, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=189, serialized_end=395)
+_ACCESSED.fields_by_name['planet'].message_type = eve__public_dot_planet_dot_planet__pb2._IDENTIFIER
+_ACCESSED.fields_by_name['planet_solar_system'].message_type = eve__public_dot_solarsystem_dot_solarsystem__pb2._IDENTIFIER
+_ACCESSED.fields_by_name['player_solar_system'].message_type = eve__public_dot_solarsystem_dot_solarsystem__pb2._IDENTIFIER
+DESCRIPTOR.message_types_by_name['Accessed'] = _ACCESSED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Accessed = _reflection.GeneratedProtocolMessageType('Accessed', (_message.Message,), {'DESCRIPTOR': _ACCESSED,
+ '__module__': 'eve_public.app.eveonline.planetaryproduction.planet_pb2'})
+_sym_db.RegisterMessage(Accessed)
+DESCRIPTOR._options = None

@@ -1,0 +1,42 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\inventory\generic_item_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.inventory import generic_item_type_pb2 as eve_dot_inventory_dot_generic__item__type__pb2
+from eveProto.generated.eve.inventory import inventory_pb2 as eve_dot_inventory_dot_inventory__pb2
+from eveProto.generated.eve import search_pb2 as eve_dot_search__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/inventory/generic_item.proto', package='eve.inventory.genericitem', syntax='proto3', serialized_options='ZDgithub.com/ccpgames/eve-proto-go/generated/eve/inventory/genericitem', create_key=_descriptor._internal_create_key, serialized_pb='\n eve/inventory/generic_item.proto\x12\x19eve.inventory.genericitem\x1a%eve/inventory/generic_item_type.proto\x1a\x1deve/inventory/inventory.proto\x1a\x10eve/search.proto" \n\nIdentifier\x12\x12\n\nsequential\x18\x01 \x01(\x04"\\\n\nAttributes\x12<\n\titem_type\x18\x01 \x01(\x0b2).eve.inventory.genericitemtype.Identifier\x12\x10\n\x08quantity\x18\x02 \x01(\r"j\n\x08Location\x123\n\x04item\x18\x01 \x01(\x0b2%.eve.inventory.genericitem.Identifier\x12)\n\x04flag\x18\x02 \x01(\x0b2\x1b.eve.inventory.LocationFlag"0\n\rSearchRequest\x12\x1f\n\x05query\x18\x01 \x01(\x0b2\x10.eve.SearchQuery"N\n\x0eSearchResponse\x12<\n\rgeneric_items\x18\x01 \x03(\x0b2%.eve.inventory.genericitem.IdentifierBFZDgithub.com/ccpgames/eve-proto-go/generated/eve/inventory/genericitemb\x06proto3', dependencies=[eve_dot_inventory_dot_generic__item__type__pb2.DESCRIPTOR, eve_dot_inventory_dot_inventory__pb2.DESCRIPTOR, eve_dot_search__pb2.DESCRIPTOR])
+_IDENTIFIER = _descriptor.Descriptor(name='Identifier', full_name='eve.inventory.genericitem.Identifier', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='sequential', full_name='eve.inventory.genericitem.Identifier.sequential', index=0, number=1, type=4, cpp_type=4, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=151, serialized_end=183)
+_ATTRIBUTES = _descriptor.Descriptor(name='Attributes', full_name='eve.inventory.genericitem.Attributes', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='item_type', full_name='eve.inventory.genericitem.Attributes.item_type', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='quantity', full_name='eve.inventory.genericitem.Attributes.quantity', index=1, number=2, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=185, serialized_end=277)
+_LOCATION = _descriptor.Descriptor(name='Location', full_name='eve.inventory.genericitem.Location', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='item', full_name='eve.inventory.genericitem.Location.item', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='flag', full_name='eve.inventory.genericitem.Location.flag', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=279, serialized_end=385)
+_SEARCHREQUEST = _descriptor.Descriptor(name='SearchRequest', full_name='eve.inventory.genericitem.SearchRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='query', full_name='eve.inventory.genericitem.SearchRequest.query', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=387, serialized_end=435)
+_SEARCHRESPONSE = _descriptor.Descriptor(name='SearchResponse', full_name='eve.inventory.genericitem.SearchResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='generic_items', full_name='eve.inventory.genericitem.SearchResponse.generic_items', index=0, number=1, type=11, cpp_type=10, label=3, has_default_value=False, default_value=[], message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=437, serialized_end=515)
+_ATTRIBUTES.fields_by_name['item_type'].message_type = eve_dot_inventory_dot_generic__item__type__pb2._IDENTIFIER
+_LOCATION.fields_by_name['item'].message_type = _IDENTIFIER
+_LOCATION.fields_by_name['flag'].message_type = eve_dot_inventory_dot_inventory__pb2._LOCATIONFLAG
+_SEARCHREQUEST.fields_by_name['query'].message_type = eve_dot_search__pb2._SEARCHQUERY
+_SEARCHRESPONSE.fields_by_name['generic_items'].message_type = _IDENTIFIER
+DESCRIPTOR.message_types_by_name['Identifier'] = _IDENTIFIER
+DESCRIPTOR.message_types_by_name['Attributes'] = _ATTRIBUTES
+DESCRIPTOR.message_types_by_name['Location'] = _LOCATION
+DESCRIPTOR.message_types_by_name['SearchRequest'] = _SEARCHREQUEST
+DESCRIPTOR.message_types_by_name['SearchResponse'] = _SEARCHRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Identifier = _reflection.GeneratedProtocolMessageType('Identifier', (_message.Message,), {'DESCRIPTOR': _IDENTIFIER,
+ '__module__': 'eve.inventory.generic_item_pb2'})
+_sym_db.RegisterMessage(Identifier)
+Attributes = _reflection.GeneratedProtocolMessageType('Attributes', (_message.Message,), {'DESCRIPTOR': _ATTRIBUTES,
+ '__module__': 'eve.inventory.generic_item_pb2'})
+_sym_db.RegisterMessage(Attributes)
+Location = _reflection.GeneratedProtocolMessageType('Location', (_message.Message,), {'DESCRIPTOR': _LOCATION,
+ '__module__': 'eve.inventory.generic_item_pb2'})
+_sym_db.RegisterMessage(Location)
+SearchRequest = _reflection.GeneratedProtocolMessageType('SearchRequest', (_message.Message,), {'DESCRIPTOR': _SEARCHREQUEST,
+ '__module__': 'eve.inventory.generic_item_pb2'})
+_sym_db.RegisterMessage(SearchRequest)
+SearchResponse = _reflection.GeneratedProtocolMessageType('SearchResponse', (_message.Message,), {'DESCRIPTOR': _SEARCHRESPONSE,
+ '__module__': 'eve.inventory.generic_item_pb2'})
+_sym_db.RegisterMessage(SearchResponse)
+DESCRIPTOR._options = None

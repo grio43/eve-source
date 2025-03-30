@@ -1,0 +1,49 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\market\corporation\sellorder_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.corporation import corporation_pb2 as eve_dot_corporation_dot_corporation__pb2
+from eveProto.generated.eve.inventory import generic_item_pb2 as eve_dot_inventory_dot_generic__item__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/market/corporation/sellorder.proto', package='eve.market.corporation.sellorder', syntax='proto3', serialized_options='ZAgithub.com/ccpgames/eve-proto-go/generated/eve/market/corporation', create_key=_descriptor._internal_create_key, serialized_pb='\n&eve/market/corporation/sellorder.proto\x12 eve.market.corporation.sellorder\x1a!eve/corporation/corporation.proto\x1a eve/inventory/generic_item.proto" \n\nIdentifier\x12\x12\n\nsequential\x18\x01 \x01(\x04"s\n\nAttributes\x120\n\x0bcorporation\x18\x01 \x01(\x0b2\x1b.eve.corporation.Identifier\x123\n\x04item\x18\x02 \x01(\x0b2%.eve.inventory.genericitem.Attributes"g\n\x12PartiallyFulfilled\x12;\n\x05order\x18\x01 \x01(\x0b2,.eve.market.corporation.sellorder.Identifier\x12\x10\n\x08quantity\x18\x02 \x01(\x05:\x02\x18\x01"L\n\tFulfilled\x12;\n\x05order\x18\x01 \x01(\x0b2,.eve.market.corporation.sellorder.Identifier:\x02\x18\x01"I\n\nGetRequest\x12;\n\x05order\x18\x01 \x01(\x0b2,.eve.market.corporation.sellorder.Identifier"J\n\x0bGetResponse\x12;\n\x05order\x18\x01 \x01(\x0b2,.eve.market.corporation.sellorder.AttributesBCZAgithub.com/ccpgames/eve-proto-go/generated/eve/market/corporationb\x06proto3', dependencies=[eve_dot_corporation_dot_corporation__pb2.DESCRIPTOR, eve_dot_inventory_dot_generic__item__pb2.DESCRIPTOR])
+_IDENTIFIER = _descriptor.Descriptor(name='Identifier', full_name='eve.market.corporation.sellorder.Identifier', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='sequential', full_name='eve.market.corporation.sellorder.Identifier.sequential', index=0, number=1, type=4, cpp_type=4, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=145, serialized_end=177)
+_ATTRIBUTES = _descriptor.Descriptor(name='Attributes', full_name='eve.market.corporation.sellorder.Attributes', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='corporation', full_name='eve.market.corporation.sellorder.Attributes.corporation', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='item', full_name='eve.market.corporation.sellorder.Attributes.item', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=179, serialized_end=294)
+_PARTIALLYFULFILLED = _descriptor.Descriptor(name='PartiallyFulfilled', full_name='eve.market.corporation.sellorder.PartiallyFulfilled', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='order', full_name='eve.market.corporation.sellorder.PartiallyFulfilled.order', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='quantity', full_name='eve.market.corporation.sellorder.PartiallyFulfilled.quantity', index=1, number=2, type=5, cpp_type=1, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options='\x18\x01', is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=296, serialized_end=399)
+_FULFILLED = _descriptor.Descriptor(name='Fulfilled', full_name='eve.market.corporation.sellorder.Fulfilled', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='order', full_name='eve.market.corporation.sellorder.Fulfilled.order', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options='\x18\x01', is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=401, serialized_end=477)
+_GETREQUEST = _descriptor.Descriptor(name='GetRequest', full_name='eve.market.corporation.sellorder.GetRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='order', full_name='eve.market.corporation.sellorder.GetRequest.order', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=479, serialized_end=552)
+_GETRESPONSE = _descriptor.Descriptor(name='GetResponse', full_name='eve.market.corporation.sellorder.GetResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='order', full_name='eve.market.corporation.sellorder.GetResponse.order', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=554, serialized_end=628)
+_ATTRIBUTES.fields_by_name['corporation'].message_type = eve_dot_corporation_dot_corporation__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['item'].message_type = eve_dot_inventory_dot_generic__item__pb2._ATTRIBUTES
+_PARTIALLYFULFILLED.fields_by_name['order'].message_type = _IDENTIFIER
+_FULFILLED.fields_by_name['order'].message_type = _IDENTIFIER
+_GETREQUEST.fields_by_name['order'].message_type = _IDENTIFIER
+_GETRESPONSE.fields_by_name['order'].message_type = _ATTRIBUTES
+DESCRIPTOR.message_types_by_name['Identifier'] = _IDENTIFIER
+DESCRIPTOR.message_types_by_name['Attributes'] = _ATTRIBUTES
+DESCRIPTOR.message_types_by_name['PartiallyFulfilled'] = _PARTIALLYFULFILLED
+DESCRIPTOR.message_types_by_name['Fulfilled'] = _FULFILLED
+DESCRIPTOR.message_types_by_name['GetRequest'] = _GETREQUEST
+DESCRIPTOR.message_types_by_name['GetResponse'] = _GETRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Identifier = _reflection.GeneratedProtocolMessageType('Identifier', (_message.Message,), {'DESCRIPTOR': _IDENTIFIER,
+ '__module__': 'eve.market.corporation.sellorder_pb2'})
+_sym_db.RegisterMessage(Identifier)
+Attributes = _reflection.GeneratedProtocolMessageType('Attributes', (_message.Message,), {'DESCRIPTOR': _ATTRIBUTES,
+ '__module__': 'eve.market.corporation.sellorder_pb2'})
+_sym_db.RegisterMessage(Attributes)
+PartiallyFulfilled = _reflection.GeneratedProtocolMessageType('PartiallyFulfilled', (_message.Message,), {'DESCRIPTOR': _PARTIALLYFULFILLED,
+ '__module__': 'eve.market.corporation.sellorder_pb2'})
+_sym_db.RegisterMessage(PartiallyFulfilled)
+Fulfilled = _reflection.GeneratedProtocolMessageType('Fulfilled', (_message.Message,), {'DESCRIPTOR': _FULFILLED,
+ '__module__': 'eve.market.corporation.sellorder_pb2'})
+_sym_db.RegisterMessage(Fulfilled)
+GetRequest = _reflection.GeneratedProtocolMessageType('GetRequest', (_message.Message,), {'DESCRIPTOR': _GETREQUEST,
+ '__module__': 'eve.market.corporation.sellorder_pb2'})
+_sym_db.RegisterMessage(GetRequest)
+GetResponse = _reflection.GeneratedProtocolMessageType('GetResponse', (_message.Message,), {'DESCRIPTOR': _GETRESPONSE,
+ '__module__': 'eve.market.corporation.sellorder_pb2'})
+_sym_db.RegisterMessage(GetResponse)
+DESCRIPTOR._options = None
+_PARTIALLYFULFILLED._options = None
+_FULFILLED._options = None

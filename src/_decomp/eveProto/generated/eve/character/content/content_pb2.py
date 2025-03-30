@@ -1,0 +1,32 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\character\content\content_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.character import character_pb2 as eve_dot_character_dot_character__pb2
+from eveProto.generated.eve.content import content_pb2 as eve_dot_content_dot_content__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/character/content/content.proto', package='eve.character.content', syntax='proto3', serialized_options='Z@github.com/ccpgames/eve-proto-go/generated/eve/character/content', create_key=_descriptor._internal_create_key, serialized_pb='\n#eve/character/content/content.proto\x12\x15eve.character.content\x1a\x1deve/character/character.proto\x1a\x19eve/content/content.proto"a\n\x07Started\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier\x12(\n\x07content\x18\x02 \x01(\x0b2\x17.eve.content.Identifier"a\n\x07Stopped\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier\x12(\n\x07content\x18\x02 \x01(\x0b2\x17.eve.content.Identifier"c\n\tCompleted\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier\x12(\n\x07content\x18\x02 \x01(\x0b2\x17.eve.content.IdentifierBBZ@github.com/ccpgames/eve-proto-go/generated/eve/character/contentb\x06proto3', dependencies=[eve_dot_character_dot_character__pb2.DESCRIPTOR, eve_dot_content_dot_content__pb2.DESCRIPTOR])
+_STARTED = _descriptor.Descriptor(name='Started', full_name='eve.character.content.Started', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.character.content.Started.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='content', full_name='eve.character.content.Started.content', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=120, serialized_end=217)
+_STOPPED = _descriptor.Descriptor(name='Stopped', full_name='eve.character.content.Stopped', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.character.content.Stopped.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='content', full_name='eve.character.content.Stopped.content', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=219, serialized_end=316)
+_COMPLETED = _descriptor.Descriptor(name='Completed', full_name='eve.character.content.Completed', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.character.content.Completed.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='content', full_name='eve.character.content.Completed.content', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=318, serialized_end=417)
+_STARTED.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_STARTED.fields_by_name['content'].message_type = eve_dot_content_dot_content__pb2._IDENTIFIER
+_STOPPED.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_STOPPED.fields_by_name['content'].message_type = eve_dot_content_dot_content__pb2._IDENTIFIER
+_COMPLETED.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_COMPLETED.fields_by_name['content'].message_type = eve_dot_content_dot_content__pb2._IDENTIFIER
+DESCRIPTOR.message_types_by_name['Started'] = _STARTED
+DESCRIPTOR.message_types_by_name['Stopped'] = _STOPPED
+DESCRIPTOR.message_types_by_name['Completed'] = _COMPLETED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Started = _reflection.GeneratedProtocolMessageType('Started', (_message.Message,), {'DESCRIPTOR': _STARTED,
+ '__module__': 'eve.character.content.content_pb2'})
+_sym_db.RegisterMessage(Started)
+Stopped = _reflection.GeneratedProtocolMessageType('Stopped', (_message.Message,), {'DESCRIPTOR': _STOPPED,
+ '__module__': 'eve.character.content.content_pb2'})
+_sym_db.RegisterMessage(Stopped)
+Completed = _reflection.GeneratedProtocolMessageType('Completed', (_message.Message,), {'DESCRIPTOR': _COMPLETED,
+ '__module__': 'eve.character.content.content_pb2'})
+_sym_db.RegisterMessage(Completed)
+DESCRIPTOR._options = None

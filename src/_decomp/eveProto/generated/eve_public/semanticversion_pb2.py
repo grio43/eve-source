@@ -1,0 +1,18 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve_public\semanticversion_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve_public/semanticversion.proto', package='eve_public.semanticversion', syntax='proto3', serialized_options='ZEgithub.com/ccpgames/eve-proto-go/generated/eve_public/semanticversion', create_key=_descriptor._internal_create_key, serialized_pb='\n eve_public/semanticversion.proto\x12\x1aeve_public.semanticversion"i\n\rSpecification\x12\r\n\x05major\x18\x01 \x01(\r\x12\r\n\x05minor\x18\x02 \x01(\r\x12\r\n\x05patch\x18\x03 \x01(\r\x12\x17\n\x0fprerelease_tags\x18\x04 \x03(\t\x12\x12\n\nbuild_tags\x18\x05 \x03(\tBGZEgithub.com/ccpgames/eve-proto-go/generated/eve_public/semanticversionb\x06proto3')
+_SPECIFICATION = _descriptor.Descriptor(name='Specification', full_name='eve_public.semanticversion.Specification', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='major', full_name='eve_public.semanticversion.Specification.major', index=0, number=1, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='minor', full_name='eve_public.semanticversion.Specification.minor', index=1, number=2, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='patch', full_name='eve_public.semanticversion.Specification.patch', index=2, number=3, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='prerelease_tags', full_name='eve_public.semanticversion.Specification.prerelease_tags', index=3, number=4, type=9, cpp_type=9, label=3, has_default_value=False, default_value=[], message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='build_tags', full_name='eve_public.semanticversion.Specification.build_tags', index=4, number=5, type=9, cpp_type=9, label=3, has_default_value=False, default_value=[], message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=64, serialized_end=169)
+DESCRIPTOR.message_types_by_name['Specification'] = _SPECIFICATION
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Specification = _reflection.GeneratedProtocolMessageType('Specification', (_message.Message,), {'DESCRIPTOR': _SPECIFICATION,
+ '__module__': 'eve_public.semanticversion_pb2'})
+_sym_db.RegisterMessage(Specification)
+DESCRIPTOR._options = None

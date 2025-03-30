@@ -1,0 +1,33 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve_public\entitlement\character\character_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve_public.entitlement.character.ship import alliancelogo_pb2 as eve__public_dot_entitlement_dot_character_dot_ship_dot_alliancelogo__pb2
+from eveProto.generated.eve_public.entitlement.character.ship import corplogo_pb2 as eve__public_dot_entitlement_dot_character_dot_ship_dot_corplogo__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve_public/entitlement/character/character.proto', package='eve_public.entitlement.character', syntax='proto3', serialized_options='ZKgithub.com/ccpgames/eve-proto-go/generated/eve_public/entitlement/character', create_key=_descriptor._internal_create_key, serialized_pb='\n0eve_public/entitlement/character/character.proto\x12 eve_public.entitlement.character\x1a8eve_public/entitlement/character/ship/alliancelogo.proto\x1a4eve_public/entitlement/character/ship/corplogo.proto"\x0f\n\rGetAllRequest"\xb9\x02\n\x0eGetAllResponse\x12R\n\x0centitlements\x18\x01 \x03(\x0b2<.eve_public.entitlement.character.GetAllResponse.Entitlement\x1a\xd2\x01\n\x0bEntitlement\x12V\n\x10corporation_logo\x18\x01 \x01(\x0b2:.eve_public.entitlement.character.ship.corplogo.IdentifierH\x00\x12W\n\ralliance_logo\x18\x02 \x01(\x0b2>.eve_public.entitlement.character.ship.alliancelogo.IdentifierH\x00B\x12\n\x10entitlement_typeBMZKgithub.com/ccpgames/eve-proto-go/generated/eve_public/entitlement/characterb\x06proto3', dependencies=[eve__public_dot_entitlement_dot_character_dot_ship_dot_alliancelogo__pb2.DESCRIPTOR, eve__public_dot_entitlement_dot_character_dot_ship_dot_corplogo__pb2.DESCRIPTOR])
+_GETALLREQUEST = _descriptor.Descriptor(name='GetAllRequest', full_name='eve_public.entitlement.character.GetAllRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=198, serialized_end=213)
+_GETALLRESPONSE_ENTITLEMENT = _descriptor.Descriptor(name='Entitlement', full_name='eve_public.entitlement.character.GetAllResponse.Entitlement', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='corporation_logo', full_name='eve_public.entitlement.character.GetAllResponse.Entitlement.corporation_logo', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='alliance_logo', full_name='eve_public.entitlement.character.GetAllResponse.Entitlement.alliance_logo', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[_descriptor.OneofDescriptor(name='entitlement_type', full_name='eve_public.entitlement.character.GetAllResponse.Entitlement.entitlement_type', index=0, containing_type=None, create_key=_descriptor._internal_create_key, fields=[])], serialized_start=319, serialized_end=529)
+_GETALLRESPONSE = _descriptor.Descriptor(name='GetAllResponse', full_name='eve_public.entitlement.character.GetAllResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='entitlements', full_name='eve_public.entitlement.character.GetAllResponse.entitlements', index=0, number=1, type=11, cpp_type=10, label=3, has_default_value=False, default_value=[], message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[_GETALLRESPONSE_ENTITLEMENT], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=216, serialized_end=529)
+_GETALLRESPONSE_ENTITLEMENT.fields_by_name['corporation_logo'].message_type = eve__public_dot_entitlement_dot_character_dot_ship_dot_corplogo__pb2._IDENTIFIER
+_GETALLRESPONSE_ENTITLEMENT.fields_by_name['alliance_logo'].message_type = eve__public_dot_entitlement_dot_character_dot_ship_dot_alliancelogo__pb2._IDENTIFIER
+_GETALLRESPONSE_ENTITLEMENT.containing_type = _GETALLRESPONSE
+_GETALLRESPONSE_ENTITLEMENT.oneofs_by_name['entitlement_type'].fields.append(_GETALLRESPONSE_ENTITLEMENT.fields_by_name['corporation_logo'])
+_GETALLRESPONSE_ENTITLEMENT.fields_by_name['corporation_logo'].containing_oneof = _GETALLRESPONSE_ENTITLEMENT.oneofs_by_name['entitlement_type']
+_GETALLRESPONSE_ENTITLEMENT.oneofs_by_name['entitlement_type'].fields.append(_GETALLRESPONSE_ENTITLEMENT.fields_by_name['alliance_logo'])
+_GETALLRESPONSE_ENTITLEMENT.fields_by_name['alliance_logo'].containing_oneof = _GETALLRESPONSE_ENTITLEMENT.oneofs_by_name['entitlement_type']
+_GETALLRESPONSE.fields_by_name['entitlements'].message_type = _GETALLRESPONSE_ENTITLEMENT
+DESCRIPTOR.message_types_by_name['GetAllRequest'] = _GETALLREQUEST
+DESCRIPTOR.message_types_by_name['GetAllResponse'] = _GETALLRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+GetAllRequest = _reflection.GeneratedProtocolMessageType('GetAllRequest', (_message.Message,), {'DESCRIPTOR': _GETALLREQUEST,
+ '__module__': 'eve_public.entitlement.character.character_pb2'})
+_sym_db.RegisterMessage(GetAllRequest)
+GetAllResponse = _reflection.GeneratedProtocolMessageType('GetAllResponse', (_message.Message,), {'Entitlement': _reflection.GeneratedProtocolMessageType('Entitlement', (_message.Message,), {'DESCRIPTOR': _GETALLRESPONSE_ENTITLEMENT,
+                 '__module__': 'eve_public.entitlement.character.character_pb2'}),
+ 'DESCRIPTOR': _GETALLRESPONSE,
+ '__module__': 'eve_public.entitlement.character.character_pb2'})
+_sym_db.RegisterMessage(GetAllResponse)
+_sym_db.RegisterMessage(GetAllResponse.Entitlement)
+DESCRIPTOR._options = None

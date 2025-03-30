@@ -1,0 +1,14 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve_public\corporation\role_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve_public/corporation/role.proto', package='eve_public.corporation.role', syntax='proto3', serialized_options='ZFgithub.com/ccpgames/eve-proto-go/generated/eve_public/corporation/role', create_key=_descriptor._internal_create_key, serialized_pb='\n!eve_public/corporation/role.proto\x12\x1beve_public.corporation.role"\x1d\n\nCollection\x12\x0f\n\x07bitmask\x18\x01 \x01(\x04BHZFgithub.com/ccpgames/eve-proto-go/generated/eve_public/corporation/roleb\x06proto3')
+_COLLECTION = _descriptor.Descriptor(name='Collection', full_name='eve_public.corporation.role.Collection', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='bitmask', full_name='eve_public.corporation.role.Collection.bitmask', index=0, number=1, type=4, cpp_type=4, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=66, serialized_end=95)
+DESCRIPTOR.message_types_by_name['Collection'] = _COLLECTION
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Collection = _reflection.GeneratedProtocolMessageType('Collection', (_message.Message,), {'DESCRIPTOR': _COLLECTION,
+ '__module__': 'eve_public.corporation.role_pb2'})
+_sym_db.RegisterMessage(Collection)
+DESCRIPTOR._options = None

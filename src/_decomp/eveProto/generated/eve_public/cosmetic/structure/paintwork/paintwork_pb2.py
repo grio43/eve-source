@@ -1,0 +1,40 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve_public\cosmetic\structure\paintwork\paintwork_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve_public/cosmetic/structure/paintwork/paintwork.proto', package='eve_public.cosmetic.structure.paintwork', syntax='proto3', serialized_options='ZRgithub.com/ccpgames/eve-proto-go/generated/eve_public/cosmetic/structure/paintwork', create_key=_descriptor._internal_create_key, serialized_pb='\n7eve_public/cosmetic/structure/paintwork/paintwork.proto\x12\'eve_public.cosmetic.structure.paintwork"\xe1\x03\n\x11SlotConfiguration\x12@\n\x05first\x18\x01 \x01(\x0b2-.eve_public.cosmetic.structure.paintwork.SlotB\x02\x18\x01\x12A\n\x06second\x18\x02 \x01(\x0b2-.eve_public.cosmetic.structure.paintwork.SlotB\x02\x18\x01\x12@\n\x05third\x18\x03 \x01(\x0b2-.eve_public.cosmetic.structure.paintwork.SlotB\x02\x18\x01\x12A\n\x06fourth\x18\x04 \x01(\x0b2-.eve_public.cosmetic.structure.paintwork.SlotB\x02\x18\x01\x12>\n\x07primary\x18\x05 \x01(\x0b2-.eve_public.cosmetic.structure.paintwork.Slot\x12@\n\tsecondary\x18\x06 \x01(\x0b2-.eve_public.cosmetic.structure.paintwork.Slot\x12@\n\tdetailing\x18\x07 \x01(\x0b2-.eve_public.cosmetic.structure.paintwork.Slot"1\n\x04Slot\x12\x0f\n\x05paint\x18\x01 \x01(\rH\x00\x12\x0f\n\x05empty\x18\x02 \x01(\x08H\x00B\x07\n\x05valueBTZRgithub.com/ccpgames/eve-proto-go/generated/eve_public/cosmetic/structure/paintworkb\x06proto3')
+_SLOTCONFIGURATION = _descriptor.Descriptor(name='SlotConfiguration', full_name='eve_public.cosmetic.structure.paintwork.SlotConfiguration', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='first', full_name='eve_public.cosmetic.structure.paintwork.SlotConfiguration.first', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options='\x18\x01', file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='second', full_name='eve_public.cosmetic.structure.paintwork.SlotConfiguration.second', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options='\x18\x01', file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='third', full_name='eve_public.cosmetic.structure.paintwork.SlotConfiguration.third', index=2, number=3, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options='\x18\x01', file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='fourth', full_name='eve_public.cosmetic.structure.paintwork.SlotConfiguration.fourth', index=3, number=4, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options='\x18\x01', file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='primary', full_name='eve_public.cosmetic.structure.paintwork.SlotConfiguration.primary', index=4, number=5, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='secondary', full_name='eve_public.cosmetic.structure.paintwork.SlotConfiguration.secondary', index=5, number=6, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='detailing', full_name='eve_public.cosmetic.structure.paintwork.SlotConfiguration.detailing', index=6, number=7, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=101, serialized_end=582)
+_SLOT = _descriptor.Descriptor(name='Slot', full_name='eve_public.cosmetic.structure.paintwork.Slot', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='paint', full_name='eve_public.cosmetic.structure.paintwork.Slot.paint', index=0, number=1, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='empty', full_name='eve_public.cosmetic.structure.paintwork.Slot.empty', index=1, number=2, type=8, cpp_type=7, label=1, has_default_value=False, default_value=False, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[_descriptor.OneofDescriptor(name='value', full_name='eve_public.cosmetic.structure.paintwork.Slot.value', index=0, containing_type=None, create_key=_descriptor._internal_create_key, fields=[])], serialized_start=584, serialized_end=633)
+_SLOTCONFIGURATION.fields_by_name['first'].message_type = _SLOT
+_SLOTCONFIGURATION.fields_by_name['second'].message_type = _SLOT
+_SLOTCONFIGURATION.fields_by_name['third'].message_type = _SLOT
+_SLOTCONFIGURATION.fields_by_name['fourth'].message_type = _SLOT
+_SLOTCONFIGURATION.fields_by_name['primary'].message_type = _SLOT
+_SLOTCONFIGURATION.fields_by_name['secondary'].message_type = _SLOT
+_SLOTCONFIGURATION.fields_by_name['detailing'].message_type = _SLOT
+_SLOT.oneofs_by_name['value'].fields.append(_SLOT.fields_by_name['paint'])
+_SLOT.fields_by_name['paint'].containing_oneof = _SLOT.oneofs_by_name['value']
+_SLOT.oneofs_by_name['value'].fields.append(_SLOT.fields_by_name['empty'])
+_SLOT.fields_by_name['empty'].containing_oneof = _SLOT.oneofs_by_name['value']
+DESCRIPTOR.message_types_by_name['SlotConfiguration'] = _SLOTCONFIGURATION
+DESCRIPTOR.message_types_by_name['Slot'] = _SLOT
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+SlotConfiguration = _reflection.GeneratedProtocolMessageType('SlotConfiguration', (_message.Message,), {'DESCRIPTOR': _SLOTCONFIGURATION,
+ '__module__': 'eve_public.cosmetic.structure.paintwork.paintwork_pb2'})
+_sym_db.RegisterMessage(SlotConfiguration)
+Slot = _reflection.GeneratedProtocolMessageType('Slot', (_message.Message,), {'DESCRIPTOR': _SLOT,
+ '__module__': 'eve_public.cosmetic.structure.paintwork.paintwork_pb2'})
+_sym_db.RegisterMessage(Slot)
+DESCRIPTOR._options = None
+_SLOTCONFIGURATION.fields_by_name['first']._options = None
+_SLOTCONFIGURATION.fields_by_name['second']._options = None
+_SLOTCONFIGURATION.fields_by_name['third']._options = None
+_SLOTCONFIGURATION.fields_by_name['fourth']._options = None

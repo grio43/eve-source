@@ -1,0 +1,31 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\planetinteraction\schematic\schematic_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/planetinteraction/schematic/schematic.proto', package='eve.planetinteraction.schematic', syntax='proto3', serialized_options='ZJgithub.com/ccpgames/eve-proto-go/generated/eve/planetinteraction/schematic', create_key=_descriptor._internal_create_key, serialized_pb='\n/eve/planetinteraction/schematic/schematic.proto\x12\x1feve.planetinteraction.schematic" \n\nIdentifier\x12\x12\n\nsequential\x18\x01 \x01(\r"<\n\nAttributes\x12\x16\n\x0ecycle_time_sec\x18\x01 \x01(\r\x12\x16\n\x0eschematic_name\x18\x02 \x01(\t"L\n\nGetRequest\x12>\n\tschematic\x18\x01 \x01(\x0b2+.eve.planetinteraction.schematic.Identifier"M\n\x0bGetResponse\x12>\n\tschematic\x18\x01 \x01(\x0b2+.eve.planetinteraction.schematic.AttributesBLZJgithub.com/ccpgames/eve-proto-go/generated/eve/planetinteraction/schematicb\x06proto3')
+_IDENTIFIER = _descriptor.Descriptor(name='Identifier', full_name='eve.planetinteraction.schematic.Identifier', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='sequential', full_name='eve.planetinteraction.schematic.Identifier.sequential', index=0, number=1, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=84, serialized_end=116)
+_ATTRIBUTES = _descriptor.Descriptor(name='Attributes', full_name='eve.planetinteraction.schematic.Attributes', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='cycle_time_sec', full_name='eve.planetinteraction.schematic.Attributes.cycle_time_sec', index=0, number=1, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='schematic_name', full_name='eve.planetinteraction.schematic.Attributes.schematic_name', index=1, number=2, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=118, serialized_end=178)
+_GETREQUEST = _descriptor.Descriptor(name='GetRequest', full_name='eve.planetinteraction.schematic.GetRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='schematic', full_name='eve.planetinteraction.schematic.GetRequest.schematic', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=180, serialized_end=256)
+_GETRESPONSE = _descriptor.Descriptor(name='GetResponse', full_name='eve.planetinteraction.schematic.GetResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='schematic', full_name='eve.planetinteraction.schematic.GetResponse.schematic', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=258, serialized_end=335)
+_GETREQUEST.fields_by_name['schematic'].message_type = _IDENTIFIER
+_GETRESPONSE.fields_by_name['schematic'].message_type = _ATTRIBUTES
+DESCRIPTOR.message_types_by_name['Identifier'] = _IDENTIFIER
+DESCRIPTOR.message_types_by_name['Attributes'] = _ATTRIBUTES
+DESCRIPTOR.message_types_by_name['GetRequest'] = _GETREQUEST
+DESCRIPTOR.message_types_by_name['GetResponse'] = _GETRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Identifier = _reflection.GeneratedProtocolMessageType('Identifier', (_message.Message,), {'DESCRIPTOR': _IDENTIFIER,
+ '__module__': 'eve.planetinteraction.schematic.schematic_pb2'})
+_sym_db.RegisterMessage(Identifier)
+Attributes = _reflection.GeneratedProtocolMessageType('Attributes', (_message.Message,), {'DESCRIPTOR': _ATTRIBUTES,
+ '__module__': 'eve.planetinteraction.schematic.schematic_pb2'})
+_sym_db.RegisterMessage(Attributes)
+GetRequest = _reflection.GeneratedProtocolMessageType('GetRequest', (_message.Message,), {'DESCRIPTOR': _GETREQUEST,
+ '__module__': 'eve.planetinteraction.schematic.schematic_pb2'})
+_sym_db.RegisterMessage(GetRequest)
+GetResponse = _reflection.GeneratedProtocolMessageType('GetResponse', (_message.Message,), {'DESCRIPTOR': _GETRESPONSE,
+ '__module__': 'eve.planetinteraction.schematic.schematic_pb2'})
+_sym_db.RegisterMessage(GetResponse)
+DESCRIPTOR._options = None

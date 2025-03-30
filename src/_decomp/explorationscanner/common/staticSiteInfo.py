@@ -1,0 +1,9 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\explorationscanner\common\staticSiteInfo.py
+
+
+class StaticSiteInfo(object):
+
+    def __init__(self, position, dungeonNameID, factionID):
+        self.position = position
+        self.dungeonNameID = dungeonNameID
+        self.factionID = factionID

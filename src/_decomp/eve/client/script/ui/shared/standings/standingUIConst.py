@@ -1,0 +1,205 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\eve\client\script\ui\shared\standings\standingUIConst.py
+from eve.common.lib import appConst
+from eve.common.script.mgt import appLogConst
+from localization import GetByLabel
+COLOR_GOOD = (0.267, 0.549, 0.706, 1.0)
+COLOR_NEUTRAL = (0.5, 0.5, 0.5, 1.0)
+COLOR_BAD = (0.6, 0.205, 0.158, 1.0)
+COLOR_INCREASE = (0.5, 0.9, 0.5, 1.0)
+ACTION_AGGRESSION = 1
+ACTION_DERIVEDOTHERFACTIONS = 2
+ACTION_DERIVEDAGENTINFACTION = 3
+ACTION_DERIVEDAGENTINCORP = 4
+ACTION_FACTIONALWARFARE = 5
+ACTION_FAILREJECTMISSION = 6
+ACTION_SPECIALMISSIONSFACTION = 7
+ACTION_SPECIALMISSIONSCORP = 8
+ACTION_CONTRABAND = 9
+ACTION_COMPLETEMISSION = 10
+ACTION_OTHER = 11
+ACTION_TRAINSKILL = 12
+ACTION_DUNGEONGROUPREWARD = 13
+ACTIONID_BY_EVENTID = {appLogConst.eventStandingAgentBuyOff: ACTION_COMPLETEMISSION,
+ appLogConst.eventStandingAgentDonation: ACTION_COMPLETEMISSION,
+ appLogConst.eventStandingAgentMissionBonus: ACTION_COMPLETEMISSION,
+ appLogConst.eventStandingAgentMissionCompleted: ACTION_COMPLETEMISSION,
+ appLogConst.eventStandingAgentMissionDeclined: ACTION_FAILREJECTMISSION,
+ appLogConst.eventStandingAgentMissionFailed: ACTION_FAILREJECTMISSION,
+ appLogConst.eventStandingAgentMissionOfferExpired: ACTION_FAILREJECTMISSION,
+ appLogConst.eventStandingCombatAggression: ACTION_AGGRESSION,
+ appLogConst.eventStandingCombatOther: ACTION_AGGRESSION,
+ appLogConst.eventStandingCombatPodKill: ACTION_AGGRESSION,
+ appLogConst.eventStandingCombatShipKill: ACTION_AGGRESSION,
+ appLogConst.eventStandingDerivedModificationNegative: ACTION_DERIVEDOTHERFACTIONS,
+ appLogConst.eventStandingDerivedModificationPositive: ACTION_DERIVEDOTHERFACTIONS,
+ appLogConst.eventStandingPirateKillSecurityStatus: ACTION_AGGRESSION,
+ appLogConst.eventStandingGroupRewardCorporation: ACTION_DUNGEONGROUPREWARD,
+ appLogConst.eventStandingGroupRewardFaction: ACTION_DUNGEONGROUPREWARD}
+ICONS_BY_ACTIONID = {ACTION_AGGRESSION: 'res:/UI/Texture/Classes/Standings/Actions/aggression.png',
+ ACTION_DERIVEDOTHERFACTIONS: 'res:/UI/Texture/Classes/Standings/Actions/derivedOtherFactions.png',
+ ACTION_DERIVEDAGENTINFACTION: 'res:/UI/Texture/Classes/Standings/Actions/derivedAgentInFaction.png',
+ ACTION_DERIVEDAGENTINCORP: 'res:/UI/Texture/Classes/Standings/Actions/derivedAgentInCorp.png',
+ ACTION_FACTIONALWARFARE: 'res:/UI/Texture/Classes/Standings/Actions/factionalWarfare.png',
+ ACTION_FAILREJECTMISSION: 'res:/UI/Texture/Classes/Standings/Actions/failRejectMission.png',
+ ACTION_SPECIALMISSIONSFACTION: 'res:/UI/Texture/Classes/Standings/Actions/specialMissionFaction.png',
+ ACTION_SPECIALMISSIONSCORP: 'res:/UI/Texture/Classes/Standings/Actions/specialMissionCorp.png',
+ ACTION_COMPLETEMISSION: 'res:/UI/Texture/Classes/Standings/Actions/completeMission.png',
+ ACTION_CONTRABAND: 'res:/UI/Texture/Classes/Standings/Actions/contraband.png',
+ ACTION_OTHER: 'res:/UI/Texture/Classes/Standings/Actions/other.png',
+ ACTION_TRAINSKILL: 'res:/UI/Texture/Classes/Standings/Actions/skill.png',
+ ACTION_DUNGEONGROUPREWARD: 'res:/UI/Texture/Classes/Standings/Actions/aggression.png'}
+LABELS_BY_ACTIONID = {ACTION_AGGRESSION: 'UI/Standings/Actions/AggressionHeader',
+ ACTION_DERIVEDOTHERFACTIONS: 'UI/Standings/Actions/DerivedHeader',
+ ACTION_DERIVEDAGENTINFACTION: 'UI/Standings/Actions/DerivedHeader',
+ ACTION_DERIVEDAGENTINCORP: 'UI/Standings/Actions/DerivedHeader',
+ ACTION_FACTIONALWARFARE: 'UI/Standings/Actions/FactionalWarfareHeader',
+ ACTION_FAILREJECTMISSION: 'UI/Standings/Actions/FailMissionHeader',
+ ACTION_SPECIALMISSIONSFACTION: 'UI/Standings/Actions/SpecialMissionHeader',
+ ACTION_SPECIALMISSIONSCORP: 'UI/Standings/Actions/SpecialMissionHeader',
+ ACTION_COMPLETEMISSION: 'UI/Standings/Actions/CompleteMissionHeader',
+ ACTION_CONTRABAND: 'UI/Standings/Actions/ContrabandHeader',
+ ACTION_DUNGEONGROUPREWARD: 'UI/Standings/Actions/GroupRewardHeader'}
+HINTS_BY_ACTIONID = {ACTION_AGGRESSION: 'UI/Standings/Actions/Aggression',
+ ACTION_DERIVEDOTHERFACTIONS: 'UI/Standings/Actions/DerivedOtherFactions',
+ ACTION_DERIVEDAGENTINFACTION: 'UI/Standings/Actions/DerivedAgentInFaction',
+ ACTION_DERIVEDAGENTINCORP: 'UI/Standings/Actions/DerivedAgentInCorp',
+ ACTION_FACTIONALWARFARE: 'UI/Standings/Actions/FactionalWarfare',
+ ACTION_FAILREJECTMISSION: 'UI/Standings/Actions/FailRejectMission',
+ ACTION_SPECIALMISSIONSFACTION: 'UI/Standings/Actions/SpecialMissionFaction',
+ ACTION_SPECIALMISSIONSCORP: 'UI/Standings/Actions/SpecialMissionCorp',
+ ACTION_COMPLETEMISSION: 'UI/Standings/Actions/CompleteMission',
+ ACTION_CONTRABAND: 'UI/Standings/Actions/Contraband',
+ ACTION_DUNGEONGROUPREWARD: 'UI/Standings/Actions/GroupReward'}
+ACTIONS_FACTION = (ACTION_TRAINSKILL,
+ ACTION_AGGRESSION,
+ ACTION_DERIVEDOTHERFACTIONS,
+ ACTION_DERIVEDAGENTINFACTION,
+ ACTION_SPECIALMISSIONSFACTION)
+ACTIONS_NPCCORPS = (ACTION_TRAINSKILL, ACTION_DERIVEDAGENTINCORP, ACTION_SPECIALMISSIONSCORP)
+ACTIONS_AGENTS = (ACTION_TRAINSKILL, ACTION_COMPLETEMISSION, ACTION_FAILREJECTMISSION)
+BENEFIT_REPROCESSINGTAX = 1
+BENEFIT_BROKERSFEE = 2
+BENEFITS_FACTION = (BENEFIT_BROKERSFEE, BENEFIT_REPROCESSINGTAX)
+BENEFITS_NPCCORP = (BENEFIT_BROKERSFEE, BENEFIT_REPROCESSINGTAX)
+ICONS_BY_BENEFITID = {BENEFIT_BROKERSFEE: 'res:/UI/Texture/Classes/Standings/Benefits/brokerFee.png',
+ BENEFIT_REPROCESSINGTAX: 'res:/UI/Texture/Classes/Standings/Benefits/reprocessingTax.png'}
+LABELS_BY_BENEFITID = {BENEFIT_BROKERSFEE: 'UI/Standings/Benefits/BrokersFeeHeader',
+ BENEFIT_REPROCESSINGTAX: 'UI/Standings/Benefits/ReprocessingTaxHeader'}
+HINTS_BY_BENEFITID = {BENEFIT_BROKERSFEE: 'UI/Standings/Benefits/BrokersFee',
+ BENEFIT_REPROCESSINGTAX: 'UI/Standings/Benefits/ReprocessingTax'}
+THRESHOLD_ATTACKEDINSPACE = 1
+THRESHOLD_NOACCESSTOAGENTS = 2
+THRESHOLD_EPICARCUNLOCK = 6
+THRESHOLD_FACTIONALWARFARE = 7
+THRESHOLD_AGENTSLVL2 = 9
+THRESHOLD_AGENTSLVL3 = 10
+THRESHOLD_AGENTSLVL4 = 11
+THRESHOLD_AGENTSLVL5 = 12
+THRESHOLD_AGENTOFFERSMISSIONS = 13
+THRESHOLD_NOACCESSTOAGENT = 14
+THRESHOLD_RESOURCEWARS_LVL2 = 15
+THRESHOLD_RESOURCEWARS_LVL3 = 16
+THRESHOLD_RESOURCEWARS_LVL4 = 17
+THRESHOLD_RESOURCEWARS_LVL5 = 18
+THRESHOLD_STATIONSERVICE = 19
+THRESHOLD_STATIONSERVICE_CORPORATION = 20
+THRESHOLD_VALUES_BY_THRESHOLDTYPE = {THRESHOLD_ATTACKEDINSPACE: -5.0,
+ THRESHOLD_NOACCESSTOAGENTS: -2.0,
+ THRESHOLD_NOACCESSTOAGENT: -2.0,
+ THRESHOLD_FACTIONALWARFARE: 0.0,
+ THRESHOLD_AGENTSLVL2: 1.0,
+ THRESHOLD_AGENTSLVL3: 3.0,
+ THRESHOLD_AGENTSLVL4: 5.0,
+ THRESHOLD_AGENTSLVL5: 7.0,
+ THRESHOLD_AGENTOFFERSMISSIONS: 0.0,
+ THRESHOLD_RESOURCEWARS_LVL2: 1.0,
+ THRESHOLD_RESOURCEWARS_LVL3: 3.0,
+ THRESHOLD_RESOURCEWARS_LVL4: 5.0,
+ THRESHOLD_RESOURCEWARS_LVL5: 7.0}
+AGENT_LEVEL_BY_THRESHOLD_ID = {THRESHOLD_NOACCESSTOAGENTS: 1,
+ THRESHOLD_AGENTSLVL2: 2,
+ THRESHOLD_AGENTSLVL3: 3,
+ THRESHOLD_AGENTSLVL4: 4,
+ THRESHOLD_AGENTSLVL5: 5}
+THRESHOLDS_ACTIVATE_AT_LESS_THAN = (THRESHOLD_ATTACKEDINSPACE, THRESHOLD_NOACCESSTOAGENTS, THRESHOLD_NOACCESSTOAGENT)
+ICONS_BY_THRESHOLDTYPEID = {THRESHOLD_ATTACKEDINSPACE: 'res:/UI/Texture/Classes/Standings/Thresholds/attackedInSpace.png',
+ THRESHOLD_NOACCESSTOAGENTS: 'res:/UI/Texture/Classes/Standings/Thresholds/noAccessToAgents.png',
+ THRESHOLD_NOACCESSTOAGENT: 'res:/UI/Texture/Classes/Standings/Thresholds/noAccessToAgents.png',
+ THRESHOLD_EPICARCUNLOCK: 'res:/UI/Texture/Classes/Standings/Thresholds/epicArc.png',
+ THRESHOLD_FACTIONALWARFARE: 'res:/UI/Texture/Classes/Standings/Thresholds/factionalWarfare.png',
+ THRESHOLD_AGENTSLVL2: 'res:/UI/Texture/Classes/Standings/Thresholds/agentsLvl2.png',
+ THRESHOLD_AGENTSLVL3: 'res:/UI/Texture/Classes/Standings/Thresholds/agentsLvl3.png',
+ THRESHOLD_AGENTSLVL4: 'res:/UI/Texture/Classes/Standings/Thresholds/agentsLvl4.png',
+ THRESHOLD_AGENTSLVL5: 'res:/UI/Texture/Classes/Standings/Thresholds/agentsLvl5.png',
+ THRESHOLD_AGENTOFFERSMISSIONS: 'res:/UI/Texture/Classes/Standings/Thresholds/agent.png',
+ THRESHOLD_RESOURCEWARS_LVL2: 'res:/UI/Texture/Classes/Standings/Thresholds/agencyLvl2.png',
+ THRESHOLD_RESOURCEWARS_LVL3: 'res:/UI/Texture/Classes/Standings/Thresholds/agencyLvl3.png',
+ THRESHOLD_RESOURCEWARS_LVL4: 'res:/UI/Texture/Classes/Standings/Thresholds/agencyLvl4.png',
+ THRESHOLD_RESOURCEWARS_LVL5: 'res:/UI/Texture/Classes/Standings/Thresholds/agencyLvl5.png',
+ THRESHOLD_STATIONSERVICE: 'res:/UI/Texture/WindowIcons/basicServices.png',
+ THRESHOLD_STATIONSERVICE_CORPORATION: 'res:/UI/Texture/WindowIcons/basicServices.png'}
+HINTS_BY_THRESHOLDTYPEID = {THRESHOLD_ATTACKEDINSPACE: 'UI/Standings/Thresholds/AttackedInSpace',
+ THRESHOLD_NOACCESSTOAGENTS: 'UI/Standings/Thresholds/NoAccessToAgents',
+ THRESHOLD_NOACCESSTOAGENT: 'UI/Standings/Thresholds/NoAccessToAgent',
+ THRESHOLD_EPICARCUNLOCK: 'UI/Standings/Thresholds/EpicArc',
+ THRESHOLD_FACTIONALWARFARE: 'UI/Standings/Thresholds/FactinalWarfare',
+ THRESHOLD_AGENTSLVL2: 'UI/Standings/Thresholds/AgentsLvl2',
+ THRESHOLD_AGENTSLVL3: 'UI/Standings/Thresholds/AgentsLvl3',
+ THRESHOLD_AGENTSLVL4: 'UI/Standings/Thresholds/AgentsLvl4',
+ THRESHOLD_AGENTSLVL5: 'UI/Standings/Thresholds/AgentsLvl5',
+ THRESHOLD_AGENTOFFERSMISSIONS: 'UI/Standings/Thresholds/Agent',
+ THRESHOLD_RESOURCEWARS_LVL2: 'UI/Standings/Thresholds/ResourceWarsLvl2',
+ THRESHOLD_RESOURCEWARS_LVL3: 'UI/Standings/Thresholds/ResourceWarsLvl3',
+ THRESHOLD_RESOURCEWARS_LVL4: 'UI/Standings/Thresholds/ResourceWarsLvl4',
+ THRESHOLD_RESOURCEWARS_LVL5: 'UI/Standings/Thresholds/ResourceWarsLvl5',
+ THRESHOLD_STATIONSERVICE: 'UI/Standings/Thresholds/StationServiceAccess',
+ THRESHOLD_STATIONSERVICE_CORPORATION: 'UI/Standings/Thresholds/StationServiceAccess'}
+LABELS_BY_THRESHOLDTYPEID = {THRESHOLD_ATTACKEDINSPACE: 'UI/Standings/Thresholds/AttackedInSpaceHeader',
+ THRESHOLD_NOACCESSTOAGENTS: 'UI/Standings/Thresholds/AgentsRestricted',
+ THRESHOLD_NOACCESSTOAGENT: 'UI/Standings/Thresholds/NoAccessHeader',
+ THRESHOLD_EPICARCUNLOCK: 'UI/Standings/Thresholds/EpicArcHeader',
+ THRESHOLD_FACTIONALWARFARE: 'UI/Standings/Thresholds/FactionalWarfareHeader',
+ THRESHOLD_AGENTSLVL2: 'UI/Standings/Thresholds/AgentLvl2Available',
+ THRESHOLD_AGENTSLVL3: 'UI/Standings/Thresholds/AgentLvl3Available',
+ THRESHOLD_AGENTSLVL4: 'UI/Standings/Thresholds/AgentLvl4Available',
+ THRESHOLD_AGENTSLVL5: 'UI/Standings/Thresholds/AgentLvl5Available',
+ THRESHOLD_AGENTOFFERSMISSIONS: 'UI/Standings/Thresholds/AgentAvailableHeader',
+ THRESHOLD_RESOURCEWARS_LVL2: 'UI/Standings/Thresholds/ResourceWarsLvl2Header',
+ THRESHOLD_RESOURCEWARS_LVL3: 'UI/Standings/Thresholds/ResourceWarsLvl3Header',
+ THRESHOLD_RESOURCEWARS_LVL4: 'UI/Standings/Thresholds/ResourceWarsLvl4Header',
+ THRESHOLD_RESOURCEWARS_LVL5: 'UI/Standings/Thresholds/ResourceWarsLvl5Header',
+ THRESHOLD_STATIONSERVICE: 'UI/Station/StationServices',
+ THRESHOLD_STATIONSERVICE_CORPORATION: 'UI/Station/StationServices'}
+THRESHOLDS_FACTION = (THRESHOLD_ATTACKEDINSPACE,)
+THRESHOLDS_FACTIONORCORPWITHAGENTS = (THRESHOLD_NOACCESSTOAGENTS,
+ THRESHOLD_AGENTSLVL2,
+ THRESHOLD_AGENTSLVL3,
+ THRESHOLD_AGENTSLVL4,
+ THRESHOLD_AGENTSLVL5)
+THRESHOLDS_RESOURCE_WARS = ()
+AGENT_KARDE_ROMU = 3019415
+AGENT_AURSA_KUNIVURI = 3019396
+AGENT_ROINERON_AVIVIERE = 3019412
+AGENT_ARSTEN_TAKALO = 3019411
+AGENT_ELLAR_STIN = 3019467
+AGENT_ATON_HORDNER = 3019465
+AGENT_ARAJNA_ASHIA = 3019466
+AGENT_ABDIEL_VERAT = 3019460
+AGENT_ARMENT_CAUTE = 3019463
+AGENT_ATMA_AULATO = 3019462
+AGENT_YADA_VINJIVAS = 3019464
+AGENT_KORI_LATMAKI = 3019457
+AGENT_SISTER_ALITURA = 3019356
+EPIC_ARC_STARTER_AGENTS = (AGENT_KARDE_ROMU,
+ AGENT_AURSA_KUNIVURI,
+ AGENT_ROINERON_AVIVIERE,
+ AGENT_ARSTEN_TAKALO,
+ AGENT_ELLAR_STIN,
+ AGENT_ATON_HORDNER,
+ AGENT_ARAJNA_ASHIA,
+ AGENT_ABDIEL_VERAT,
+ AGENT_ARMENT_CAUTE,
+ AGENT_ATMA_AULATO,
+ AGENT_YADA_VINJIVAS,
+ AGENT_KORI_LATMAKI,
+ AGENT_SISTER_ALITURA)

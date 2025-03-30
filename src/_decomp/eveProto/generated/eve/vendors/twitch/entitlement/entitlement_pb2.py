@@ -1,0 +1,27 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\vendors\twitch\entitlement\entitlement_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.id.federate.twitch import twitch_pb2 as eve_dot_id_dot_federate_dot_twitch_dot_twitch__pb2
+from google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/vendors/twitch/entitlement/entitlement.proto', package='eve.vendors.twitch.entitlement', syntax='proto3', serialized_options='ZIgithub.com/ccpgames/eve-proto-go/generated/eve/vendors/twitch/entitlement', create_key=_descriptor._internal_create_key, serialized_pb='\n0eve/vendors/twitch/entitlement/entitlement.proto\x12\x1eeve.vendors.twitch.entitlement\x1a#eve/id/federate/twitch/twitch.proto\x1a\x1fgoogle/protobuf/timestamp.proto"\x1a\n\nIdentifier\x12\x0c\n\x04uuid\x18\x01 \x01(\x0c"\xbd\x01\n\nAttributes\x12-\n\ttimestamp\x18\x01 \x01(\x0b2\x1a.google.protobuf.Timestamp\x122\n\x06twitch\x18\x02 \x01(\x0b2".eve.id.federate.twitch.Identifier\x12\x1a\n\x12fulfillment_status\x18\x03 \x01(\t\x120\n\x0clast_updated\x18\x04 \x01(\x0b2\x1a.google.protobuf.TimestampBKZIgithub.com/ccpgames/eve-proto-go/generated/eve/vendors/twitch/entitlementb\x06proto3', dependencies=[eve_dot_id_dot_federate_dot_twitch_dot_twitch__pb2.DESCRIPTOR, google_dot_protobuf_dot_timestamp__pb2.DESCRIPTOR])
+_IDENTIFIER = _descriptor.Descriptor(name='Identifier', full_name='eve.vendors.twitch.entitlement.Identifier', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='uuid', full_name='eve.vendors.twitch.entitlement.Identifier.uuid', index=0, number=1, type=12, cpp_type=9, label=1, has_default_value=False, default_value='', message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=154, serialized_end=180)
+_ATTRIBUTES = _descriptor.Descriptor(name='Attributes', full_name='eve.vendors.twitch.entitlement.Attributes', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='timestamp', full_name='eve.vendors.twitch.entitlement.Attributes.timestamp', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='twitch', full_name='eve.vendors.twitch.entitlement.Attributes.twitch', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='fulfillment_status', full_name='eve.vendors.twitch.entitlement.Attributes.fulfillment_status', index=2, number=3, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='last_updated', full_name='eve.vendors.twitch.entitlement.Attributes.last_updated', index=3, number=4, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=183, serialized_end=372)
+_ATTRIBUTES.fields_by_name['timestamp'].message_type = google_dot_protobuf_dot_timestamp__pb2._TIMESTAMP
+_ATTRIBUTES.fields_by_name['twitch'].message_type = eve_dot_id_dot_federate_dot_twitch_dot_twitch__pb2._IDENTIFIER
+_ATTRIBUTES.fields_by_name['last_updated'].message_type = google_dot_protobuf_dot_timestamp__pb2._TIMESTAMP
+DESCRIPTOR.message_types_by_name['Identifier'] = _IDENTIFIER
+DESCRIPTOR.message_types_by_name['Attributes'] = _ATTRIBUTES
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Identifier = _reflection.GeneratedProtocolMessageType('Identifier', (_message.Message,), {'DESCRIPTOR': _IDENTIFIER,
+ '__module__': 'eve.vendors.twitch.entitlement.entitlement_pb2'})
+_sym_db.RegisterMessage(Identifier)
+Attributes = _reflection.GeneratedProtocolMessageType('Attributes', (_message.Message,), {'DESCRIPTOR': _ATTRIBUTES,
+ '__module__': 'eve.vendors.twitch.entitlement.entitlement_pb2'})
+_sym_db.RegisterMessage(Attributes)
+DESCRIPTOR._options = None

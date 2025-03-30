@@ -1,0 +1,78 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\character\mail\label_pb2.py
+from google.protobuf.internal import enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.character import character_pb2 as eve_dot_character_dot_character__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/character/mail/label.proto', package='eve.character.mail.label', syntax='proto3', serialized_options='ZCgithub.com/ccpgames/eve-proto-go/generated/eve/character/mail/label', create_key=_descriptor._internal_create_key, serialized_pb='\n\x1eeve/character/mail/label.proto\x12\x18eve.character.mail.label\x1a\x1deve/character/character.proto" \n\nIdentifier\x12\x12\n\nsequential\x18\x01 \x01(\r")\n\nAttributes\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05color\x18\x02 \x01(\r"\x93\x01\n\x0eCharacterLabel\x126\n\x08label_id\x18\x01 \x01(\x0b2$.eve.character.mail.label.Identifier\x123\n\x05label\x18\x02 \x01(\x0b2$.eve.character.mail.label.Attributes\x12\x14\n\x0cunread_mails\x18\x03 \x01(\r"F\n\x16GetForCharacterRequest\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier"S\n\x17GetForCharacterResponse\x128\n\x06labels\x18\x01 \x03(\x0b2(.eve.character.mail.label.CharacterLabel"r\n\rCreateRequest\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier\x123\n\x05label\x18\x02 \x01(\x0b2$.eve.character.mail.label.Attributes"E\n\x0eCreateResponse\x123\n\x05label\x18\x01 \x01(\x0b2$.eve.character.mail.label.Identifier"r\n\rDeleteRequest\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier\x123\n\x05label\x18\x02 \x01(\x0b2$.eve.character.mail.label.Identifier"\x10\n\x0eDeleteResponse*I\n\x06System\x12\x0b\n\x07invalid\x10\x00\x12\t\n\x05inbox\x10\x01\x12\x08\n\x04sent\x10\x02\x12\x0f\n\x0bcorporation\x10\x04\x12\x0c\n\x08alliance\x10\x08BEZCgithub.com/ccpgames/eve-proto-go/generated/eve/character/mail/labelb\x06proto3', dependencies=[eve_dot_character_dot_character__pb2.DESCRIPTOR])
+_SYSTEM = _descriptor.EnumDescriptor(name='System', full_name='eve.character.mail.label.System', filename=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key, values=[_descriptor.EnumValueDescriptor(name='invalid', index=0, number=0, serialized_options=None, type=None, create_key=_descriptor._internal_create_key),
+ _descriptor.EnumValueDescriptor(name='inbox', index=1, number=1, serialized_options=None, type=None, create_key=_descriptor._internal_create_key),
+ _descriptor.EnumValueDescriptor(name='sent', index=2, number=2, serialized_options=None, type=None, create_key=_descriptor._internal_create_key),
+ _descriptor.EnumValueDescriptor(name='corporation', index=3, number=4, serialized_options=None, type=None, create_key=_descriptor._internal_create_key),
+ _descriptor.EnumValueDescriptor(name='alliance', index=4, number=8, serialized_options=None, type=None, create_key=_descriptor._internal_create_key)], containing_type=None, serialized_options=None, serialized_start=796, serialized_end=869)
+_sym_db.RegisterEnumDescriptor(_SYSTEM)
+System = enum_type_wrapper.EnumTypeWrapper(_SYSTEM)
+invalid = 0
+inbox = 1
+sent = 2
+corporation = 4
+alliance = 8
+_IDENTIFIER = _descriptor.Descriptor(name='Identifier', full_name='eve.character.mail.label.Identifier', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='sequential', full_name='eve.character.mail.label.Identifier.sequential', index=0, number=1, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=91, serialized_end=123)
+_ATTRIBUTES = _descriptor.Descriptor(name='Attributes', full_name='eve.character.mail.label.Attributes', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='name', full_name='eve.character.mail.label.Attributes.name', index=0, number=1, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='color', full_name='eve.character.mail.label.Attributes.color', index=1, number=2, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=125, serialized_end=166)
+_CHARACTERLABEL = _descriptor.Descriptor(name='CharacterLabel', full_name='eve.character.mail.label.CharacterLabel', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='label_id', full_name='eve.character.mail.label.CharacterLabel.label_id', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='label', full_name='eve.character.mail.label.CharacterLabel.label', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='unread_mails', full_name='eve.character.mail.label.CharacterLabel.unread_mails', index=2, number=3, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=169, serialized_end=316)
+_GETFORCHARACTERREQUEST = _descriptor.Descriptor(name='GetForCharacterRequest', full_name='eve.character.mail.label.GetForCharacterRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.character.mail.label.GetForCharacterRequest.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=318, serialized_end=388)
+_GETFORCHARACTERRESPONSE = _descriptor.Descriptor(name='GetForCharacterResponse', full_name='eve.character.mail.label.GetForCharacterResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='labels', full_name='eve.character.mail.label.GetForCharacterResponse.labels', index=0, number=1, type=11, cpp_type=10, label=3, has_default_value=False, default_value=[], message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=390, serialized_end=473)
+_CREATEREQUEST = _descriptor.Descriptor(name='CreateRequest', full_name='eve.character.mail.label.CreateRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.character.mail.label.CreateRequest.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='label', full_name='eve.character.mail.label.CreateRequest.label', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=475, serialized_end=589)
+_CREATERESPONSE = _descriptor.Descriptor(name='CreateResponse', full_name='eve.character.mail.label.CreateResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='label', full_name='eve.character.mail.label.CreateResponse.label', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=591, serialized_end=660)
+_DELETEREQUEST = _descriptor.Descriptor(name='DeleteRequest', full_name='eve.character.mail.label.DeleteRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.character.mail.label.DeleteRequest.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='label', full_name='eve.character.mail.label.DeleteRequest.label', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=662, serialized_end=776)
+_DELETERESPONSE = _descriptor.Descriptor(name='DeleteResponse', full_name='eve.character.mail.label.DeleteResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=778, serialized_end=794)
+_CHARACTERLABEL.fields_by_name['label_id'].message_type = _IDENTIFIER
+_CHARACTERLABEL.fields_by_name['label'].message_type = _ATTRIBUTES
+_GETFORCHARACTERREQUEST.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_GETFORCHARACTERRESPONSE.fields_by_name['labels'].message_type = _CHARACTERLABEL
+_CREATEREQUEST.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_CREATEREQUEST.fields_by_name['label'].message_type = _ATTRIBUTES
+_CREATERESPONSE.fields_by_name['label'].message_type = _IDENTIFIER
+_DELETEREQUEST.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_DELETEREQUEST.fields_by_name['label'].message_type = _IDENTIFIER
+DESCRIPTOR.message_types_by_name['Identifier'] = _IDENTIFIER
+DESCRIPTOR.message_types_by_name['Attributes'] = _ATTRIBUTES
+DESCRIPTOR.message_types_by_name['CharacterLabel'] = _CHARACTERLABEL
+DESCRIPTOR.message_types_by_name['GetForCharacterRequest'] = _GETFORCHARACTERREQUEST
+DESCRIPTOR.message_types_by_name['GetForCharacterResponse'] = _GETFORCHARACTERRESPONSE
+DESCRIPTOR.message_types_by_name['CreateRequest'] = _CREATEREQUEST
+DESCRIPTOR.message_types_by_name['CreateResponse'] = _CREATERESPONSE
+DESCRIPTOR.message_types_by_name['DeleteRequest'] = _DELETEREQUEST
+DESCRIPTOR.message_types_by_name['DeleteResponse'] = _DELETERESPONSE
+DESCRIPTOR.enum_types_by_name['System'] = _SYSTEM
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Identifier = _reflection.GeneratedProtocolMessageType('Identifier', (_message.Message,), {'DESCRIPTOR': _IDENTIFIER,
+ '__module__': 'eve.character.mail.label_pb2'})
+_sym_db.RegisterMessage(Identifier)
+Attributes = _reflection.GeneratedProtocolMessageType('Attributes', (_message.Message,), {'DESCRIPTOR': _ATTRIBUTES,
+ '__module__': 'eve.character.mail.label_pb2'})
+_sym_db.RegisterMessage(Attributes)
+CharacterLabel = _reflection.GeneratedProtocolMessageType('CharacterLabel', (_message.Message,), {'DESCRIPTOR': _CHARACTERLABEL,
+ '__module__': 'eve.character.mail.label_pb2'})
+_sym_db.RegisterMessage(CharacterLabel)
+GetForCharacterRequest = _reflection.GeneratedProtocolMessageType('GetForCharacterRequest', (_message.Message,), {'DESCRIPTOR': _GETFORCHARACTERREQUEST,
+ '__module__': 'eve.character.mail.label_pb2'})
+_sym_db.RegisterMessage(GetForCharacterRequest)
+GetForCharacterResponse = _reflection.GeneratedProtocolMessageType('GetForCharacterResponse', (_message.Message,), {'DESCRIPTOR': _GETFORCHARACTERRESPONSE,
+ '__module__': 'eve.character.mail.label_pb2'})
+_sym_db.RegisterMessage(GetForCharacterResponse)
+CreateRequest = _reflection.GeneratedProtocolMessageType('CreateRequest', (_message.Message,), {'DESCRIPTOR': _CREATEREQUEST,
+ '__module__': 'eve.character.mail.label_pb2'})
+_sym_db.RegisterMessage(CreateRequest)
+CreateResponse = _reflection.GeneratedProtocolMessageType('CreateResponse', (_message.Message,), {'DESCRIPTOR': _CREATERESPONSE,
+ '__module__': 'eve.character.mail.label_pb2'})
+_sym_db.RegisterMessage(CreateResponse)
+DeleteRequest = _reflection.GeneratedProtocolMessageType('DeleteRequest', (_message.Message,), {'DESCRIPTOR': _DELETEREQUEST,
+ '__module__': 'eve.character.mail.label_pb2'})
+_sym_db.RegisterMessage(DeleteRequest)
+DeleteResponse = _reflection.GeneratedProtocolMessageType('DeleteResponse', (_message.Message,), {'DESCRIPTOR': _DELETERESPONSE,
+ '__module__': 'eve.character.mail.label_pb2'})
+_sym_db.RegisterMessage(DeleteResponse)
+DESCRIPTOR._options = None

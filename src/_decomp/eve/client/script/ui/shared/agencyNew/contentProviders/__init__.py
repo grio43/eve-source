@@ -1,0 +1,55 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\eve\client\script\ui\shared\agencyNew\contentProviders\__init__.py
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderAgency import ContentProviderAgency
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderAgentFinder import ContentProviderAgentFinder
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderAsteroidBelts import ContentProviderAsteroidBelts
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderCareerAgents import ContentProviderCareerAgents
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderDistributionAgents import ContentProviderDistributionAgents
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderESS import ContentProviderESS
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderEpicArcs import ContentProviderEpicArcs
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderEscalations import ContentProviderEscalations
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderFactionWarfareAgents import ContentProviderFactionWarfareAgents
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderFactionalWarfareSystems import ContentProviderFactionalWarfareSystems
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderHelp import ContentProviderHelp
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderIceBelts import ContentProviderIceBelts
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderIncursions import ContentProviderIncursions
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderHeraldryAgents import ContentProviderHeraldryAgents
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderLocatorAgents import ContentProviderLocatorAgents
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderMiningAgents import ContentProviderMiningAgents
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderOreAnomalies import ContentProviderOreAnomalies
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderPirateInsurgenceSystems import ContentProviderPirateInsurgenceSystems
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderPirateStronghold import ContentProviderPirateStronghold
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderPlanetaryProductionSystems import ContentProviderPlanetaryProductionSystems
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderResearchAgents import ContentProviderResearchAgents
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderSecurityAgents import ContentProviderSecurityAgents
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderSignatures import ContentProviderSignatures
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderSites import ContentProviderSites
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderStorylineAgents import ContentProviderStorylineAgents
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderHomefrontSites import ContentProviderHomefrontSites
+from eve.client.script.ui.shared.agencyNew.contentProviders.contentProviderColonyResourcesAgency import ContentProviderColonyResourcesAgency
+contentProviders = [ContentProviderSites,
+ ContentProviderAgency,
+ ContentProviderSignatures,
+ ContentProviderEpicArcs,
+ ContentProviderAsteroidBelts,
+ ContentProviderEscalations,
+ ContentProviderIncursions,
+ ContentProviderFactionalWarfareSystems,
+ ContentProviderCareerAgents,
+ ContentProviderPirateStronghold,
+ ContentProviderStorylineAgents,
+ ContentProviderSecurityAgents,
+ ContentProviderDistributionAgents,
+ ContentProviderMiningAgents,
+ ContentProviderResearchAgents,
+ ContentProviderLocatorAgents,
+ ContentProviderIceBelts,
+ ContentProviderAgentFinder,
+ ContentProviderFactionWarfareAgents,
+ ContentProviderOreAnomalies,
+ ContentProviderPlanetaryProductionSystems,
+ ContentProviderESS,
+ ContentProviderHelp,
+ ContentProviderHeraldryAgents,
+ ContentProviderHomefrontSites,
+ ContentProviderPirateInsurgenceSystems,
+ ContentProviderColonyResourcesAgency]

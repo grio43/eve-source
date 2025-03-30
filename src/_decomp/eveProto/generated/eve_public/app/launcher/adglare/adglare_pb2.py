@@ -1,0 +1,26 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve_public\app\launcher\adglare\adglare_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve_public/app/launcher/adglare/adglare.proto', package='eve_public.app.launcher.adglare', syntax='proto3', serialized_options='ZJgithub.com/ccpgames/eve-proto-go/generated/eve_public/app/launcher/adglare', create_key=_descriptor._internal_create_key, serialized_pb='\n-eve_public/app/launcher/adglare/adglare.proto\x12\x1feve_public.app.launcher.adglare")\n\x12CreativeIdentifier\x12\x13\n\x0bcreative_id\x18\x01 \x01(\t")\n\x12CampaignIdentifier\x12\x13\n\x0bcampaign_id\x18\x01 \x01(\t"\x9e\x01\n\x08Creative\x12H\n\x0bcreative_id\x18\x01 \x01(\x0b23.eve_public.app.launcher.adglare.CreativeIdentifier\x12H\n\x0bcampaign_id\x18\x02 \x01(\x0b23.eve_public.app.launcher.adglare.CampaignIdentifierBLZJgithub.com/ccpgames/eve-proto-go/generated/eve_public/app/launcher/adglareb\x06proto3')
+_CREATIVEIDENTIFIER = _descriptor.Descriptor(name='CreativeIdentifier', full_name='eve_public.app.launcher.adglare.CreativeIdentifier', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='creative_id', full_name='eve_public.app.launcher.adglare.CreativeIdentifier.creative_id', index=0, number=1, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=82, serialized_end=123)
+_CAMPAIGNIDENTIFIER = _descriptor.Descriptor(name='CampaignIdentifier', full_name='eve_public.app.launcher.adglare.CampaignIdentifier', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='campaign_id', full_name='eve_public.app.launcher.adglare.CampaignIdentifier.campaign_id', index=0, number=1, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=125, serialized_end=166)
+_CREATIVE = _descriptor.Descriptor(name='Creative', full_name='eve_public.app.launcher.adglare.Creative', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='creative_id', full_name='eve_public.app.launcher.adglare.Creative.creative_id', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='campaign_id', full_name='eve_public.app.launcher.adglare.Creative.campaign_id', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=169, serialized_end=327)
+_CREATIVE.fields_by_name['creative_id'].message_type = _CREATIVEIDENTIFIER
+_CREATIVE.fields_by_name['campaign_id'].message_type = _CAMPAIGNIDENTIFIER
+DESCRIPTOR.message_types_by_name['CreativeIdentifier'] = _CREATIVEIDENTIFIER
+DESCRIPTOR.message_types_by_name['CampaignIdentifier'] = _CAMPAIGNIDENTIFIER
+DESCRIPTOR.message_types_by_name['Creative'] = _CREATIVE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+CreativeIdentifier = _reflection.GeneratedProtocolMessageType('CreativeIdentifier', (_message.Message,), {'DESCRIPTOR': _CREATIVEIDENTIFIER,
+ '__module__': 'eve_public.app.launcher.adglare.adglare_pb2'})
+_sym_db.RegisterMessage(CreativeIdentifier)
+CampaignIdentifier = _reflection.GeneratedProtocolMessageType('CampaignIdentifier', (_message.Message,), {'DESCRIPTOR': _CAMPAIGNIDENTIFIER,
+ '__module__': 'eve_public.app.launcher.adglare.adglare_pb2'})
+_sym_db.RegisterMessage(CampaignIdentifier)
+Creative = _reflection.GeneratedProtocolMessageType('Creative', (_message.Message,), {'DESCRIPTOR': _CREATIVE,
+ '__module__': 'eve_public.app.launcher.adglare.adglare_pb2'})
+_sym_db.RegisterMessage(Creative)
+DESCRIPTOR._options = None

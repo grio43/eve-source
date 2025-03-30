@@ -1,0 +1,22 @@
+{
+    "version": "1.0.0",
+    "libraries": {
+        "carbon_audio": "github.com/ccpgames/carbon-audio/v2.5.0-0-g24254aa",
+        "carbon_d3dinfo": "github.com/ccpgames/carbon-d3dinfo/v1.0.1-0-ge1fc939",
+        "carbon_db": "github.com/ccpgames/carbon-db/v1.0.0-0-g5219430",
+        "carbon_blue": "github.com/ccpgames/carbon-blue/v2.4.0-0-g64f317c",
+        "carbon_blueexposure": "github.com/ccpgames/carbon-blueexposure/v1.1.0-0-g1b7cb0c",
+        "carbon_destiny": "github.com/ccpgames/carbon-destiny/v2.1.0-0-g9af222d",
+        "carbon_exefile": "github.com/ccpgames/carbon-exefile/v3.0.0-0-gc4ebcba",
+        "carbon_exefileconsole": "github.com/ccpgames/carbon-exefileconsole/v1.0.0-0-g54c0c96",
+        "carbon_fsd": "github.com/ccpgames/carbon-fsd/v1.0.3-0-gca3219e",
+        "carbon_geo2": "github.com/ccpgames/carbon-geo2/v1.1.0-0-g71574e9",
+        "carbon_ime": "github.com/ccpgames/carbon-ime/v1.0.0-0-ga563d53",
+        "carbon_imagetools": "github.com/ccpgames/carbon-imagetools/v1.0.3-0-gcbbe9ac",
+        "carbon_localization": "github.com/ccpgames/carbon-localization/v1.0.0-0-g6f3bc99",
+        "carbon_pathfinder": "github.com/ccpgames/carbon-pathfinder/v1.1.1-0-g88498af",
+        "carbon_spacemouse": "github.com/ccpgames/carbon-spacemouse/v1.0.0-0-gb1c92b7",
+        "carbon_trinity": "github.com/ccpgames/carbon-trinity/v2.0.5-0-g5bf010de",
+        "carbon_videoplayer": "github.com/ccpgames/carbon-videoplayer/v1.0.1-0-g349eb80"
+    }
+}

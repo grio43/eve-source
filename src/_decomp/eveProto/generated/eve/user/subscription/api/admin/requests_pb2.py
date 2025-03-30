@@ -1,0 +1,37 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\user\subscription\api\admin\requests_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.quasar.admin import admin_pb2 as eve_dot_quasar_dot_admin_dot_admin__pb2
+from eveProto.generated.eve.user.subscription import subscription_pb2 as eve_dot_user_dot_subscription_dot_subscription__pb2
+from eveProto.generated.eve.user import user_pb2 as eve_dot_user_dot_user__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/user/subscription/api/admin/requests.proto', package='eve.user.subscription.api.admin', syntax='proto3', serialized_options='ZJgithub.com/ccpgames/eve-proto-go/generated/eve/user/subscription/api/admin', create_key=_descriptor._internal_create_key, serialized_pb='\n.eve/user/subscription/api/admin/requests.proto\x12\x1feve.user.subscription.api.admin\x1a\x1ceve/quasar/admin/admin.proto\x1a(eve/user/subscription/subscription.proto\x1a\x13eve/user/user.proto"\x98\x01\n\rCancelRequest\x12"\n\x04user\x18\x01 \x01(\x0b2\x14.eve.user.Identifier\x127\n\x0csubscription\x18\x02 \x01(\x0b2!.eve.user.subscription.Identifier\x12*\n\x07context\x18\x03 \x01(\x0b2\x19.eve.quasar.admin.Context"\x10\n\x0eCancelResponse"x\n\x11RescheduleRequest\x127\n\x0csubscription\x18\x01 \x01(\x0b2!.eve.user.subscription.Identifier\x12*\n\x07context\x18\x02 \x01(\x0b2\x19.eve.quasar.admin.Context"\x14\n\x12RescheduleResponseBLZJgithub.com/ccpgames/eve-proto-go/generated/eve/user/subscription/api/adminb\x06proto3', dependencies=[eve_dot_quasar_dot_admin_dot_admin__pb2.DESCRIPTOR, eve_dot_user_dot_subscription_dot_subscription__pb2.DESCRIPTOR, eve_dot_user_dot_user__pb2.DESCRIPTOR])
+_CANCELREQUEST = _descriptor.Descriptor(name='CancelRequest', full_name='eve.user.subscription.api.admin.CancelRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='user', full_name='eve.user.subscription.api.admin.CancelRequest.user', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='subscription', full_name='eve.user.subscription.api.admin.CancelRequest.subscription', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='context', full_name='eve.user.subscription.api.admin.CancelRequest.context', index=2, number=3, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=177, serialized_end=329)
+_CANCELRESPONSE = _descriptor.Descriptor(name='CancelResponse', full_name='eve.user.subscription.api.admin.CancelResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=331, serialized_end=347)
+_RESCHEDULEREQUEST = _descriptor.Descriptor(name='RescheduleRequest', full_name='eve.user.subscription.api.admin.RescheduleRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='subscription', full_name='eve.user.subscription.api.admin.RescheduleRequest.subscription', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='context', full_name='eve.user.subscription.api.admin.RescheduleRequest.context', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=349, serialized_end=469)
+_RESCHEDULERESPONSE = _descriptor.Descriptor(name='RescheduleResponse', full_name='eve.user.subscription.api.admin.RescheduleResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=471, serialized_end=491)
+_CANCELREQUEST.fields_by_name['user'].message_type = eve_dot_user_dot_user__pb2._IDENTIFIER
+_CANCELREQUEST.fields_by_name['subscription'].message_type = eve_dot_user_dot_subscription_dot_subscription__pb2._IDENTIFIER
+_CANCELREQUEST.fields_by_name['context'].message_type = eve_dot_quasar_dot_admin_dot_admin__pb2._CONTEXT
+_RESCHEDULEREQUEST.fields_by_name['subscription'].message_type = eve_dot_user_dot_subscription_dot_subscription__pb2._IDENTIFIER
+_RESCHEDULEREQUEST.fields_by_name['context'].message_type = eve_dot_quasar_dot_admin_dot_admin__pb2._CONTEXT
+DESCRIPTOR.message_types_by_name['CancelRequest'] = _CANCELREQUEST
+DESCRIPTOR.message_types_by_name['CancelResponse'] = _CANCELRESPONSE
+DESCRIPTOR.message_types_by_name['RescheduleRequest'] = _RESCHEDULEREQUEST
+DESCRIPTOR.message_types_by_name['RescheduleResponse'] = _RESCHEDULERESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+CancelRequest = _reflection.GeneratedProtocolMessageType('CancelRequest', (_message.Message,), {'DESCRIPTOR': _CANCELREQUEST,
+ '__module__': 'eve.user.subscription.api.admin.requests_pb2'})
+_sym_db.RegisterMessage(CancelRequest)
+CancelResponse = _reflection.GeneratedProtocolMessageType('CancelResponse', (_message.Message,), {'DESCRIPTOR': _CANCELRESPONSE,
+ '__module__': 'eve.user.subscription.api.admin.requests_pb2'})
+_sym_db.RegisterMessage(CancelResponse)
+RescheduleRequest = _reflection.GeneratedProtocolMessageType('RescheduleRequest', (_message.Message,), {'DESCRIPTOR': _RESCHEDULEREQUEST,
+ '__module__': 'eve.user.subscription.api.admin.requests_pb2'})
+_sym_db.RegisterMessage(RescheduleRequest)
+RescheduleResponse = _reflection.GeneratedProtocolMessageType('RescheduleResponse', (_message.Message,), {'DESCRIPTOR': _RESCHEDULERESPONSE,
+ '__module__': 'eve.user.subscription.api.admin.requests_pb2'})
+_sym_db.RegisterMessage(RescheduleResponse)
+DESCRIPTOR._options = None

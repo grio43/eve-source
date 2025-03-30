@@ -1,0 +1,15 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\cosmetics\client\ships\ship_skin_svc_signals.py
+from signals import Signal
+on_skin_state_set_internal = Signal()
+on_skin_state_set_all_in_bubble_internal = Signal()
+on_sequencing_started_internal = Signal()
+on_sequencing_failed_internal = Signal()
+on_sequencing_completed_internal = Signal()
+on_component_license_granted_internal = Signal('on_component_license_granted_internal')
+on_component_license_transaction_failed_internal = Signal('on_component_license_transaction_failed_internal')
+on_component_license_transaction_succeeded_internal = Signal('on_component_license_transaction_succeeded_internal')
+on_skin_license_added_internal = Signal('on_skin_license_added_internal')
+on_skin_license_updated_internal = Signal('on_skin_license_updated_internal')
+on_skin_license_deleted_internal = Signal('on_skin_license_deleted_internal')
+on_transaction_succeeded_internal = Signal('on_transaction_succeeded_internal')
+on_transaction_failed_internal = Signal('on_transaction_failed_internal')

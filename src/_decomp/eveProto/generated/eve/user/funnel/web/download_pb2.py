@@ -1,0 +1,21 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\user\funnel\web\download_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.user.funnel.web import context_pb2 as eve_dot_user_dot_funnel_dot_web_dot_context__pb2
+from eveProto.generated.eve.user import user_pb2 as eve_dot_user_dot_user__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/user/funnel/web/download.proto', package='eve.user.funnel.web.download', syntax='proto3', serialized_options='ZGgithub.com/ccpgames/eve-proto-go/generated/eve/user/funnel/web/download', create_key=_descriptor._internal_create_key, serialized_pb='\n"eve/user/funnel/web/download.proto\x12\x1ceve.user.funnel.web.download\x1a!eve/user/funnel/web/context.proto\x1a\x13eve/user/user.proto"\x9f\x01\n\x18InstallerDownloadStarted\x12-\n\x07context\x18\x01 \x01(\x0b2\x1c.eve.user.funnel.web.Context\x12\x10\n\x08platform\x18\x03 \x01(\t\x12\x18\n\x10operating_system\x18\x04 \x01(\t\x12"\n\x04user\x18\x05 \x01(\x0b2\x14.eve.user.IdentifierJ\x04\x08\x02\x10\x03BIZGgithub.com/ccpgames/eve-proto-go/generated/eve/user/funnel/web/downloadb\x06proto3', dependencies=[eve_dot_user_dot_funnel_dot_web_dot_context__pb2.DESCRIPTOR, eve_dot_user_dot_user__pb2.DESCRIPTOR])
+_INSTALLERDOWNLOADSTARTED = _descriptor.Descriptor(name='InstallerDownloadStarted', full_name='eve.user.funnel.web.download.InstallerDownloadStarted', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='context', full_name='eve.user.funnel.web.download.InstallerDownloadStarted.context', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='platform', full_name='eve.user.funnel.web.download.InstallerDownloadStarted.platform', index=1, number=3, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='operating_system', full_name='eve.user.funnel.web.download.InstallerDownloadStarted.operating_system', index=2, number=4, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='user', full_name='eve.user.funnel.web.download.InstallerDownloadStarted.user', index=3, number=5, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=125, serialized_end=284)
+_INSTALLERDOWNLOADSTARTED.fields_by_name['context'].message_type = eve_dot_user_dot_funnel_dot_web_dot_context__pb2._CONTEXT
+_INSTALLERDOWNLOADSTARTED.fields_by_name['user'].message_type = eve_dot_user_dot_user__pb2._IDENTIFIER
+DESCRIPTOR.message_types_by_name['InstallerDownloadStarted'] = _INSTALLERDOWNLOADSTARTED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+InstallerDownloadStarted = _reflection.GeneratedProtocolMessageType('InstallerDownloadStarted', (_message.Message,), {'DESCRIPTOR': _INSTALLERDOWNLOADSTARTED,
+ '__module__': 'eve.user.funnel.web.download_pb2'})
+_sym_db.RegisterMessage(InstallerDownloadStarted)
+DESCRIPTOR._options = None

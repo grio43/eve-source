@@ -1,0 +1,2 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\localizationcache\__init__.py
+from localizationcache.cache import SetRoot, SetCache, ResetCache, ResetStorage, GetMessage, GetMessageIDByLabel, GetAllMessageTexts, UpdateMessage, CreateMessage, CreateMessageID, DeleteMessage, GetVersion, Storage, Groups, Messages, GetGroupInfo, BatchUpdate, SaveGroup, LoadGroup, GetMessageWithDefault, GetGroupPath, AddGroup

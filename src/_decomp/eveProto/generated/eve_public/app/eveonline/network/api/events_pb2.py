@@ -1,0 +1,22 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve_public\app\eveonline\network\api\events_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve_public import public_pb2 as eve__public_dot_public__pb2
+from eveProto.generated.eve_public.user import user_pb2 as eve__public_dot_user_dot_user__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve_public/app/eveonline/network/api/events.proto', package='eve_public.app.eveonline.network.api', syntax='proto3', serialized_options='ZOgithub.com/ccpgames/eve-proto-go/generated/eve_public/app/eveonline/network/api', create_key=_descriptor._internal_create_key, serialized_pb='\n1eve_public/app/eveonline/network/api/events.proto\x12$eve_public.app.eveonline.network.api\x1a\x17eve_public/public.proto\x1a\x1aeve_public/user/user.proto"\x99\x01\n\x0eConnectionLost\x12)\n\x04user\x18\x01 \x01(\x0b2\x1b.eve_public.user.Identifier\x12\x0e\n\x06reason\x18\x02 \x01(\t\x12\x14\n\x0ccountry_code\x18\x03 \x01(\t\x12\x0b\n\x03asn\x18\x04 \x01(\r\x12)\n\nip_address\x18\x05 \x01(\x0b2\x15.eve_public.IPAddressBQZOgithub.com/ccpgames/eve-proto-go/generated/eve_public/app/eveonline/network/apib\x06proto3', dependencies=[eve__public_dot_public__pb2.DESCRIPTOR, eve__public_dot_user_dot_user__pb2.DESCRIPTOR])
+_CONNECTIONLOST = _descriptor.Descriptor(name='ConnectionLost', full_name='eve_public.app.eveonline.network.api.ConnectionLost', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='user', full_name='eve_public.app.eveonline.network.api.ConnectionLost.user', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='reason', full_name='eve_public.app.eveonline.network.api.ConnectionLost.reason', index=1, number=2, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='country_code', full_name='eve_public.app.eveonline.network.api.ConnectionLost.country_code', index=2, number=3, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='asn', full_name='eve_public.app.eveonline.network.api.ConnectionLost.asn', index=3, number=4, type=13, cpp_type=3, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='ip_address', full_name='eve_public.app.eveonline.network.api.ConnectionLost.ip_address', index=4, number=5, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=145, serialized_end=298)
+_CONNECTIONLOST.fields_by_name['user'].message_type = eve__public_dot_user_dot_user__pb2._IDENTIFIER
+_CONNECTIONLOST.fields_by_name['ip_address'].message_type = eve__public_dot_public__pb2._IPADDRESS
+DESCRIPTOR.message_types_by_name['ConnectionLost'] = _CONNECTIONLOST
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+ConnectionLost = _reflection.GeneratedProtocolMessageType('ConnectionLost', (_message.Message,), {'DESCRIPTOR': _CONNECTIONLOST,
+ '__module__': 'eve_public.app.eveonline.network.api.events_pb2'})
+_sym_db.RegisterMessage(ConnectionLost)
+DESCRIPTOR._options = None

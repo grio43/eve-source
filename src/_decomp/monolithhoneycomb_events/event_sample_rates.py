@@ -1,0 +1,28 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\monolithhoneycomb_events\event_sample_rates.py
+from monolithhoneycomb import SAFE_SAMPLE_RATE
+from events import *
+rates = {CHAT_CLIENT_CONNECTION_OBJECT_CREATED: 1000,
+ CHAT_CLIENT_HANDLE_CONNECTION_LOST: 1000,
+ CHAT_CLIENT_HANDLE_LOGGED_IN: 1000,
+ CHAT_CONNECTION_CREATED: 1000,
+ CHAT_CONNECTION_DELETED: 1000,
+ CHAT_CONNECTION_CONNECTED: 1000,
+ CHAT_CONNECTION_DISCONNECTED: 1000,
+ CHAT_MEMBERSHIP_DELTA_CALCULATED: 1000,
+ DESTINY_DO_DESTINY_UPDATE_NARROWCASTS: 10000,
+ DESTINY_DO_DESTINY_UPDATE_SINGLECASTS: 10000,
+ DESTINY_ADD_TO_USER_HISTORY: 1000,
+ DESTINY_ADD_TO_BUBBLE_HISTORY: 10000,
+ DESTINY_ADD_TO_SYSTEM_HISTORY: 100000,
+ DESTINY_UPDATE_SLIM_ITEM_FIELD_MULTI: 10000,
+ DESTINY_UPDATE_SLIM_ITEM_FIELD: 10000}
+
+def get(event_name):
+    global rates
+    return rates.get(event_name, SAFE_SAMPLE_RATE)
+
+
+def set(event_name, sample_rate):
+    if sample_rate < 1:
+        return
+    rates[event_name] = sample_rate

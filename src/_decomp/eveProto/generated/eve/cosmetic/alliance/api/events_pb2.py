@@ -1,0 +1,25 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\cosmetic\alliance\api\events_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.alliance import alliance_pb2 as eve_dot_alliance_dot_alliance__pb2
+from eveProto.generated.eve.character import character_pb2 as eve_dot_character_dot_character__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/cosmetic/alliance/api/events.proto', package='eve.cosmetic.alliance.api', syntax='proto3', serialized_options='ZDgithub.com/ccpgames/eve-proto-go/generated/eve/cosmetic/alliance/api', create_key=_descriptor._internal_create_key, serialized_pb='\n&eve/cosmetic/alliance/api/events.proto\x12\x19eve.cosmetic.alliance.api\x1a\x1beve/alliance/alliance.proto\x1a\x1deve/character/character.proto"k\n\x0fManagerPromoted\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier\x12*\n\x08alliance\x18\x02 \x01(\x0b2\x18.eve.alliance.Identifier"j\n\x0eManagerDemoted\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier\x12*\n\x08alliance\x18\x02 \x01(\x0b2\x18.eve.alliance.IdentifierBFZDgithub.com/ccpgames/eve-proto-go/generated/eve/cosmetic/alliance/apib\x06proto3', dependencies=[eve_dot_alliance_dot_alliance__pb2.DESCRIPTOR, eve_dot_character_dot_character__pb2.DESCRIPTOR])
+_MANAGERPROMOTED = _descriptor.Descriptor(name='ManagerPromoted', full_name='eve.cosmetic.alliance.api.ManagerPromoted', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.cosmetic.alliance.api.ManagerPromoted.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='alliance', full_name='eve.cosmetic.alliance.api.ManagerPromoted.alliance', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=129, serialized_end=236)
+_MANAGERDEMOTED = _descriptor.Descriptor(name='ManagerDemoted', full_name='eve.cosmetic.alliance.api.ManagerDemoted', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.cosmetic.alliance.api.ManagerDemoted.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='alliance', full_name='eve.cosmetic.alliance.api.ManagerDemoted.alliance', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=238, serialized_end=344)
+_MANAGERPROMOTED.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_MANAGERPROMOTED.fields_by_name['alliance'].message_type = eve_dot_alliance_dot_alliance__pb2._IDENTIFIER
+_MANAGERDEMOTED.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_MANAGERDEMOTED.fields_by_name['alliance'].message_type = eve_dot_alliance_dot_alliance__pb2._IDENTIFIER
+DESCRIPTOR.message_types_by_name['ManagerPromoted'] = _MANAGERPROMOTED
+DESCRIPTOR.message_types_by_name['ManagerDemoted'] = _MANAGERDEMOTED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+ManagerPromoted = _reflection.GeneratedProtocolMessageType('ManagerPromoted', (_message.Message,), {'DESCRIPTOR': _MANAGERPROMOTED,
+ '__module__': 'eve.cosmetic.alliance.api.events_pb2'})
+_sym_db.RegisterMessage(ManagerPromoted)
+ManagerDemoted = _reflection.GeneratedProtocolMessageType('ManagerDemoted', (_message.Message,), {'DESCRIPTOR': _MANAGERDEMOTED,
+ '__module__': 'eve.cosmetic.alliance.api.events_pb2'})
+_sym_db.RegisterMessage(ManagerDemoted)
+DESCRIPTOR._options = None

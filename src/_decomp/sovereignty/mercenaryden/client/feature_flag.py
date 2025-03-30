@@ -1,0 +1,4 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\sovereignty\mercenaryden\client\feature_flag.py
+from launchdarkly.client.featureflag import create_boolean_flag_check
+from sovereignty.mercenaryden.client.mercenary_den_signals import on_feature_version_changed
+is_contraband_mlp_version_enabled = create_boolean_flag_check(launchdarkly_key='contraband_mlp_version_enabled', fallback_value=False, on_flag_changed_callback=on_feature_version_changed)

@@ -1,0 +1,39 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\fleet\member_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.character import character_pb2 as eve_dot_character_dot_character__pb2
+from eveProto.generated.eve.fleet import fleet_pb2 as eve_dot_fleet_dot_fleet__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/fleet/member.proto', package='eve.fleet.member', syntax='proto3', serialized_options='Z;github.com/ccpgames/eve-proto-go/generated/eve/fleet/member', create_key=_descriptor._internal_create_key, serialized_pb='\n\x16eve/fleet/member.proto\x12\x10eve.fleet.member\x1a\x1deve/character/character.proto\x1a\x15eve/fleet/fleet.proto"Y\n\x06Joined\x12$\n\x05fleet\x18\x01 \x01(\x0b2\x15.eve.fleet.Identifier\x12)\n\x06member\x18\x02 \x01(\x0b2\x19.eve.character.Identifier"W\n\x04Left\x12$\n\x05fleet\x18\x01 \x01(\x0b2\x15.eve.fleet.Identifier\x12)\n\x06member\x18\x02 \x01(\x0b2\x19.eve.character.Identifier"Y\n\x06Kicked\x12$\n\x05fleet\x18\x01 \x01(\x0b2\x15.eve.fleet.Identifier\x12)\n\x06member\x18\x02 \x01(\x0b2\x19.eve.character.Identifier"_\n\x0cDisconnected\x12$\n\x05fleet\x18\x01 \x01(\x0b2\x15.eve.fleet.Identifier\x12)\n\x06member\x18\x02 \x01(\x0b2\x19.eve.character.IdentifierB=Z;github.com/ccpgames/eve-proto-go/generated/eve/fleet/memberb\x06proto3', dependencies=[eve_dot_character_dot_character__pb2.DESCRIPTOR, eve_dot_fleet_dot_fleet__pb2.DESCRIPTOR])
+_JOINED = _descriptor.Descriptor(name='Joined', full_name='eve.fleet.member.Joined', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='fleet', full_name='eve.fleet.member.Joined.fleet', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='member', full_name='eve.fleet.member.Joined.member', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=98, serialized_end=187)
+_LEFT = _descriptor.Descriptor(name='Left', full_name='eve.fleet.member.Left', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='fleet', full_name='eve.fleet.member.Left.fleet', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='member', full_name='eve.fleet.member.Left.member', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=189, serialized_end=276)
+_KICKED = _descriptor.Descriptor(name='Kicked', full_name='eve.fleet.member.Kicked', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='fleet', full_name='eve.fleet.member.Kicked.fleet', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='member', full_name='eve.fleet.member.Kicked.member', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=278, serialized_end=367)
+_DISCONNECTED = _descriptor.Descriptor(name='Disconnected', full_name='eve.fleet.member.Disconnected', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='fleet', full_name='eve.fleet.member.Disconnected.fleet', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='member', full_name='eve.fleet.member.Disconnected.member', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=369, serialized_end=464)
+_JOINED.fields_by_name['fleet'].message_type = eve_dot_fleet_dot_fleet__pb2._IDENTIFIER
+_JOINED.fields_by_name['member'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_LEFT.fields_by_name['fleet'].message_type = eve_dot_fleet_dot_fleet__pb2._IDENTIFIER
+_LEFT.fields_by_name['member'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_KICKED.fields_by_name['fleet'].message_type = eve_dot_fleet_dot_fleet__pb2._IDENTIFIER
+_KICKED.fields_by_name['member'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_DISCONNECTED.fields_by_name['fleet'].message_type = eve_dot_fleet_dot_fleet__pb2._IDENTIFIER
+_DISCONNECTED.fields_by_name['member'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+DESCRIPTOR.message_types_by_name['Joined'] = _JOINED
+DESCRIPTOR.message_types_by_name['Left'] = _LEFT
+DESCRIPTOR.message_types_by_name['Kicked'] = _KICKED
+DESCRIPTOR.message_types_by_name['Disconnected'] = _DISCONNECTED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Joined = _reflection.GeneratedProtocolMessageType('Joined', (_message.Message,), {'DESCRIPTOR': _JOINED,
+ '__module__': 'eve.fleet.member_pb2'})
+_sym_db.RegisterMessage(Joined)
+Left = _reflection.GeneratedProtocolMessageType('Left', (_message.Message,), {'DESCRIPTOR': _LEFT,
+ '__module__': 'eve.fleet.member_pb2'})
+_sym_db.RegisterMessage(Left)
+Kicked = _reflection.GeneratedProtocolMessageType('Kicked', (_message.Message,), {'DESCRIPTOR': _KICKED,
+ '__module__': 'eve.fleet.member_pb2'})
+_sym_db.RegisterMessage(Kicked)
+Disconnected = _reflection.GeneratedProtocolMessageType('Disconnected', (_message.Message,), {'DESCRIPTOR': _DISCONNECTED,
+ '__module__': 'eve.fleet.member_pb2'})
+_sym_db.RegisterMessage(Disconnected)
+DESCRIPTOR._options = None

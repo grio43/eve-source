@@ -1,0 +1,3 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\characterskills\const.py
+MAX_SKILL_LEVEL = 5
+SKILL_POINT_MULTIPLIER = 250

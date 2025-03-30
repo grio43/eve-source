@@ -1,0 +1,54 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\eve\client\script\ui\const\buttonConst.py
+import eveicon
+STATE_UNDOCK = 1
+STATE_DOCK = 2
+STATE_WARPTO = 3
+STATE_SETDESTINATION = 4
+STATE_STARTCONVERSATION = 5
+STATE_OPENPROBESCANNER = 6
+STATE_DESTINATIONSET = 7
+STATE_NONE = 8
+STATE_APPROACH = 9
+STATE_PREPARING_WARP = 10
+STATE_WARPING = 11
+STATE_UNDOCKING = 12
+STATE_APPROACHING = 13
+STATE_DOCKING = 14
+STATE_CLAIM_REWARDS = 15
+STATE_COMPLETEREFERRAL = 16
+STATE_READDETAILS = 17
+STATE_DROPITEMINMISSIONCONTAINER = 18
+BUTTON_LABEL_PATH_BY_STATE = {STATE_UNDOCK: 'UI/Neocom/UndockBtn',
+ STATE_DOCK: 'UI/Inflight/DockInStation',
+ STATE_WARPTO: 'UI/Inflight/WarpToBookmark',
+ STATE_SETDESTINATION: 'UI/Inflight/SetDestination',
+ STATE_DESTINATIONSET: 'UI/Inflight/DestinationSet',
+ STATE_APPROACH: 'UI/Inflight/ApproachObject',
+ STATE_PREPARING_WARP: 'UI/Inflight/Preparing',
+ STATE_WARPING: 'UI/Inflight/Warping',
+ STATE_UNDOCKING: 'UI/Station/AbortUndock',
+ STATE_STARTCONVERSATION: 'UI/Commands/StartConversation',
+ STATE_APPROACHING: 'UI/Inflight/Messages/ApproachingHeader',
+ STATE_DOCKING: 'UI/Inflight/Messages/Docking',
+ STATE_COMPLETEREFERRAL: 'UI/Commands/StartConversation',
+ STATE_READDETAILS: 'UI/Agents/Commands/ReadDetails',
+ STATE_DROPITEMINMISSIONCONTAINER: 'UI/Agents/Commands/OpenContainer'}
+BUTTON_TEXTURE_PATH_BY_STATE = {STATE_UNDOCK: 'res:/UI/Texture/Shared/actions/undock.png',
+ STATE_DOCK: eveicon.dock,
+ STATE_WARPTO: eveicon.warp_to,
+ STATE_SETDESTINATION: eveicon.set_destination,
+ STATE_DESTINATIONSET: eveicon.checkmark,
+ STATE_APPROACH: eveicon.approach,
+ STATE_STARTCONVERSATION: eveicon.start_conversation,
+ STATE_COMPLETEREFERRAL: eveicon.start_conversation,
+ STATE_READDETAILS: 'res:/UI/Texture/Icons/38_16_190.png',
+ STATE_DROPITEMINMISSIONCONTAINER: 'res:/UI/Texture/Shared/Brackets/containerCargoNPC.png'}
+ACTIVE_BUTTON_STATES = [STATE_PREPARING_WARP,
+ STATE_WARPING,
+ STATE_APPROACHING,
+ STATE_DOCKING,
+ STATE_UNDOCKING]
+BUTTON_DISABLED_STATES = [STATE_DESTINATIONSET,
+ STATE_WARPING,
+ STATE_DOCKING,
+ STATE_PREPARING_WARP]

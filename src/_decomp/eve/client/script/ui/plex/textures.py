@@ -1,0 +1,15 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\eve\client\script\ui\plex\textures.py
+PLEX_12_SOLID_WHITE = 'res:/UI/Texture/Plex/plex_12_solid_white.png'
+PLEX_20_SOLID_WHITE = 'res:/UI/Texture/Plex/plex_20_solid_white.png'
+PLEX_24_GRADIENT_YELLOW = 'res:/UI/Texture/Plex/plex_24_gradient_yellow.png'
+PLEX_24_SOLID_WHITE = 'res:/UI/Texture/Plex/plex_24_solid_white.png'
+PLEX_24_SOLID_YELLOW = 'res:/UI/Texture/Plex/plex_24_solid_yellow.png'
+PLEX_32_GRADIENT_YELLOW = 'res:/UI/Texture/Plex/plex_32_gradient_yellow.png'
+PLEX_32_SOLID_WHITE = 'res:/UI/Texture/Plex/plex_32_solid_white.png'
+PLEX_32_SOLID_YELLOW = 'res:/UI/Texture/Plex/plex_32_solid_yellow.png'
+PLEX_128_GRADIENT_WHITE = 'res:/UI/Texture/Plex/plex_128_gradient_white.png'
+PLEX_128_GRADIENT_YELLOW = 'res:/UI/Texture/Plex/plex_128_gradient_yellow.png'
+PLEX_128_SOLID_WHITE = 'res:/UI/Texture/Plex/plex_128_solid_white.png'
+PLEX_128_SOLID_YELLOW = 'res:/UI/Texture/Plex/plex_128_solid_yellow.png'
+PLEX_SLOT = 'res:/UI/Texture/classes/PlexVault/plexSlot.png'
+PLEX_WINDOW_ICON = PLEX_128_GRADIENT_WHITE

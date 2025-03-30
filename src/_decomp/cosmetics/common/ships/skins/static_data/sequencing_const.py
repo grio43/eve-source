@@ -1,0 +1,55 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\cosmetics\common\ships\skins\static_data\sequencing_const.py
+from eve.common.lib import appConst
+max_runs_default = 1
+max_runs_skills = (appConst.typeBatchSequencing, appConst.typeMassSequencing, appConst.typeIndustrialSequencing)
+max_runs_added_by_skill_and_level = {max_runs_skills[0]: {1: 4,
+                      2: 5,
+                      3: 10,
+                      4: 10,
+                      5: 20},
+ max_runs_skills[1]: {1: 25,
+                      2: 25,
+                      3: 50,
+                      4: 50,
+                      5: 100},
+ max_runs_skills[2]: {1: 200,
+                      2: 250,
+                      3: 250,
+                      4: 1000,
+                      5: 3000}}
+max_concurrent_jobs_default = 1
+max_concurrent_jobs_skills = (appConst.typeParallelSequencing, appConst.typeMultiThreadSequencing)
+max_concurrent_jobs_added_by_skill_and_level = {max_concurrent_jobs_skills[0]: {1: 1,
+                                 2: 2,
+                                 3: 2,
+                                 4: 2,
+                                 5: 2},
+ max_concurrent_jobs_skills[1]: {1: 2,
+                                 2: 2,
+                                 3: 2,
+                                 4: 2,
+                                 5: 2}}
+sequencing_time_bonus_skills = (appConst.typeBasicInduction,
+ appConst.typeInductionEfficiency,
+ appConst.typeAdvancedInductionEfficiency,
+ appConst.typePeakInductionAcceleration)
+sequencing_time_bonus_by_skill_and_level = {sequencing_time_bonus_skills[0]: {1: 0.01,
+                                   2: 0.02,
+                                   3: 0.03,
+                                   4: 0.04,
+                                   5: 0.05},
+ sequencing_time_bonus_skills[1]: {1: 0.01,
+                                   2: 0.02,
+                                   3: 0.03,
+                                   4: 0.04,
+                                   5: 0.05},
+ sequencing_time_bonus_skills[2]: {1: 0.01,
+                                   2: 0.02,
+                                   3: 0.03,
+                                   4: 0.04,
+                                   5: 0.05},
+ sequencing_time_bonus_skills[3]: {1: 0.01,
+                                   2: 0.02,
+                                   3: 0.03,
+                                   4: 0.04,
+                                   5: 0.05}}

@@ -1,0 +1,25 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\entitlement\user\entitlement_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.user import user_pb2 as eve_dot_user_dot_user__pb2
+from google.protobuf import duration_pb2 as google_dot_protobuf_dot_duration__pb2
+from google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/entitlement/user/entitlement.proto', package='eve.entitlement.user', syntax='proto3', serialized_options='Z?github.com/ccpgames/eve-proto-go/generated/eve/entitlement/user', create_key=_descriptor._internal_create_key, serialized_pb='\n&eve/entitlement/user/entitlement.proto\x12\x14eve.entitlement.user\x1a\x13eve/user/user.proto\x1a\x1egoogle/protobuf/duration.proto\x1a\x1fgoogle/protobuf/timestamp.proto"\xdd\x01\n\x0bEntitlement\x12\x1a\n\x12ccp_fulfillment_id\x18\x01 \x01(\t\x12"\n\x04user\x18\x02 \x01(\x0b2\x14.eve.user.Identifier\x12\x18\n\x10entitlement_name\x18\x03 \x01(\t\x12.\n\x0btime_to_add\x18\x04 \x01(\x0b2\x19.google.protobuf.Duration\x12/\n\x0bexpiry_date\x18\x05 \x01(\x0b2\x1a.google.protobuf.Timestamp\x12\x13\n\x0bdescription\x18\x06 \x01(\tBAZ?github.com/ccpgames/eve-proto-go/generated/eve/entitlement/userb\x06proto3', dependencies=[eve_dot_user_dot_user__pb2.DESCRIPTOR, google_dot_protobuf_dot_duration__pb2.DESCRIPTOR, google_dot_protobuf_dot_timestamp__pb2.DESCRIPTOR])
+_ENTITLEMENT = _descriptor.Descriptor(name='Entitlement', full_name='eve.entitlement.user.Entitlement', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='ccp_fulfillment_id', full_name='eve.entitlement.user.Entitlement.ccp_fulfillment_id', index=0, number=1, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='user', full_name='eve.entitlement.user.Entitlement.user', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='entitlement_name', full_name='eve.entitlement.user.Entitlement.entitlement_name', index=2, number=3, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='time_to_add', full_name='eve.entitlement.user.Entitlement.time_to_add', index=3, number=4, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='expiry_date', full_name='eve.entitlement.user.Entitlement.expiry_date', index=4, number=5, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='description', full_name='eve.entitlement.user.Entitlement.description', index=5, number=6, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=151, serialized_end=372)
+_ENTITLEMENT.fields_by_name['user'].message_type = eve_dot_user_dot_user__pb2._IDENTIFIER
+_ENTITLEMENT.fields_by_name['time_to_add'].message_type = google_dot_protobuf_dot_duration__pb2._DURATION
+_ENTITLEMENT.fields_by_name['expiry_date'].message_type = google_dot_protobuf_dot_timestamp__pb2._TIMESTAMP
+DESCRIPTOR.message_types_by_name['Entitlement'] = _ENTITLEMENT
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Entitlement = _reflection.GeneratedProtocolMessageType('Entitlement', (_message.Message,), {'DESCRIPTOR': _ENTITLEMENT,
+ '__module__': 'eve.entitlement.user.entitlement_pb2'})
+_sym_db.RegisterMessage(Entitlement)
+DESCRIPTOR._options = None

@@ -1,0 +1,7 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\cosmetics\client\ships\feature_flag.py
+from cosmetics.client.ships import ship_skin_signals
+from launchdarkly.client.featureflag import create_boolean_flag_check, create_integer_flag_check
+is_ship_skinr_feature_enabled = create_boolean_flag_check(launchdarkly_key='client-ship-skinr-feature-enabled', fallback_value=True, on_flag_changed_callback=ship_skin_signals.on_ship_skinr_feature_availability_changed)
+are_skin_hub_offers_enabled = create_boolean_flag_check(launchdarkly_key='skin_hub_offers_enabled', fallback_value=True, on_flag_changed_callback=ship_skin_signals.on_skin_hub_offers_availability_changed)
+are_st_patrick_component_listings_available = create_boolean_flag_check(launchdarkly_key='heraldry_st_patrick_hub_component_offers', fallback_value=False, on_flag_changed_callback=ship_skin_signals.on_are_st_patrick_component_listings_available_changed)
+ship_skin_sequencing_cost_discount = create_integer_flag_check(launchdarkly_key='skinr_sequencing_cost_discount', fallback_value=0, on_flag_changed_callback=ship_skin_signals.on_ship_skin_sequencing_cost_discount_changed)

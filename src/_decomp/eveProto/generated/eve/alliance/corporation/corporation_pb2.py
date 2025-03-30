@@ -1,0 +1,43 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\alliance\corporation\corporation_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.alliance import alliance_pb2 as eve_dot_alliance_dot_alliance__pb2
+from eveProto.generated.eve.corporation import corporation_pb2 as eve_dot_corporation_dot_corporation__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/alliance/corporation/corporation.proto', package='eve.alliance.corporation', syntax='proto3', serialized_options='ZCgithub.com/ccpgames/eve-proto-go/generated/eve/alliance/corporation', create_key=_descriptor._internal_create_key, serialized_pb='\n*eve/alliance/corporation/corporation.proto\x12\x18eve.alliance.corporation\x1a\x1beve/alliance/alliance.proto\x1a!eve/corporation/corporation.proto"\xe5\x01\n\x11AllegianceChanged\x123\n\x0ecorporation_id\x18\x01 \x01(\x0b2\x1b.eve.corporation.Identifier\x120\n\x0cold_alliance\x18\x02 \x01(\x0b2\x18.eve.alliance.IdentifierH\x00\x12\x13\n\tjoin_only\x18\x04 \x01(\x08H\x00\x120\n\x0cnew_alliance\x18\x03 \x01(\x0b2\x18.eve.alliance.IdentifierH\x01\x12\x14\n\nleave_only\x18\x05 \x01(\x08H\x01B\x05\n\x03oldB\x05\n\x03new"B\n\x11GetMembersRequest\x12-\n\x0balliance_id\x18\x01 \x01(\x0b2\x18.eve.alliance.Identifier"J\n\x12GetMembersResponse\x124\n\x0fcorporation_ids\x18\x01 \x03(\x0b2\x1b.eve.corporation.IdentifierBEZCgithub.com/ccpgames/eve-proto-go/generated/eve/alliance/corporationb\x06proto3', dependencies=[eve_dot_alliance_dot_alliance__pb2.DESCRIPTOR, eve_dot_corporation_dot_corporation__pb2.DESCRIPTOR])
+_ALLEGIANCECHANGED = _descriptor.Descriptor(name='AllegianceChanged', full_name='eve.alliance.corporation.AllegianceChanged', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='corporation_id', full_name='eve.alliance.corporation.AllegianceChanged.corporation_id', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='old_alliance', full_name='eve.alliance.corporation.AllegianceChanged.old_alliance', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='join_only', full_name='eve.alliance.corporation.AllegianceChanged.join_only', index=2, number=4, type=8, cpp_type=7, label=1, has_default_value=False, default_value=False, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='new_alliance', full_name='eve.alliance.corporation.AllegianceChanged.new_alliance', index=3, number=3, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key),
+ _descriptor.FieldDescriptor(name='leave_only', full_name='eve.alliance.corporation.AllegianceChanged.leave_only', index=4, number=5, type=8, cpp_type=7, label=1, has_default_value=False, default_value=False, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[_descriptor.OneofDescriptor(name='old', full_name='eve.alliance.corporation.AllegianceChanged.old', index=0, containing_type=None, create_key=_descriptor._internal_create_key, fields=[]), _descriptor.OneofDescriptor(name='new', full_name='eve.alliance.corporation.AllegianceChanged.new', index=1, containing_type=None, create_key=_descriptor._internal_create_key, fields=[])], serialized_start=137, serialized_end=366)
+_GETMEMBERSREQUEST = _descriptor.Descriptor(name='GetMembersRequest', full_name='eve.alliance.corporation.GetMembersRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='alliance_id', full_name='eve.alliance.corporation.GetMembersRequest.alliance_id', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=368, serialized_end=434)
+_GETMEMBERSRESPONSE = _descriptor.Descriptor(name='GetMembersResponse', full_name='eve.alliance.corporation.GetMembersResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='corporation_ids', full_name='eve.alliance.corporation.GetMembersResponse.corporation_ids', index=0, number=1, type=11, cpp_type=10, label=3, has_default_value=False, default_value=[], message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=436, serialized_end=510)
+_ALLEGIANCECHANGED.fields_by_name['corporation_id'].message_type = eve_dot_corporation_dot_corporation__pb2._IDENTIFIER
+_ALLEGIANCECHANGED.fields_by_name['old_alliance'].message_type = eve_dot_alliance_dot_alliance__pb2._IDENTIFIER
+_ALLEGIANCECHANGED.fields_by_name['new_alliance'].message_type = eve_dot_alliance_dot_alliance__pb2._IDENTIFIER
+_ALLEGIANCECHANGED.oneofs_by_name['old'].fields.append(_ALLEGIANCECHANGED.fields_by_name['old_alliance'])
+_ALLEGIANCECHANGED.fields_by_name['old_alliance'].containing_oneof = _ALLEGIANCECHANGED.oneofs_by_name['old']
+_ALLEGIANCECHANGED.oneofs_by_name['old'].fields.append(_ALLEGIANCECHANGED.fields_by_name['join_only'])
+_ALLEGIANCECHANGED.fields_by_name['join_only'].containing_oneof = _ALLEGIANCECHANGED.oneofs_by_name['old']
+_ALLEGIANCECHANGED.oneofs_by_name['new'].fields.append(_ALLEGIANCECHANGED.fields_by_name['new_alliance'])
+_ALLEGIANCECHANGED.fields_by_name['new_alliance'].containing_oneof = _ALLEGIANCECHANGED.oneofs_by_name['new']
+_ALLEGIANCECHANGED.oneofs_by_name['new'].fields.append(_ALLEGIANCECHANGED.fields_by_name['leave_only'])
+_ALLEGIANCECHANGED.fields_by_name['leave_only'].containing_oneof = _ALLEGIANCECHANGED.oneofs_by_name['new']
+_GETMEMBERSREQUEST.fields_by_name['alliance_id'].message_type = eve_dot_alliance_dot_alliance__pb2._IDENTIFIER
+_GETMEMBERSRESPONSE.fields_by_name['corporation_ids'].message_type = eve_dot_corporation_dot_corporation__pb2._IDENTIFIER
+DESCRIPTOR.message_types_by_name['AllegianceChanged'] = _ALLEGIANCECHANGED
+DESCRIPTOR.message_types_by_name['GetMembersRequest'] = _GETMEMBERSREQUEST
+DESCRIPTOR.message_types_by_name['GetMembersResponse'] = _GETMEMBERSRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+AllegianceChanged = _reflection.GeneratedProtocolMessageType('AllegianceChanged', (_message.Message,), {'DESCRIPTOR': _ALLEGIANCECHANGED,
+ '__module__': 'eve.alliance.corporation.corporation_pb2'})
+_sym_db.RegisterMessage(AllegianceChanged)
+GetMembersRequest = _reflection.GeneratedProtocolMessageType('GetMembersRequest', (_message.Message,), {'DESCRIPTOR': _GETMEMBERSREQUEST,
+ '__module__': 'eve.alliance.corporation.corporation_pb2'})
+_sym_db.RegisterMessage(GetMembersRequest)
+GetMembersResponse = _reflection.GeneratedProtocolMessageType('GetMembersResponse', (_message.Message,), {'DESCRIPTOR': _GETMEMBERSRESPONSE,
+ '__module__': 'eve.alliance.corporation.corporation_pb2'})
+_sym_db.RegisterMessage(GetMembersResponse)
+DESCRIPTOR._options = None

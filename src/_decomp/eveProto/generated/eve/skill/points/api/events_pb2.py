@@ -1,0 +1,18 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\skill\points\api\events_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.character import character_pb2 as eve_dot_character_dot_character__pb2
+from eveProto.generated.eve.skill.points import transaction_pb2 as eve_dot_skill_dot_points_dot_transaction__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/skill/points/api/events.proto', package='eve.skill.points.api', syntax='proto3', serialized_options='Z?github.com/ccpgames/eve-proto-go/generated/eve/skill/points/api', create_key=_descriptor._internal_create_key, serialized_pb='\n!eve/skill/points/api/events.proto\x12\x14eve.skill.points.api\x1a\x1deve/character/character.proto\x1a"eve/skill/points/transaction.proto"\x8b\x01\n\x0eGrantCommanded\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier\x12\x0e\n\x06amount\x18\x02 \x01(\x04\x12;\n\x10transaction_type\x18\x03 \x01(\x0e2!.eve.skill.points.TransactionTypeBAZ?github.com/ccpgames/eve-proto-go/generated/eve/skill/points/apib\x06proto3', dependencies=[eve_dot_character_dot_character__pb2.DESCRIPTOR, eve_dot_skill_dot_points_dot_transaction__pb2.DESCRIPTOR])
+_GRANTCOMMANDED = _descriptor.Descriptor(name='GrantCommanded', full_name='eve.skill.points.api.GrantCommanded', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.skill.points.api.GrantCommanded.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='amount', full_name='eve.skill.points.api.GrantCommanded.amount', index=1, number=2, type=4, cpp_type=4, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='transaction_type', full_name='eve.skill.points.api.GrantCommanded.transaction_type', index=2, number=3, type=14, cpp_type=8, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=127, serialized_end=266)
+_GRANTCOMMANDED.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_GRANTCOMMANDED.fields_by_name['transaction_type'].enum_type = eve_dot_skill_dot_points_dot_transaction__pb2._TRANSACTIONTYPE
+DESCRIPTOR.message_types_by_name['GrantCommanded'] = _GRANTCOMMANDED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+GrantCommanded = _reflection.GeneratedProtocolMessageType('GrantCommanded', (_message.Message,), {'DESCRIPTOR': _GRANTCOMMANDED,
+ '__module__': 'eve.skill.points.api.events_pb2'})
+_sym_db.RegisterMessage(GrantCommanded)
+DESCRIPTOR._options = None

@@ -1,0 +1,27 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\fastcheckout\const.py
+BUTTON_COLOR = (0.788, 0.894, 1, 0.25)
+WINDOW_COLOR = (0.102, 0.141, 0.168, 1)
+OFFER_ENTRY_COLOR = (0.102, 0.141, 0.168, 0.65)
+PASSWORD_BOX_COLOR = (0.173, 0.192, 0.207, 1)
+TEXT_BOX_COLOR = (0.102, 0.141, 0.168, 0.5)
+FRAME_COLOR = (0.192, 0.255, 0.309, 1)
+GOLD_COLOR = (0.996, 0.647, 0.0, 1.0)
+BACKGROUND_IMAGE_PATH = 'res:/UI/Texture/classes/FastCheckout/background.png'
+PLEX_ICON_PATH = 'res:/UI/Texture/classes/FastCheckout/PLEX_SALE_ICON_37x29.png'
+OFFER_ENTRY_WIDTH = 130
+FULL_WINDOW_WIDTH = 1000
+MEDIUM_WINDOW_WIDTH = 900
+SMALL_WINDOW_WIDTH = 750
+FULL_WINDOW_HEIGHT = 484
+OFFER_ENTRY_PADDING = 10
+FROM_OFFER_WINDOW = 'offerWindow'
+FROM_INFO_WINDOW = 'InfoWindow'
+FROM_MARKET_WINDOW = 'Market_MarketWindow'
+FROM_PLEX_MARKET_GROUP = 'Market_PlexMarketGroup'
+FROM_CHARACTER_SHEET = 'CharacterSheet'
+FROM_PLEX_VAULT = 'PlexVault'
+FROM_WALLET_BUY_PLEX = 'Wallet_BuyPlex'
+FROM_WALLET_PLUS_BUTTON = 'Wallet_+'
+FROM_NES_PRODUCT = 'NewEdenStore_Product'
+FROM_NES_HEADER = 'NewEdenStore_Header'
+FROM_BUY_MISSING_PLEX_WND = 'BuyMissingPlexWindow'

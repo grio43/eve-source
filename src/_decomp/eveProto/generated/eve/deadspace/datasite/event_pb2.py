@@ -1,0 +1,21 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\deadspace\datasite\event_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.character import character_pb2 as eve_dot_character_dot_character__pb2
+from eveProto.generated.eve.deadspace import archetype_pb2 as eve_dot_deadspace_dot_archetype__pb2
+from eveProto.generated.eve.deadspace.datasite import data_site_pb2 as eve_dot_deadspace_dot_datasite_dot_data__site__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/deadspace/datasite/event.proto', package='eve.deadspace.datasite.event', syntax='proto3', serialized_options='ZGgithub.com/ccpgames/eve-proto-go/generated/eve/deadspace/datasite/event', create_key=_descriptor._internal_create_key, serialized_pb='\n"eve/deadspace/datasite/event.proto\x12\x1ceve.deadspace.datasite.event\x1a\x1deve/character/character.proto\x1a\x1deve/deadspace/archetype.proto\x1a&eve/deadspace/datasite/data_site.proto"\xbb\x01\n\x12CharacterCompleted\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier\x12?\n\x0fsite_attributes\x18\x02 \x01(\x0b2".eve.deadspace.datasite.AttributesB\x02\x18\x01\x126\n\tarchetype\x18\x03 \x01(\x0b2#.eve.deadspace.archetype.IdentifierBIZGgithub.com/ccpgames/eve-proto-go/generated/eve/deadspace/datasite/eventb\x06proto3', dependencies=[eve_dot_character_dot_character__pb2.DESCRIPTOR, eve_dot_deadspace_dot_archetype__pb2.DESCRIPTOR, eve_dot_deadspace_dot_datasite_dot_data__site__pb2.DESCRIPTOR])
+_CHARACTERCOMPLETED = _descriptor.Descriptor(name='CharacterCompleted', full_name='eve.deadspace.datasite.event.CharacterCompleted', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.deadspace.datasite.event.CharacterCompleted.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='site_attributes', full_name='eve.deadspace.datasite.event.CharacterCompleted.site_attributes', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options='\x18\x01', file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='archetype', full_name='eve.deadspace.datasite.event.CharacterCompleted.archetype', index=2, number=3, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=171, serialized_end=358)
+_CHARACTERCOMPLETED.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_CHARACTERCOMPLETED.fields_by_name['site_attributes'].message_type = eve_dot_deadspace_dot_datasite_dot_data__site__pb2._ATTRIBUTES
+_CHARACTERCOMPLETED.fields_by_name['archetype'].message_type = eve_dot_deadspace_dot_archetype__pb2._IDENTIFIER
+DESCRIPTOR.message_types_by_name['CharacterCompleted'] = _CHARACTERCOMPLETED
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+CharacterCompleted = _reflection.GeneratedProtocolMessageType('CharacterCompleted', (_message.Message,), {'DESCRIPTOR': _CHARACTERCOMPLETED,
+ '__module__': 'eve.deadspace.datasite.event_pb2'})
+_sym_db.RegisterMessage(CharacterCompleted)
+DESCRIPTOR._options = None
+_CHARACTERCOMPLETED.fields_by_name['site_attributes']._options = None

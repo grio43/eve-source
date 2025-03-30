@@ -1,0 +1,10 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\evefleet\fleetSetupConst.py
+FS_NAME = 'setupName'
+FS_MOTD = 'motd'
+FS_IS_FREE_MOVE = 'isFreeMove'
+FS_DEFAULT_SQUAD = 'defaultSquad'
+FS_MAX_SIZE = 'maxFleetSize'
+FS_WINGS_INFO = 'wingsInfo'
+FS_WING_NAME = 'wingName'
+FS_SQUAD_NAMES = 'squadNames'
+FS_WING_IDX = 'wingIdx'

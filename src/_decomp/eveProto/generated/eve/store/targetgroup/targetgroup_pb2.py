@@ -1,0 +1,21 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\store\targetgroup\targetgroup_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.store import store_pb2 as eve_dot_store_dot_store__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/store/targetgroup/targetgroup.proto', package='eve.store.targetgroup', syntax='proto3', serialized_options='Z@github.com/ccpgames/eve-proto-go/generated/eve/store/targetgroup', create_key=_descriptor._internal_create_key, serialized_pb='\n\'eve/store/targetgroup/targetgroup.proto\x12\x15eve.store.targetgroup\x1a\x15eve/store/store.proto"D\n\nIdentifier\x12#\n\x07catalog\x18\x01 \x01(\x0e2\x12.eve.store.Catalog\x12\x11\n\tgroup_key\x18\x02 \x01(\t"/\n\nAttributes\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x13\n\x0bdescription\x18\x02 \x01(\tBBZ@github.com/ccpgames/eve-proto-go/generated/eve/store/targetgroupb\x06proto3', dependencies=[eve_dot_store_dot_store__pb2.DESCRIPTOR])
+_IDENTIFIER = _descriptor.Descriptor(name='Identifier', full_name='eve.store.targetgroup.Identifier', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='catalog', full_name='eve.store.targetgroup.Identifier.catalog', index=0, number=1, type=14, cpp_type=8, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='group_key', full_name='eve.store.targetgroup.Identifier.group_key', index=1, number=2, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=89, serialized_end=157)
+_ATTRIBUTES = _descriptor.Descriptor(name='Attributes', full_name='eve.store.targetgroup.Attributes', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='name', full_name='eve.store.targetgroup.Attributes.name', index=0, number=1, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='description', full_name='eve.store.targetgroup.Attributes.description', index=1, number=2, type=9, cpp_type=9, label=1, has_default_value=False, default_value=''.decode('utf-8'), message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=159, serialized_end=206)
+_IDENTIFIER.fields_by_name['catalog'].enum_type = eve_dot_store_dot_store__pb2._CATALOG
+DESCRIPTOR.message_types_by_name['Identifier'] = _IDENTIFIER
+DESCRIPTOR.message_types_by_name['Attributes'] = _ATTRIBUTES
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+Identifier = _reflection.GeneratedProtocolMessageType('Identifier', (_message.Message,), {'DESCRIPTOR': _IDENTIFIER,
+ '__module__': 'eve.store.targetgroup.targetgroup_pb2'})
+_sym_db.RegisterMessage(Identifier)
+Attributes = _reflection.GeneratedProtocolMessageType('Attributes', (_message.Message,), {'DESCRIPTOR': _ATTRIBUTES,
+ '__module__': 'eve.store.targetgroup.targetgroup_pb2'})
+_sym_db.RegisterMessage(Attributes)
+DESCRIPTOR._options = None

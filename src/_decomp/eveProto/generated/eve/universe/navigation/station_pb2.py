@@ -1,0 +1,22 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\universe\navigation\station_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.station import station_pb2 as eve_dot_station_dot_station__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/universe/navigation/station.proto', package='eve.universe.navigation', syntax='proto3', serialized_options='ZBgithub.com/ccpgames/eve-proto-go/generated/eve/universe/navigation', create_key=_descriptor._internal_create_key, serialized_pb='\n%eve/universe/navigation/station.proto\x12\x17eve.universe.navigation\x1a\x19eve/station/station.proto"q\n!GetShortestSystemJumpCountRequest\x12&\n\x05start\x18\x01 \x01(\x0b2\x17.eve.station.Identifier\x12$\n\x03end\x18\x02 \x01(\x0b2\x17.eve.station.Identifier"8\n"GetShortestSystemJumpCountResponse\x12\x12\n\njump_count\x18\x01 \x01(\x04BDZBgithub.com/ccpgames/eve-proto-go/generated/eve/universe/navigationb\x06proto3', dependencies=[eve_dot_station_dot_station__pb2.DESCRIPTOR])
+_GETSHORTESTSYSTEMJUMPCOUNTREQUEST = _descriptor.Descriptor(name='GetShortestSystemJumpCountRequest', full_name='eve.universe.navigation.GetShortestSystemJumpCountRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='start', full_name='eve.universe.navigation.GetShortestSystemJumpCountRequest.start', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='end', full_name='eve.universe.navigation.GetShortestSystemJumpCountRequest.end', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=93, serialized_end=206)
+_GETSHORTESTSYSTEMJUMPCOUNTRESPONSE = _descriptor.Descriptor(name='GetShortestSystemJumpCountResponse', full_name='eve.universe.navigation.GetShortestSystemJumpCountResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='jump_count', full_name='eve.universe.navigation.GetShortestSystemJumpCountResponse.jump_count', index=0, number=1, type=4, cpp_type=4, label=1, has_default_value=False, default_value=0, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=208, serialized_end=264)
+_GETSHORTESTSYSTEMJUMPCOUNTREQUEST.fields_by_name['start'].message_type = eve_dot_station_dot_station__pb2._IDENTIFIER
+_GETSHORTESTSYSTEMJUMPCOUNTREQUEST.fields_by_name['end'].message_type = eve_dot_station_dot_station__pb2._IDENTIFIER
+DESCRIPTOR.message_types_by_name['GetShortestSystemJumpCountRequest'] = _GETSHORTESTSYSTEMJUMPCOUNTREQUEST
+DESCRIPTOR.message_types_by_name['GetShortestSystemJumpCountResponse'] = _GETSHORTESTSYSTEMJUMPCOUNTRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+GetShortestSystemJumpCountRequest = _reflection.GeneratedProtocolMessageType('GetShortestSystemJumpCountRequest', (_message.Message,), {'DESCRIPTOR': _GETSHORTESTSYSTEMJUMPCOUNTREQUEST,
+ '__module__': 'eve.universe.navigation.station_pb2'})
+_sym_db.RegisterMessage(GetShortestSystemJumpCountRequest)
+GetShortestSystemJumpCountResponse = _reflection.GeneratedProtocolMessageType('GetShortestSystemJumpCountResponse', (_message.Message,), {'DESCRIPTOR': _GETSHORTESTSYSTEMJUMPCOUNTRESPONSE,
+ '__module__': 'eve.universe.navigation.station_pb2'})
+_sym_db.RegisterMessage(GetShortestSystemJumpCountResponse)
+DESCRIPTOR._options = None

@@ -1,0 +1,24 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\eveProto\generated\eve\character\skill\character_attributes_pb2.py
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
+_sym_db = _symbol_database.Default()
+from eveProto.generated.eve.character import character_pb2 as eve_dot_character_dot_character__pb2
+from eveProto.generated.eve.skill import character_attributes_pb2 as eve_dot_skill_dot_character__attributes__pb2
+DESCRIPTOR = _descriptor.FileDescriptor(name='eve/character/skill/character_attributes.proto', package='eve.character.skill', syntax='proto3', serialized_options='Z>github.com/ccpgames/eve-proto-go/generated/eve/character/skill', create_key=_descriptor._internal_create_key, serialized_pb='\n.eve/character/skill/character_attributes.proto\x12\x13eve.character.skill\x1a\x1deve/character/character.proto\x1a$eve/skill/character_attributes.proto"M\n\x1dGetCharacterAttributesRequest\x12,\n\tcharacter\x18\x01 \x01(\x0b2\x19.eve.character.Identifier"\x8e\x01\n\x1eGetCharacterAttributesResponse\x125\n\x06values\x18\x01 \x01(\x0b2%.eve.skill.characterattributes.Values\x125\n\x06remaps\x18\x02 \x01(\x0b2%.eve.skill.characterattributes.RemapsB@Z>github.com/ccpgames/eve-proto-go/generated/eve/character/skillb\x06proto3', dependencies=[eve_dot_character_dot_character__pb2.DESCRIPTOR, eve_dot_skill_dot_character__attributes__pb2.DESCRIPTOR])
+_GETCHARACTERATTRIBUTESREQUEST = _descriptor.Descriptor(name='GetCharacterAttributesRequest', full_name='eve.character.skill.GetCharacterAttributesRequest', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='character', full_name='eve.character.skill.GetCharacterAttributesRequest.character', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=140, serialized_end=217)
+_GETCHARACTERATTRIBUTESRESPONSE = _descriptor.Descriptor(name='GetCharacterAttributesResponse', full_name='eve.character.skill.GetCharacterAttributesResponse', filename=None, file=DESCRIPTOR, containing_type=None, create_key=_descriptor._internal_create_key, fields=[_descriptor.FieldDescriptor(name='values', full_name='eve.character.skill.GetCharacterAttributesResponse.values', index=0, number=1, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key), _descriptor.FieldDescriptor(name='remaps', full_name='eve.character.skill.GetCharacterAttributesResponse.remaps', index=1, number=2, type=11, cpp_type=10, label=1, has_default_value=False, default_value=None, message_type=None, enum_type=None, containing_type=None, is_extension=False, extension_scope=None, serialized_options=None, file=DESCRIPTOR, create_key=_descriptor._internal_create_key)], extensions=[], nested_types=[], enum_types=[], serialized_options=None, is_extendable=False, syntax='proto3', extension_ranges=[], oneofs=[], serialized_start=220, serialized_end=362)
+_GETCHARACTERATTRIBUTESREQUEST.fields_by_name['character'].message_type = eve_dot_character_dot_character__pb2._IDENTIFIER
+_GETCHARACTERATTRIBUTESRESPONSE.fields_by_name['values'].message_type = eve_dot_skill_dot_character__attributes__pb2._VALUES
+_GETCHARACTERATTRIBUTESRESPONSE.fields_by_name['remaps'].message_type = eve_dot_skill_dot_character__attributes__pb2._REMAPS
+DESCRIPTOR.message_types_by_name['GetCharacterAttributesRequest'] = _GETCHARACTERATTRIBUTESREQUEST
+DESCRIPTOR.message_types_by_name['GetCharacterAttributesResponse'] = _GETCHARACTERATTRIBUTESRESPONSE
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
+GetCharacterAttributesRequest = _reflection.GeneratedProtocolMessageType('GetCharacterAttributesRequest', (_message.Message,), {'DESCRIPTOR': _GETCHARACTERATTRIBUTESREQUEST,
+ '__module__': 'eve.character.skill.character_attributes_pb2'})
+_sym_db.RegisterMessage(GetCharacterAttributesRequest)
+GetCharacterAttributesResponse = _reflection.GeneratedProtocolMessageType('GetCharacterAttributesResponse', (_message.Message,), {'DESCRIPTOR': _GETCHARACTERATTRIBUTESRESPONSE,
+ '__module__': 'eve.character.skill.character_attributes_pb2'})
+_sym_db.RegisterMessage(GetCharacterAttributesResponse)
+DESCRIPTOR._options = None

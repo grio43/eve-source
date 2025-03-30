@@ -1,0 +1,16 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\packages\sovereignty\mercenaryden\client\mercenary_den_signals.py
+from signals import Signal
+on_feature_version_changed = Signal('mercenary_den_signals.on_feature_version_changed')
+on_mercenary_den_changed = Signal('mercenary_den_signals.on_mercenary_den_changed')
+on_mercenary_den_destroyed_on_server_signal = Signal('mercenary_den_signals.on_mercenary_den_destroyed_on_server_signal')
+on_mercenary_den_removed = Signal('mercenary_den_signals.on_mercenary_den_destroyed')
+on_mercenary_den_added = Signal('mercenary_den_signals.on_mercenary_den_added')
+on_evolution_simulation_changed = Signal('mercenary_den_signals.on_evolution_simulation_changed')
+on_mercenary_den_definition_updated = Signal('mercenary_den_signals.on_mercenary_den_definition_updated')
+on_activity_added_notice = Signal('mercenary_den_signals.on_activity_added_notice')
+on_activity_expiry_changed_notice = Signal('mercenary_den_signals.on_activity_expiry_changed_notice')
+on_activity_started_notice = Signal('mercenary_den_signals.on_activity_started_notice')
+on_activity_completed_notice = Signal('mercenary_den_signals.on_activity_completed_notice')
+on_activity_removed_notice = Signal('mercenary_den_signals.on_activity_removed_notice')
+on_activities_loaded = Signal('mercenary_den_signals.on_activities_loaded')
+on_start_activity_failed_unknown = Signal('mercenary_den_signals.on_start_activity_failed_unknown')

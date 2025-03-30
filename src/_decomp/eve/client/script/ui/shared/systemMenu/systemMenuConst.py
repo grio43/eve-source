@@ -1,0 +1,69 @@
+#Embedded file name: C:\BuildAgent\work\ba3dced9a47cf95a\eve\release\V22.02\eve\client\script\ui\shared\systemMenu\systemMenuConst.py
+import eveicon
+from carbonui.services.setting import SessionSettingEnum
+PANELID_DISPLAY_AND_GRAPHICS = 'displayandgraphics'
+PANELID_CAMERA = 'camera'
+PANELID_AUDIO = 'audio'
+PANELID_USERINTERFACE = 'generic'
+PANELID_GAMEPLAY = 'gameplay'
+PANELID_SHORTCUTS = 'shortcuts'
+PANELID_FEATUREPREVIEW = 'experiments'
+PANELID_RESETSETTINGS = 'reset settings'
+PANELID_LANGUAGE = 'language'
+PANELID_ABOUTEVE = 'about eve'
+PANELID_SHORTCUTS_WINDOW = 'window'
+PANELID_SHORTCUTS_COMBAT = 'combat'
+PANELID_SHORTCUTS_GENERAL = 'general'
+PANELID_SHORTCUTS_NAVIGATION = 'navigation'
+PANELID_SHORTCUTS_MODULES = 'modules'
+PANELID_SHORTCUTS_DRONES = 'drones'
+PANELID_SHORTCUTS_FIGHTERS = 'fighters'
+PANELID_SHORTCUTS_CHARCREATION = 'charactercreator'
+PANEL_IDS = (PANELID_DISPLAY_AND_GRAPHICS,
+ PANELID_CAMERA,
+ PANELID_AUDIO,
+ PANELID_USERINTERFACE,
+ PANELID_GAMEPLAY,
+ PANELID_SHORTCUTS,
+ PANELID_FEATUREPREVIEW,
+ PANELID_RESETSETTINGS,
+ PANELID_LANGUAGE,
+ PANELID_ABOUTEVE)
+PANEL_IDS_SHORTCUTS = [PANELID_SHORTCUTS_WINDOW,
+ PANELID_SHORTCUTS_COMBAT,
+ PANELID_SHORTCUTS_GENERAL,
+ PANELID_SHORTCUTS_NAVIGATION,
+ PANELID_SHORTCUTS_MODULES,
+ PANELID_SHORTCUTS_DRONES,
+ PANELID_SHORTCUTS_FIGHTERS,
+ PANELID_SHORTCUTS_CHARCREATION]
+NAME_BY_PANELID = {PANELID_DISPLAY_AND_GRAPHICS: 'UI/SystemMenu/DisplayAndGraphics/Header',
+ PANELID_CAMERA: 'UI/SystemMenu/Camera/Header',
+ PANELID_AUDIO: 'UI/SystemMenu/AudioAndChat/AudioHeader',
+ PANELID_USERINTERFACE: 'UI/SystemMenu/GeneralSettings/Header',
+ PANELID_GAMEPLAY: 'UI/SystemMenu/Gameplay/Header',
+ PANELID_SHORTCUTS: 'UI/SystemMenu/Shortcuts/Header',
+ PANELID_FEATUREPREVIEW: 'UI/FeaturePreview/FeaturePreviewsTab',
+ PANELID_RESETSETTINGS: 'UI/SystemMenu/ResetSettings/Header',
+ PANELID_LANGUAGE: 'UI/SystemMenu/Language/Header',
+ PANELID_ABOUTEVE: 'UI/SystemMenu/AboutEve/Header',
+ PANELID_SHORTCUTS_WINDOW: 'UI/SystemMenu/Shortcuts/WindowTab',
+ PANELID_SHORTCUTS_COMBAT: 'UI/SystemMenu/Shortcuts/CombatTab',
+ PANELID_SHORTCUTS_GENERAL: 'UI/SystemMenu/Shortcuts/GeneralTab',
+ PANELID_SHORTCUTS_NAVIGATION: 'UI/SystemMenu/Shortcuts/NavigationTab',
+ PANELID_SHORTCUTS_MODULES: 'UI/SystemMenu/Shortcuts/ModulesTab',
+ PANELID_SHORTCUTS_DRONES: 'UI/SystemMenu/Shortcuts/DronesTab',
+ PANELID_SHORTCUTS_FIGHTERS: 'UI/Common/Fighters',
+ PANELID_SHORTCUTS_CHARCREATION: 'UI/CharacterCreation'}
+ICON_BY_PANELID = {PANELID_DISPLAY_AND_GRAPHICS: eveicon.video,
+ PANELID_CAMERA: eveicon.look_at,
+ PANELID_AUDIO: eveicon.audio,
+ PANELID_USERINTERFACE: eveicon.ui,
+ PANELID_GAMEPLAY: eveicon.gameplay,
+ PANELID_SHORTCUTS: eveicon.shortcuts,
+ PANELID_FEATUREPREVIEW: eveicon.feature,
+ PANELID_RESETSETTINGS: eveicon.reset,
+ PANELID_LANGUAGE: eveicon.language,
+ PANELID_ABOUTEVE: eveicon.show_info}
+LABEL_WIDTH = 300
+system_menu_selected_tab_setting = SessionSettingEnum(PANELID_DISPLAY_AND_GRAPHICS, NAME_BY_PANELID)
